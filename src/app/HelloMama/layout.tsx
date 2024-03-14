@@ -20,22 +20,14 @@ export default function RootLayout({
       style={{ colorScheme: "light" }}
       suppressHydrationWarning
     >
-      <body className="bg-background text-foreground">
-        <ul className="mt-4 flex w-full flex-row justify-center gap-4 text-xl">
-          <li>
-            <Link href="/HelloMama/daili">Đại lí</Link>
-          </li>
-          <li>
-            <Link href="/HelloMama/lienhe">Liên hệ</Link>
-          </li>
-          <li>
-            <Link href="/HelloMama/tintuc">Tin tức</Link>
-          </li>
-          <li>
-            <Link href="/HelloMama/giohang">Giỏ hàng</Link>
-          </li>
-        </ul>
-        <main className="mx-auto flex min-h-screen w-screen max-w-[2200px] flex-col items-center overflow-hidden">
+      <body className="overflow-hidden bg-background text-foreground">
+        <div className="mx-auto mt-4 flex w-fit gap-4 text-xl">
+          <Link href="/HelloMama/daili">Đại lí</Link>
+          <Link href="/HelloMama/lienhe">Liên hệ</Link>
+          <Link href="/HelloMama/tintuc">Tin tức</Link>
+          <Link href="/HelloMama/giohang">Giỏ hàng</Link>
+        </div>
+        <main className="mx-auto flex min-h-screen w-auto flex-col items-center overflow-hidden">
           {children}
         </main>
       </body>
