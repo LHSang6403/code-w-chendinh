@@ -20,7 +20,7 @@ export default function RootLayout({
       style={{ colorScheme: "light" }}
       suppressHydrationWarning
     >
-      <body className="overflow-hidden bg-background text-foreground">
+      <body className="bg-background text-foreground">
         <div className="mx-auto mt-4 flex w-fit gap-4 text-xl">
           <Link href="/HelloMama/daili">Đại lí</Link>
           <Link href="/HelloMama/lienhe">Liên hệ</Link>
