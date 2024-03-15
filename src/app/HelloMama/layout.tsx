@@ -22,13 +22,14 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <body className="bg-background text-foreground">
-        <div className="mx-auto mt-4 flex w-fit gap-4 text-xl">
+        <div className="mx-auto mt-4 flex h-fit w-full flex-wrap justify-center gap-4 text-xl">
           <Link href="/HelloMama/daili">Đại lí</Link>
           <Link href="/HelloMama/lienhe">Liên hệ</Link>
           <Link href="/HelloMama/tintuc">Tin tức</Link>
           <Link href="/HelloMama/giohang">Giỏ hàng</Link>
+          <Link href="/HelloMama/thuvien">Thư viện</Link>
         </div>
-        <main className="flex min-h-screen w-full px-28 xl:px-3 flex-col items-center overflow-hidden">
+        <main className="flex min-h-screen w-full flex-col items-center overflow-hidden px-28 xl:px-3">
           {children}
         </main>
         <Footer />
