@@ -22,7 +22,7 @@ export const columns: ColumnDef<CartType>[] = [
       return (
         <div className="flex flex-col">
           <div className="flex w-[700px] flex-row items-center justify-start gap-6 xl:w-full lg:gap-2">
-            <div className="w-36 bg-gradient-to-r from-[#F5E45F] via-[#FCF9A0] to-[#E9CD91] p-[2px]">
+            <div className="w-full bg-gradient-to-r from-[#F5E45F] via-[#FCF9A0] to-[#E9CD91] p-[2px]">
               <Image
                 alt="Sản phẩm"
                 src={data.image}
@@ -51,7 +51,7 @@ export const columns: ColumnDef<CartType>[] = [
     accessorKey: "quantity",
     header: () => {
       return (
-        <div className="mb-2 w-48 border-b border-[#A19C9C] pb-3 text-left text-xl font-light text-[#A19C9C] xl:w-full sm:hidden">
+        <div className="mb-2 w-full border-b border-[#A19C9C] pb-3 text-left text-xl font-light text-[#A19C9C] xl:w-full sm:hidden">
           Số lượng
         </div>
       );
@@ -60,7 +60,7 @@ export const columns: ColumnDef<CartType>[] = [
       const data = row.original;
 
       return (
-        <div className=" w-48 gap-4 text-left sm:hidden">
+        <div className="w-full gap-4 text-left sm:hidden">
           <QuantityButtons row={data} />
         </div>
       );
@@ -70,7 +70,7 @@ export const columns: ColumnDef<CartType>[] = [
     accessorKey: "price",
     header: () => {
       return (
-        <div className="mb-2 w-48 border-b border-[#A19C9C] pb-3 text-right text-xl font-light text-[#A19C9C] xl:w-full">
+        <div className="mb-2 w-full border-b border-[#A19C9C] pb-3 text-right text-xl font-light text-[#A19C9C] xl:w-full">
           Tổng tiền
         </div>
       );
