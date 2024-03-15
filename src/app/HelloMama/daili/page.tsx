@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function page() {
   return (
-    <div className="xl:max-w-screen flex h-auto max-w-[1440px] flex-col items-center pb-20 pt-6 sm:w-screen sm:px-3">
+    <div className="w-full flex h-auto flex-col items-center pb-20 pt-6 sm:w-screen sm:px-3">
       <h1 className="mb-6 bg-gradient-to-b from-[#1E588F] via-[#0E7BB8] to-[#0E7BB8] bg-clip-text text-3xl text-transparent">
         HỆ THỐNG ĐẠI LÝ
       </h1>

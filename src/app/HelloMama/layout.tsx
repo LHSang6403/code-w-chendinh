@@ -1,6 +1,7 @@
 import { GeistSans } from "geist/font/sans";
 import "../globals.css";
 import Link from "next/link";
+import Footer from "./Components/Footer";
 
 export const metadata = {
   title: "Hello Mama",
@@ -27,9 +28,10 @@ export default function RootLayout({
           <Link href="/HelloMama/tintuc">Tin tức</Link>
           <Link href="/HelloMama/giohang">Giỏ hàng</Link>
         </div>
-        <main className="mx-auto flex min-h-screen w-auto flex-col items-center overflow-hidden">
+        <main className="flex min-h-screen w-full px-28 xl:px-3 flex-col items-center overflow-hidden">
           {children}
         </main>
+        <Footer />
       </body>
     </html>
   );
