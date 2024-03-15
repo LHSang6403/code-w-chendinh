@@ -26,11 +26,11 @@ export default function page() {
     },
     {
       image: "/assets/images/HelloMama/thuvien/activityImages/tv2.png",
-      description: "Khai trương đại lý phân phối tại Phú Thọ",
+      description: "Logo công ty",
     },
     {
       image: "/assets/images/HelloMama/thuvien/activityImages/tv3.png",
-      description: "Khai trương đại lý phân phối tại Vĩnh Phúc",
+      description: "Khai trương đại lý phân phối tại Phú Thọ",
     },
   ];
 
