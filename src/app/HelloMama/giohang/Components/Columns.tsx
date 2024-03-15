@@ -22,7 +22,7 @@ export const columns: ColumnDef<CartType>[] = [
       return (
         <div className="flex flex-col">
           <div className="flex w-[700px] flex-row items-center justify-start gap-6 xl:w-full lg:gap-2">
-            <div className="w-full bg-gradient-to-r from-[#F5E45F] via-[#FCF9A0] to-[#E9CD91] p-[2px]">
+            <div className="w-40 xl:w-32 sm:w-24 bg-gradient-to-r from-[#F5E45F] via-[#FCF9A0] to-[#E9CD91] p-[2px]">
               <Image
                 alt="Sản phẩm"
                 src={data.image}
