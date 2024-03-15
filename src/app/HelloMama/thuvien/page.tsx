@@ -110,7 +110,7 @@ export default function page() {
   ];
 
   return (
-    <div className="flex h-auto w-full flex-col items-center gap-2 pb-10 pt-6 sm:w-screen xl:px-3 sm:px-8">
+    <div className="flex h-auto w-full flex-col items-center gap-6 pb-10 pt-6 sm:w-screen xl:px-3 sm:px-6">
       <h1 className="bg-gradient-to-b from-[#1E588F] via-[#0E7BB8] to-[#0E7BB8] bg-clip-text text-3xl text-transparent">
         THƯ VIỆN
       </h1>
@@ -126,7 +126,7 @@ export default function page() {
       <section className="h-fit w-full">
         <ImagesCarousel items={hoatDongItems} />
       </section>
-      <h1 className="bg-gradient-to-b from-[#1E588F] via-[#0E7BB8] to-[#0E7BB8] bg-clip-text text-3xl text-transparent">
+      <h1 className="bg-gradient-to-b mb-2 from-[#1E588F] via-[#0E7BB8] to-[#0E7BB8] bg-clip-text text-3xl text-transparent">
         KHÁCH HÀNG MAY MẮN
       </h1>
       <section className="h-fit w-full">

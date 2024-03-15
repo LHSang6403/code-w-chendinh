@@ -3,11 +3,11 @@ import Image from "next/image";
 
 export function Images({ items }: { items: ImageItemType[] }) {
   return (
-    <div className="grid w-full grid-cols-3 gap-4 overflow-hidden lg:grid-cols-2">
+    <div className="grid w-full grid-cols-3 gap-4 lg:gap-2 overflow-hidden lg:grid-cols-2">
       {items.map((item, index) => (
         <div
           key={index}
-          className="flex h-fit w-full flex-col items-center justify-start gap-2 p-1"
+          className="flex h-fit w-full flex-col items-center justify-start gap-2"
         >
           <div key={index} className="h-fit w-full">
             <Image

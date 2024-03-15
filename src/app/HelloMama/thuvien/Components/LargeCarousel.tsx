@@ -19,8 +19,8 @@ export function LargeCarousel({ items }: { items: CarouselItemType[] }) {
       <CarouselContent>
         {items.map((item, index) => (
           <CarouselItem key={index}>
-            <div className="flex h-fit w-full flex-col items-center justify-start gap-2 p-1">
-              <div key={index} className="my-2 h-[450px] w-full">
+            <div className="flex h-fit w-full flex-col items-center justify-start gap-2">
+              <div key={index} className="h-[450px] lg:h-[300px] w-full">
                 <Image
                   alt="Thư viện ảnh"
                   src={item.images[0]}
