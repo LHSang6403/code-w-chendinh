@@ -9,7 +9,7 @@ export function Images({ items }: { items: ImageItemType[] }) {
           key={index}
           className="flex h-fit w-full flex-col items-center justify-start gap-2 p-1"
         >
-          <div key={index} className="my-2 h-fit w-full">
+          <div key={index} className="h-fit w-full">
             <Image
               alt="Thư viện ảnh"
               src={item.image}
