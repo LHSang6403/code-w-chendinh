@@ -19,15 +19,17 @@ export default function Footer() {
       <div className="-mt-4 hidden xl:block">
         <FooterLinksMobile />
       </div>
-      <div className="mt-6 flex h-16 w-full xl:w-[96vw] lg:w-[94vw] flex-row items-center justify-between bg-[#2378AF] px-28 font-light xl:px-0 lg:mt-0 xl:border-t xl:bg-transparent">
-        <span className="font-extralight sm:w-full sm:text-[14px]">
-          @bản quyền thuộc hellomama.com.vn
-        </span>
-        <div className="xl:hidden">
-          <FooterLinks />
-        </div>
-        <div className="hidden xl:block">
-          <FooterIcons />
+      <div className="mt-6 h-16 w-full bg-[#2378AF] px-28 font-light xl:w-[96vw] xl:border-t xl:bg-transparent xl:px-0 lg:mt-0 lg:w-[94vw]">
+        <div className="flex h-full max-w-[1320px] mx-auto flex-row items-center justify-between">
+          <span className="font-extralight sm:w-full sm:text-[14px]">
+            @bản quyền thuộc hellomama.com.vn
+          </span>
+          <div className="xl:hidden">
+            <FooterLinks />
+          </div>
+          <div className="hidden xl:block">
+            <FooterIcons />
+          </div>
         </div>
       </div>
     </div>
