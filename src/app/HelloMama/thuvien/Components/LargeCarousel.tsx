@@ -5,10 +5,10 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "../../Shadcn/Carousel";
-import { CarouselItemType } from "../page";
+import { ImageItemType } from "../page";
 import Image from "next/image";
 
-export function LargeCarousel({ items }: { items: CarouselItemType[] }) {
+export function LargeCarousel({ items }: { items: ImageItemType[] }) {
   return (
     <Carousel
       opts={{
@@ -19,22 +19,20 @@ export function LargeCarousel({ items }: { items: CarouselItemType[] }) {
       <CarouselContent>
         {items.map((item, index) => (
           <CarouselItem key={index}>
-            <div className="flex h-fit w-full flex-col items-center justify-start gap-2">
-              <div key={index} className="h-[450px] lg:h-[300px] w-full">
-                <Image
-                  alt="Thư viện ảnh"
-                  src={item.images[0]}
-                  className="object-fit !relative z-0 h-full !w-full xl:object-cover"
-                  layout="fill"
-                  quality={100}
-                />
-              </div>
+            <div className="flex max-h-[650px] w-full flex-col items-center justify-start gap-2 lg:h-fit">
+              <Image
+                alt="Thư viện ảnh"
+                src={item.image}
+                width={1920}
+                height={800}
+                quality={100}
+              />
             </div>
           </CarouselItem>
         ))}
       </CarouselContent>
-      <CarouselPrevious />
-      <CarouselNext />
+      <CarouselPrevious className="left-4" />
+      <CarouselNext className="right-4" />
     </Carousel>
   );
 }

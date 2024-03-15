@@ -1,6 +1,7 @@
 import FooterIcons from "./FooterIcons";
 import FooterLogo from "./FooterLogo";
 import { FooterLinks, FooterLinksMobile } from "./FooterLinks";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -20,9 +21,9 @@ export default function Footer() {
         <FooterLinksMobile />
       </div>
       <div className="mt-6 h-16 w-full bg-[#2378AF] px-28 font-light xl:w-[96vw] xl:border-t xl:bg-transparent xl:px-0 lg:mt-0 lg:w-[94vw]">
-        <div className="flex h-full max-w-[1320px] mx-auto flex-row items-center justify-between">
+        <div className="mx-auto flex h-full max-w-[1320px] flex-row items-center justify-between">
           <span className="font-extralight sm:w-full sm:text-[14px]">
-            @bản quyền thuộc hellomama.com.vn
+            @Bản quyền thuộc <Link href="#">hellomama.com.vn</Link>
           </span>
           <div className="xl:hidden">
             <FooterLinks />

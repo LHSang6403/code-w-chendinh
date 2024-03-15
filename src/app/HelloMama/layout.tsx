@@ -29,7 +29,7 @@ export default function RootLayout({
           <Link href="/HelloMama/giohang">Giỏ hàng</Link>
           <Link href="/HelloMama/thuvien">Thư viện</Link>
         </div>
-        <main className="mx-auto flex w-screen max-w-[1600px] flex-col items-center overflow-hidden px-28 xl:px-3">
+        <main className="mx-auto flex w-full max-w-[1600px] flex-col items-center overflow-hidden px-28 xl:px-3">
           {children}
         </main>
         <Footer />

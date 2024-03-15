@@ -215,7 +215,7 @@ const CarouselPrevious = React.forwardRef<
       onClick={scrollPrev}
       {...props}
     >
-      <div className="w-6">
+      <div className="w-6 hover:cursor-pointer">
         <Image
           alt="Thư viện ảnh"
           src="/assets/images/HelloMama/thuvien/carouselButtons/left.png"
@@ -252,7 +252,7 @@ const CarouselNext = React.forwardRef<
       onClick={scrollNext}
       {...props}
     >
-      <div className="w-6">
+      <div className="w-6 hover:cursor-pointer">
         <Image
           alt="Thư viện ảnh"
           src="/assets/images/HelloMama/thuvien/carouselButtons/right.png"

@@ -21,14 +21,14 @@ export default function FooterIcons() {
   ];
 
   return (
-    <div className="items flex h-fit flex-row items-center justify-center gap-8 sm:gap-3">
+    <div className="items flex h-fit flex-row items-center justify-center gap-8 xl:gap-4 sm:gap-3">
       {icons.map((icon, index) => (
-        <Link href={icon.link} key={index} className="h-fit w-10 sm:w-6">
+        <Link href={icon.link} key={index} className="h-fit w-8 xl:w-6">
           <Image
             alt={icon.name}
             src={icon.image}
-            className="object-fit !relative z-0 !w-full xl:object-cover"
-            layout="fill"
+            width={48}
+            height={48}
             quality={100}
           />
         </Link>
