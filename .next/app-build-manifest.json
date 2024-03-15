@@ -21,35 +21,15 @@
       "static/chunks/main-app.js",
       "static/chunks/app/loading.js"
     ],
-    "/(main)/template": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(main)/template.js"
-    ],
-    "/(main)/layout": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(main)/layout.js"
-    ],
-    "/HelloMama/tintuc/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/HelloMama/tintuc/page.js"
-    ],
     "/HelloMama/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/HelloMama/layout.js"
     ],
-    "/HelloMama/lienhe/page": [
+    "/HelloMama/tintuc/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/HelloMama/lienhe/page.js"
-    ],
-    "/HelloMama/daili/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/HelloMama/daili/page.js"
+      "static/chunks/app/HelloMama/tintuc/page.js"
     ],
     "/HelloMama/giohang/page": [
       "static/chunks/webpack.js",
