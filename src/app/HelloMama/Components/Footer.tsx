@@ -21,7 +21,7 @@ export default function Footer() {
         <FooterLinksMobile />
       </div>
       <div className="mt-6 h-16 w-full bg-[#2378AF] px-28 font-light xl:w-[96vw] xl:border-t xl:bg-transparent xl:px-0 lg:mt-0 lg:w-[94vw]">
-        <div className="mx-auto flex h-full max-w-[1320px] flex-row items-center justify-between">
+        <div className="mx-auto flex h-full max-w-[2000px] flex-row items-center justify-between">
           <span className="font-extralight sm:w-full sm:text-[14px]">
             @Bản quyền thuộc <Link href="#">hellomama.com.vn</Link>
           </span>

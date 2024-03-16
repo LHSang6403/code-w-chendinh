@@ -33,7 +33,7 @@ export default function RootLayout({
           </Link>
           <Link href="/HelloMama/faq">FAQ</Link>
         </div>
-        <main className="mx-auto flex h-fit w-full max-w-[1600px] flex-col items-center overflow-hidden">
+        <main className="mx-auto flex h-fit w-full max-w-[2000px] flex-col items-center overflow-hidden">
           {children}
         </main>
         <Footer />
