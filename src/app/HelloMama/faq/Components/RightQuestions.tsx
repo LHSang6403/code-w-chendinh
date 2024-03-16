@@ -48,7 +48,7 @@ export default function RightQuestions() {
         <AccordionItem
           value={index.toString()}
           key={index}
-          className="border-none xl:-mt-2.5"
+          className="-mt-4 border-none xl:-mt-2.5"
         >
           <AccordionTrigger className="-mb-3 justify-start gap-1 font-light hover:no-underline">
             <div>
