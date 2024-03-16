@@ -44,7 +44,7 @@ export default function LeftQuestions() {
             </span>
             <ChevronDown className="h-4.5 w-4.5 shrink-0 text-[#0E7BB8] transition-transform duration-200" />
           </AccordionTrigger>
-          <AccordionContent className="-mb-1 flex flex-col justify-start gap-3 font-extralight">
+          <AccordionContent className="-mb-1 flex flex-col justify-start gap-3 font-extralight xl:gap-4">
             {question.answer.map((item, index) => (
               <span key={index} className="text-base hover:cursor-pointer">
                 {item}

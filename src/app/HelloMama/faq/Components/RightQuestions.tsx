@@ -11,30 +11,34 @@ export default function RightQuestions() {
   const rightQuestions = [
     {
       question: "Tôi cần chờ bao lâu mới nhận được đơn hàng?",
-      answer:
-        "Thời gian nhận hàng trung bình: Từ 3 - 5 ngày. Đặt hàng trong khung giờ hành chính (Thứ 2 đến thứ 7 vào 8h - 17h30): hàng sẽ được đóng gói và gửi đi trong ngày. Đặt hàng ngoài khung giờ hành chính (sau 17h30 và Chủ Nhật): hàng sẽ được đóng gói và gửi đi vào ngày hôm sau. Ngày nghỉ, lễ, Tết: hàng sẽ được gói và gửi đi khi đơn vị vận chuyển làm việc.",
+      answer: `
+    <p>
+      Thời gian nhận hàng trung bình: Từ 3 - 5 ngày. <br />
+      &#8226; Đặt hàng trong khung giờ hành chính (Thứ 2 đến thứ 7 vào 8h - 17h30): hàng sẽ được đóng gói và gửi đi trong ngày. <br />
+      &#8226; Đặt hàng ngoài khung giờ hành chính (sau 17h30 và Chủ Nhật): hàng sẽ được đóng gói và gửi đi vào ngày hôm sau. <br />
+      &#8226; Ngày nghỉ, lễ, Tết: hàng sẽ được gói và gửi đi khi đơn vị vận chuyển làm việc.
+    </p>
+  `,
     },
     {
       question: "Tôi muốn thay đổi đơn hàng phải làm sao?",
-      answer:
-        "Bạn vui lòng hủy đơn hàng hiện tại và đặt lại đơn mới. Hoặc liên hệ số điện thoại hotline 1900 066 878 để Hello Mama tư vấn trực tiếp.",
+      answer: `<p>Bạn vui lòng hủy đơn hàng hiện tại và đặt lại đơn mới. Hoặc liên hệ số điện thoại hotline 1900 066 878 để Hello Mama tư vấn trực tiếp.</p>`,
     },
     {
       question: "Làm cách nào để đặt đơn hàng hỏa tốc? ",
-      answer: "Chọn vào “Giao hàng giao tốc” tại trang đặt hàng.",
+      answer: `<p>Chọn vào “Giao hàng giao tốc” tại trang đặt hàng.<p>`,
     },
     {
       question: "Chính sách trả hàng",
-      answer: "",
+      answer: `<p><p>`,
     },
     {
       question: "Hướng dẫn đổi phương thức thanh toán",
-      answer: "",
+      answer: `<p><p>`,
     },
     {
       question: "Tôi cần chờ bao lâu mới nhận được đơn hàng?",
-      answer:
-        "Hello Mama chấp nhận các hình thức thanh toán: VN Pay, Momo, mã QR, và COD. ",
+      answer: `<p>Hello Mama chấp nhận các hình thức thanh toán: VN Pay, Momo, mã QR, và COD..<p>`,
     },
   ];
 
@@ -44,9 +48,9 @@ export default function RightQuestions() {
         <AccordionItem
           value={index.toString()}
           key={index}
-          className="-mt-4 border-none"
+          className="border-none xl:-mt-2.5"
         >
-          <AccordionTrigger className="-mb-2 justify-start gap-1 font-light hover:no-underline sm:gap-0">
+          <AccordionTrigger className="-mb-3 justify-start gap-1 font-light hover:no-underline">
             <div>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -68,8 +72,8 @@ export default function RightQuestions() {
             </span>
             <ChevronDown className="h-4 w-4 shrink-0 rounded-full border-[1.5px] border-black transition-transform duration-200" />
           </AccordionTrigger>
-          <AccordionContent className="-mb-1 text-[16px] xl:text-sm font-extralight">
-            {question.answer}
+          <AccordionContent className="-mb-4 text-[17px] font-extralight xl:text-sm">
+            <div dangerouslySetInnerHTML={{ __html: question.answer }} />
           </AccordionContent>
         </AccordionItem>
       ))}
