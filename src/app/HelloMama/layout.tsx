@@ -28,8 +28,12 @@ export default function RootLayout({
           <Link href="/HelloMama/tintuc">Tin tức</Link>
           <Link href="/HelloMama/giohang">Giỏ hàng</Link>
           <Link href="/HelloMama/thuvien">Thư viện</Link>
+          <Link href="/HelloMama/cauchuyenthuonghieu">
+            Câu chuyện thương hiệu
+          </Link>
+          <Link href="/HelloMama/faq">FAQ</Link>
         </div>
-        <main className="mx-auto flex w-full max-w-[1600px] flex-col items-center overflow-hidden px-28 xl:px-3">
+        <main className="mx-auto flex h-fit w-full max-w-[1600px] flex-col items-center overflow-hidden">
           {children}
         </main>
         <Footer />

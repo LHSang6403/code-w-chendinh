@@ -48,7 +48,7 @@ export default function page() {
   ];
 
   return (
-    <div className="flex h-auto w-full flex-col items-center pb-20 pt-6 sm:w-screen sm:px-3">
+    <div className="flex h-auto w-full flex-col items-center px-28 pb-20 pt-6 xl:px-3 sm:w-screen sm:px-3">
       <EventSection />
       <section className="flex w-full flex-col items-center">
         <h1 className="mb-8 mt-4 bg-gradient-to-b from-[#1E588F] via-[#0E7BB8] to-[#0E7BB8] bg-clip-text text-center text-3xl text-transparent sm:mb-4">
