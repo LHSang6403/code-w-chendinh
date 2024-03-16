@@ -72,7 +72,7 @@ export default function RightQuestions() {
             </span>
             <ChevronDown className="h-4 w-4 shrink-0 rounded-full border-[1.5px] border-black transition-transform duration-200" />
           </AccordionTrigger>
-          <AccordionContent className="-mb-4 text-sm font-extralight xl:text-sm">
+          <AccordionContent className="-mb-4 text-base font-extralight xl:text-sm">
             <div dangerouslySetInnerHTML={{ __html: question.answer }} />
           </AccordionContent>
         </AccordionItem>
