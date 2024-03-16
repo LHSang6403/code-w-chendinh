@@ -17,7 +17,7 @@ export default function page() {
       <h1 className="bg-gradient-to-b from-[#1E588F] via-[#0E7BB8] to-[#0E7BB8] bg-clip-text text-center text-3xl text-transparent">
         HỆ THỐNG CỬA HÀNG
       </h1>
-      <p className="px-56 text-center font-light xl:px-28 sm:px-0">
+      <p className="max-w-[600px] text-center font-light">
         Hiện nay, các sản phẩm của Hello Mama đã có mặt ở gần 200 đại lý, cửa
         hàng, nhà phân phối trên toàn quốc
       </p>

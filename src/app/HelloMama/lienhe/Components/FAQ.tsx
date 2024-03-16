@@ -4,7 +4,6 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@components/ui/accordion";
-import Image from "next/image";
 import { Button } from "../../Shadcn/Button";
 
 export default function FAQ() {
