@@ -1,37 +1,14 @@
-import create from "zustand";
+import { create } from "zustand";
+import { CustomerType } from "@/utils/types";
 
-type UserSession = {
-  isLoggedIn: boolean;
-  username: string | null;
-};
+interface SessionState<T extends CustomerType> {
+  session: T | null;
+  setSession: (session: T) => void;
+  removeSession: () => void;
+}
 
-type UserSessionStore = {
-  userSession: UserSession;
-  login: (username: string) => void;
-  logout: () => void;
-};
-
-const useUserSessionStore = create<UserSessionStore>((set) => ({
-  userSession: {
-    isLoggedIn: false,
-    username: null,
-  },
-  login: (username) => {
-    set((state) => ({
-      userSession: {
-        isLoggedIn: true,
-        username: username,
-      },
-    }));
-  },
-  logout: () => {
-    set((state) => ({
-      userSession: {
-        isLoggedIn: false,
-        username: null,
-      },
-    }));
-  },
+export const useSession = create<SessionState<CustomerType>>((set) => ({
+  session: null,
+  setSession: (session: CustomerType | null) => set({ session }),
+  removeSession: () => set({ session: null }),
 }));
-
-export default useUserSessionStore;

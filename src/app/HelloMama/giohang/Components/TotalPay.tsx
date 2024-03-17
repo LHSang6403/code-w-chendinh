@@ -1,12 +1,18 @@
+"use client";
+
+import { useOrder } from "@/zustand/useOrder";
 import { Button } from "../../Shadcn/Button";
+import formatCurrency from "@utils/functions/formatCurrency";
 
 export default function TotalPay() {
+  const { order } = useOrder();
+
   return (
     <div className="flex w-64 flex-col sm:w-full">
       <div className="flex flex-row justify-between text-xl">
         <span className="font-light">Tổng tiền:</span>
         <span className="line-clamp-1 overflow-ellipsis font-medium">
-          1.300.000đ
+          {order ? formatCurrency(order?.total_price) : 0}đ
         </span>
       </div>
       <span className="text-center text-[12px] font-light text-[#A19C9C]">

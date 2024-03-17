@@ -1,12 +1,12 @@
 "use client";
 
 import { ColumnDef } from "@tanstack/react-table";
-import { CartType } from "@app/HelloMama/giohang/Components/CartTable";
 import Image from "next/image";
 import formatCurrency from "@/utils/functions/formatCurrency";
 import QuantityButtons from "./QuantityButtons";
+import { OrderType, CartTableType } from "@/utils/types";
 
-export const columns: ColumnDef<CartType>[] = [
+export const columns: ColumnDef<CartTableType>[] = [
   {
     accessorKey: "product",
     header: () => {
@@ -21,7 +21,7 @@ export const columns: ColumnDef<CartType>[] = [
             <div className="w-24 bg-gradient-to-r from-[#F5E45F] via-[#FCF9A0] to-[#E9CD91] p-[2px] xl:w-20 sm:w-16">
               <Image
                 alt="Sản phẩm"
-                src={data.image}
+                src={data.product.images[0]}
                 className="object-fit !relative h-full !w-full bg-white xl:object-cover"
                 layout="fill"
                 quality={100}
@@ -29,10 +29,10 @@ export const columns: ColumnDef<CartType>[] = [
             </div>
             <div className="flex flex-col items-start">
               <span className="line-clamp-2 overflow-ellipsis text-left font-light sm:text-lg">
-                {data.product}
+                {data.product.name}
               </span>
               <span className="line-clamp-1 overflow-ellipsis text-left font-light">
-                {formatCurrency(data.price)}đ
+                {formatCurrency(data.product.price)}đ
               </span>
               <div className="mt-3">
                 <QuantityButtons row={data} />

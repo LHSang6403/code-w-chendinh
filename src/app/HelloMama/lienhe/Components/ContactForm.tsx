@@ -32,7 +32,11 @@ export default function ContactForm() {
     },
   });
 
-  async function onSubmit(data: z.infer<typeof FormSchema>) {}
+  async function onSubmit(data: z.infer<typeof FormSchema>) {
+    // Call API
+    console.log(data);
+    form.reset();
+  }
 
   return (
     <div className="w-[550px] rounded-md bg-[#E7F2F8] px-3 py-6 sm:w-full">

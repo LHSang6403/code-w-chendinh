@@ -1,12 +1,12 @@
 "use client";
 
 import { ColumnDef } from "@tanstack/react-table";
-import { CartType } from "@app/HelloMama/giohang/Components/CartTable";
 import Image from "next/image";
 import QuantityButtons from "./QuantityButtons";
 import formatCurrency from "@utils/functions/formatCurrency";
+import { CartTableType } from "./CartTable";
 
-export const columns: ColumnDef<CartType>[] = [
+export const columns: ColumnDef<CartTableType>[] = [
   {
     accessorKey: "product",
     header: () => {
@@ -22,10 +22,10 @@ export const columns: ColumnDef<CartType>[] = [
       return (
         <div className="flex flex-col">
           <div className="flex w-[700px] flex-row items-center justify-start gap-6 xl:w-full lg:gap-2">
-            <div className="w-40 xl:w-32 sm:w-24 bg-gradient-to-r from-[#F5E45F] via-[#FCF9A0] to-[#E9CD91] p-[2px]">
+            <div className="w-40 bg-gradient-to-r from-[#F5E45F] via-[#FCF9A0] to-[#E9CD91] p-[2px] xl:w-32 sm:w-24">
               <Image
                 alt="Sản phẩm"
-                src={data.image}
+                src={data.product.images[0]}
                 className="object-fit !relative h-full !w-full bg-white xl:object-cover"
                 layout="fill"
                 quality={100}
@@ -33,10 +33,10 @@ export const columns: ColumnDef<CartType>[] = [
             </div>
             <div className="flex flex-col items-start gap-1">
               <span className="line-clamp-2 overflow-ellipsis text-left text-xl font-light sm:text-lg">
-                {data.product}
+                {data.product.name}
               </span>
-              <span className="overflow-ellipsis line-clamp-1 text-left font-light text-[#A19C9C]">
-                {data.description}
+              <span className="line-clamp-1 overflow-ellipsis text-left font-light text-[#A19C9C]">
+                {data.product.description}
               </span>
             </div>
           </div>
@@ -80,7 +80,7 @@ export const columns: ColumnDef<CartType>[] = [
 
       return (
         <div className="text-right text-xl font-light sm:pb-10">
-          {formatCurrency(data.price)}đ
+          {formatCurrency(data.product.price * data.product_quantity)}đ
         </div>
       );
     },

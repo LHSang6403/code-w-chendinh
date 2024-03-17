@@ -19,12 +19,14 @@ export default function Search() {
     },
   });
 
-  async function onSubmit(data: z.infer<typeof FormSchema>) {}
+  async function onSubmit(data: z.infer<typeof FormSchema>) {
+    console.log(data);
+  }
 
   return (
     <div className="flex w-full flex-row">
       <Form {...form}>
-        <form className="w-full" onSubmit={form.handleSubmit(onSubmit)}>
+        <form className="w-full" onChange={form.handleSubmit(onSubmit)}>
           <FormField
             control={form.control}
             name="searchText"

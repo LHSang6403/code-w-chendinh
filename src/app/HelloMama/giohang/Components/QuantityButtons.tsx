@@ -1,9 +1,12 @@
-import { CartType } from "./CartTable";
+import { CartTableType } from "./CartTable";
+import { useOrder } from "@/zustand/useOrder";
 
-export default function QuantityButtons({ row }: { row: CartType }) {
+export default function QuantityButtons({ row }: { row: CartTableType }) {
+  const { increaseQuantity, decreaseQuantity, removeProduct } = useOrder();
+
   return (
     <div className="flex flex-row items-center justify-start gap-4">
-      <div className="flex h-10 w-28 sm:w-24 flex-row items-center justify-between border border-[9D9B9B] px-2">
+      <div className="flex h-10 w-28 flex-row items-center justify-between border border-[9D9B9B] px-2 sm:w-24">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -11,11 +14,13 @@ export default function QuantityButtons({ row }: { row: CartType }) {
           stroke-width="1.5"
           stroke="currentColor"
           className="h-5 w-5 hover:cursor-pointer"
-          onClick={() => {}}
+          onClick={() => {
+            decreaseQuantity(row.product.id);
+          }}
         >
           <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14" />
         </svg>
-        <span className="text-xl font-light">{row.quantity}</span>
+        <span className="text-xl font-light">{row.product_quantity || 0}</span>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -23,7 +28,9 @@ export default function QuantityButtons({ row }: { row: CartType }) {
           stroke-width="1.5"
           stroke="currentColor"
           className="h-5 w-5 hover:cursor-pointer"
-          onClick={() => {}}
+          onClick={() => {
+            increaseQuantity(row.product.id);
+          }}
         >
           <path
             stroke-linecap="round"
@@ -39,7 +46,9 @@ export default function QuantityButtons({ row }: { row: CartType }) {
         stroke-width="1.5"
         stroke="currentColor"
         className="h-5 w-5 hover:cursor-pointer"
-        onClick={() => {}}
+        onClick={() => {
+          removeProduct(row.product.id);
+        }}
       >
         <path
           stroke-linecap="round"

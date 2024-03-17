@@ -1,4 +1,4 @@
-import Selects from "./Components/Selects";
+import AddressSelects from "./Components/AddressSelects";
 import SearchList from "./Components/SearchList";
 import Image from "next/image";
 
@@ -9,7 +9,7 @@ export default function page() {
         HỆ THỐNG ĐẠI LÝ
       </h1>
       <div className="flex w-[870px] justify-center xl:w-[600px] sm:w-full">
-        <Selects />
+        <AddressSelects />
       </div>
       <div className="mt-3 flex w-full flex-row justify-center gap-2 xl:w-full xl:flex-col sm:w-full">
         <div className="">

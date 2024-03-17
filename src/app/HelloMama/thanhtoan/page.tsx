@@ -1,8 +1,9 @@
-import CartTable from "./Components/CartTable";
+import PaymentCartTable from "./Components/PaymentCartTable";
 import VoucherInput from "./Components/VoucherInput";
 import PaymentCheckboxs from "./Components/PaymentCheckboxs";
 import ShipmentForm from "./Components/ShipmentForm";
 import QRPayment from "./Components/QRPayment";
+import TotalPay from "./Components/TotalPay";
 
 export default function page() {
   return (
@@ -22,15 +23,10 @@ export default function page() {
           <QRPayment />
         </div>
       </div>
-      <div className="min-h-screen w-fit bg-[#F9F9F9] px-6 xl:hidden">
-        <div className="-mt-16 pt-3">
-          <CartTable />
-        </div>
+      <div className="min-h-screen w-fit min-w-[360px] bg-[#F9F9F9] px-6 xl:hidden">
+        <PaymentCartTable />
         <VoucherInput />
-        <div className="mt-3 w-full text-right font-light">
-          <span className="mr-10 w-full">Tổng tiền:</span>{" "}
-          <span className="w-fit">1.300.000đ</span>
-        </div>
+        <TotalPay />
       </div>
     </div>
   );

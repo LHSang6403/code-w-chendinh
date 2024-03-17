@@ -2,40 +2,38 @@
 
 import { DataTable } from "@components/Table/DataTable";
 import { columns } from "@app/HelloMama/giohang/Components/Columns";
+import { useOrder } from "@/zustand/useOrder";
+import { OrderType, ProductType } from "@/utils/types";
 
-export interface CartType {
-  product: string;
-  description: string;
-  image: string;
-  quantity: number;
-  price: number;
+export interface CartTableType {
+  product: ProductType;
+  product_quantity: number;
 }
 
-const data: CartType[] = [
-  {
-    product: "GOCARE Premium A+",
-    description: "Trẻ 6-24 tháng tuổi",
-    image: "/assets/images/HelloMama/giohang/product1.png",
-    quantity: 1,
-    price: 625000,
-  },
-  {
-    product: "GOCARE Premium A+",
-    description: "Trẻ 2-15 tuổi",
-    image: "/assets/images/HelloMama/giohang/product2.png",
-    quantity: 1,
-    price: 625000,
-  },
-];
-
 export default function CartTable() {
+  const { order } = useOrder();
+
+  if (!order) return <div className="text-center">No data</div>;
+  const rows = transformOrderToList(order as OrderType);
+
   return (
     <DataTable
       columns={columns}
-      data={data as CartType[]}
+      data={rows as CartTableType[]}
       isPaginationEnabled={false}
       isCollumnVisibilityEnabled={false}
       isSearchEnabled={false}
     />
   );
+}
+
+function transformOrderToList(order: OrderType): CartTableType[] {
+  const productList = order.products.map((product, index) => {
+    return {
+      product: product,
+      product_quantity: order.product_quantities[index] || 1,
+    };
+  });
+
+  return productList;
 }

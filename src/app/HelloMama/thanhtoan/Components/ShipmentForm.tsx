@@ -34,7 +34,11 @@ export default function ShipmentForm() {
     },
   });
 
-  async function onSubmit(data: z.infer<typeof FormSchema>) {}
+  async function onSubmit(data: z.infer<typeof FormSchema>) {
+    // Call API
+    console.log(data);
+    form.reset();
+  }
 
   return (
     <div className="w-full xl:w-[90vw]">
