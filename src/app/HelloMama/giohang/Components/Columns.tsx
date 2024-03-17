@@ -35,7 +35,7 @@ export const columns: ColumnDef<CartType>[] = [
               <span className="line-clamp-2 overflow-ellipsis text-left text-xl font-light sm:text-lg">
                 {data.product}
               </span>
-              <span className="overflow-ellipsi line-clamp-1 text-left font-light text-[#A19C9C]">
+              <span className="overflow-ellipsis line-clamp-1 text-left font-light text-[#A19C9C]">
                 {data.description}
               </span>
             </div>

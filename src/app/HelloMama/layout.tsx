@@ -32,6 +32,7 @@ export default function RootLayout({
             Câu chuyện thương hiệu
           </Link>
           <Link href="/HelloMama/faq">FAQ</Link>
+          <Link href="/HelloMama/thanhtoan">Thanh Toán</Link>
         </div>
         <main className="mx-auto flex h-fit w-full max-w-[2000px] flex-col items-center overflow-hidden">
           {children}
