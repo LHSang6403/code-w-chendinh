@@ -24,7 +24,7 @@ export default function PaymentCheckboxs() {
           key={index}
           className="rounded bg-gradient-to-r from-[#CD9F2D] via-[#F7EF8A] to-[#EDC967] p-[1px] sm:w-1/2"
         >
-          <div className="flex h-fit w-48 flex-row items-center justify-between rounded bg-white px-1.5 sm:w-full">
+          <div className="flex h-fit w-52 flex-row items-center justify-between rounded bg-white px-1.5 sm:w-full">
             <Checkbox id={method.id} className="text-white sm:h-3 sm:w-3" />
             <label
               htmlFor="terms"

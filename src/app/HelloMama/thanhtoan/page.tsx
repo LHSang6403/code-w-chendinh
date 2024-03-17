@@ -7,7 +7,7 @@ import QRPayment from "./Components/QRPayment";
 export default function page() {
   return (
     <div className="flex h-auto w-full flex-row items-start justify-center px-36 pb-10 pt-6 xl:flex-col xl:px-3 ">
-      <div className="flex w-fit flex-col items-center gap-3 px-1 xl:w-full">
+      <div className="flex w-fit flex-col items-center gap-3 px-3 xl:w-full xl:px-1">
         <PaymentCheckboxs />
         <div className="mt-1 flex flex-col gap-3 border-t border-t-[#9D9B9B]">
           <h1 className="mt-3 bg-gradient-to-b from-[#1E588F] via-[#0E7BB8] to-[#0E7BB8] bg-clip-text text-center text-[45px] font-light text-transparent lg:text-2xl">
