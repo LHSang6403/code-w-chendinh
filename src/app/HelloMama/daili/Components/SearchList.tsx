@@ -1,6 +1,8 @@
 import Search from "./Search";
 
 export default function SearchList() {
+  // Call api to get list
+
   return (
     <div className="h-fit w-full">
       <div className="w-full">

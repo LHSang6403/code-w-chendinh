@@ -145,7 +145,7 @@ export default function ShipmentForm() {
             )}
           />
           <Button
-            disabled={!form.formState.isValid}
+            disabled={!form.formState.isValid || !order}
             className="group mx-auto w-fit px-3 sm:mt-2"
           >
             <span className="bg-gradient-to-b from-[#1E588F] via-[#0E7BB8] to-[#0E7BB8] bg-clip-text font-light text-[#9D9B9B] text-transparent group-hover:text-white">

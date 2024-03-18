@@ -20,6 +20,7 @@ export default function Search() {
   });
 
   async function onSubmit(data: z.infer<typeof FormSchema>) {
+    // Call API
     console.log(data);
   }
 
