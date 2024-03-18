@@ -37,7 +37,7 @@ export default function PaymentCheckboxs() {
               onCheckedChange={(value) => {
                 if (value) setPayment(method.id as PaymentType);
               }}
-              className="text-white sm:h-3 sm:w-3"
+              className="text-white sm:h-4 sm:w-4"
             />
             <label
               htmlFor="terms"
