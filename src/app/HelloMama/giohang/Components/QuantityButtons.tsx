@@ -1,4 +1,4 @@
-import { CartTableType } from "./CartTable";
+import { CartTableType } from "@/utils/types";
 import { useOrder } from "@/zustand/useOrder";
 
 export default function QuantityButtons({ row }: { row: CartTableType }) {
