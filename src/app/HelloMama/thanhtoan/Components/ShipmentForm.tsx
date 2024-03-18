@@ -13,16 +13,19 @@ import {
 import { Input } from "@components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "../../Shadcn/Button";
+import { useOrder } from "@/zustand/useOrder";
 
 const FormSchema = z.object({
-  familyName: z.string(),
-  name: z.string(),
-  address: z.string(),
-  phone: z.string(),
+  familyName: z.string().min(2),
+  name: z.string().min(2),
+  address: z.string().min(2),
+  phone: z.string().min(9),
   note: z.string().optional(),
 });
 
 export default function ShipmentForm() {
+  const { order } = useOrder();
+
   const form = useForm<z.infer<typeof FormSchema>>({
     resolver: zodResolver(FormSchema),
     defaultValues: {
@@ -36,7 +39,7 @@ export default function ShipmentForm() {
 
   async function onSubmit(data: z.infer<typeof FormSchema>) {
     // Call API
-    console.log(data);
+    console.log(data, order);
     form.reset();
   }
 
@@ -141,7 +144,10 @@ export default function ShipmentForm() {
               </FormItem>
             )}
           />
-          <Button className="group mx-auto w-fit px-3 sm:mt-2">
+          <Button
+            disabled={!form.formState.isValid}
+            className="group mx-auto w-fit px-3 sm:mt-2"
+          >
             <span className="bg-gradient-to-b from-[#1E588F] via-[#0E7BB8] to-[#0E7BB8] bg-clip-text font-light text-[#9D9B9B] text-transparent group-hover:text-white">
               XÁC NHẬN
             </span>

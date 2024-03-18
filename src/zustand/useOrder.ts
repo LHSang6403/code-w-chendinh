@@ -1,5 +1,5 @@
 import { create } from "zustand";
-import type { ProductType } from "@utils/types/index";
+import type { ProductType, PaymentType } from "@utils/types/index";
 import type { ShipmentNameType, OrderType } from "@utils/types/index";
 import { generate } from "randomstring";
 
@@ -14,6 +14,7 @@ interface OrderState {
   ) => void;
   setCustomer: (id: string, name: string) => void;
   setFees: (shipping_fee: number, insurance_fee: number) => void;
+  setPayment: (payment: PaymentType) => void;
   addProduct: (prod: ProductType) => void;
   removeProduct: (id: string) => void;
   removeAll: () => void;
@@ -53,6 +54,51 @@ const initProducts: ProductType[] = [
     category: "",
     is_deleted: false,
   },
+  {
+    id: "2",
+    name: "GOCARE Premium A+",
+    description: "Trẻ 2-15 tuổi",
+    images: ["/assets/images/HelloMama/giohang/product2.png"],
+    price: 300000,
+    created_at: "",
+    brand: "",
+    options: [],
+    rate: 0,
+    sold_quantity: 0,
+    description_id: "",
+    category: "",
+    is_deleted: false,
+  },
+  {
+    id: "2",
+    name: "GOCARE Premium A+",
+    description: "Trẻ 2-15 tuổi",
+    images: ["/assets/images/HelloMama/giohang/product2.png"],
+    price: 300000,
+    created_at: "",
+    brand: "",
+    options: [],
+    rate: 0,
+    sold_quantity: 0,
+    description_id: "",
+    category: "",
+    is_deleted: false,
+  },
+  {
+    id: "1",
+    name: "GOCARE Premium A+",
+    description: "Trẻ 6-24 tháng tuổi",
+    images: ["/assets/images/HelloMama/giohang/product1.png"],
+    price: 600000,
+    created_at: "",
+    brand: "",
+    options: [],
+    rate: 0,
+    sold_quantity: 0,
+    description_id: "",
+    category: "",
+    is_deleted: false,
+  },
 ];
 
 const initORder: OrderType = {
@@ -61,14 +107,14 @@ const initORder: OrderType = {
   shipment_name: "",
   shipment_label_code: "",
   products: initProducts,
-  product_quantities: [3, 6],
   state: "pending",
   customer_id: "",
   customer_name: "",
-  price: 3600000,
+  price: 2100000,
   shipping_fee: 0,
   insurance_fee: 0,
-  total_price: 3600000,
+  total_price: 2100000,
+  payment: "cod",
   note: "",
   address: "",
   ward: "",
@@ -144,6 +190,19 @@ export const useOrder = create<OrderState>((set) => ({
       }
     });
   },
+  setPayment: (payment: PaymentType) =>
+    set((state: OrderState) => {
+      if (state.order) {
+        return {
+          order: {
+            ...state.order,
+            payment: payment,
+          },
+        };
+      } else {
+        return state;
+      }
+    }),
   addProduct: (prod: ProductType) =>
     set((state: OrderState) => {
       if (!state.order) {
@@ -151,19 +210,10 @@ export const useOrder = create<OrderState>((set) => ({
       }
 
       const updatedOrder = { ...state.order };
-      const existingProductIndex = updatedOrder.products.findIndex(
-        (p) => p.id === prod.id
-      );
-
-      if (existingProductIndex !== -1) {
-        updatedOrder.product_quantities[existingProductIndex]++;
-      } else {
-        updatedOrder.products.push(prod);
-        updatedOrder.product_quantities.push(1);
-      }
+      updatedOrder.products.push(prod);
 
       updatedOrder.price += prod.price;
-      updatedOrder.total_price = updatedOrder.price;
+      updatedOrder.total_price = calTotalPrice(updatedOrder);
 
       return {
         order: updatedOrder,
@@ -174,18 +224,23 @@ export const useOrder = create<OrderState>((set) => ({
       if (state.order) {
         const updatedOrder = { ...state.order };
 
-        const index = updatedOrder.products.findIndex((prod) => prod.id === id);
+        const indexesToRemove: number[] = [];
+        let removedProductPrice = 0;
 
-        if (index !== -1) {
-          const removedProductPrice =
-            updatedOrder.products[index].price *
-            updatedOrder.product_quantities[index];
+        updatedOrder.products.forEach((prod, index) => {
+          if (prod.id === id) {
+            indexesToRemove.push(index);
+            removedProductPrice += prod.price;
+          }
+        });
 
-          updatedOrder.products.splice(index, 1);
-          updatedOrder.product_quantities.splice(index, 1);
+        if (indexesToRemove.length > 0) {
+          indexesToRemove.reverse().forEach((index) => {
+            updatedOrder.products.splice(index, 1);
+          });
 
           updatedOrder.price -= removedProductPrice;
-          updatedOrder.total_price = updatedOrder.price;
+          updatedOrder.total_price = calTotalPrice(updatedOrder);
         }
 
         if (updatedOrder.products.length === 0) {
@@ -205,9 +260,9 @@ export const useOrder = create<OrderState>((set) => ({
         const index = updatedOrder.products.findIndex((prod) => prod.id === id);
 
         if (index !== -1) {
-          updatedOrder.product_quantities[index]++;
+          updatedOrder.products.push(updatedOrder.products[index]);
           updatedOrder.price += updatedOrder.products[index].price;
-          updatedOrder.total_price = updatedOrder.price;
+          updatedOrder.total_price = calTotalPrice(updatedOrder);
         }
 
         return { order: updatedOrder };
@@ -215,21 +270,17 @@ export const useOrder = create<OrderState>((set) => ({
         return state;
       }
     }),
-  decreaseQuantity: (id: string) => {
+  decreaseQuantity: (id: string) =>
     set((state: OrderState) => {
       if (state.order) {
         const updatedOrder = { ...state.order };
         const index = updatedOrder.products.findIndex((prod) => prod.id === id);
 
         if (index !== -1) {
-          updatedOrder.product_quantities[index]--;
-          updatedOrder.price -= updatedOrder.products[index].price;
-          updatedOrder.total_price = updatedOrder.price;
-
-          if (updatedOrder.product_quantities[index] === 0) {
-            updatedOrder.products.splice(index, 1);
-            updatedOrder.product_quantities.splice(index, 1);
-          }
+          const prodTemp = updatedOrder.products[index];
+          updatedOrder.products.splice(index, 1);
+          updatedOrder.price -= prodTemp.price;
+          updatedOrder.total_price = calTotalPrice(updatedOrder);
         }
 
         if (updatedOrder.products.length === 0) {
@@ -240,8 +291,7 @@ export const useOrder = create<OrderState>((set) => ({
       } else {
         return state;
       }
-    });
-  },
+    }),
 }));
 
 function createOrderFromProduct(prod: ProductType): OrderType {
@@ -251,7 +301,6 @@ function createOrderFromProduct(prod: ProductType): OrderType {
     shipment_name: "",
     shipment_label_code: "",
     products: [prod],
-    product_quantities: [1],
     state: "pending",
     customer_id: "",
     customer_name: "",
@@ -259,6 +308,7 @@ function createOrderFromProduct(prod: ProductType): OrderType {
     shipping_fee: 0,
     insurance_fee: 0,
     total_price: 0,
+    payment: "cod",
     note: "",
     address: "",
     ward: "",
@@ -270,4 +320,17 @@ function createOrderFromProduct(prod: ProductType): OrderType {
     pick_province: "",
     weight: 500,
   };
+}
+
+function calTotalPrice(order: OrderType): number {
+  let totalPrice = 0;
+
+  order.products.forEach((prod) => {
+    totalPrice += prod.price;
+  });
+
+  if (order.shipping_fee > 0) totalPrice += order.shipping_fee;
+  if (order.insurance_fee > 0) totalPrice += order.insurance_fee;
+
+  return totalPrice;
 }

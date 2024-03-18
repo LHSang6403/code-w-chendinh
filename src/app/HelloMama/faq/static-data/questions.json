@@ -1,0 +1,226 @@
+[
+  {
+    "questionId": "1",
+    "question": "Đơn hàng & Vận chuyển",
+    "answers": [
+      {
+        "answerId": "01",
+        "answer": "Đơn hàng",
+        "sub": [
+          {
+            "subQuestionId": "01",
+            "subQuestion": "Tôi cần chờ bao lâu mới nhận được đơn hàng?",
+            "subAnswer": "<p>Thời gian nhận hàng trung bình: Từ 3 - 5 ngày. <br />&#8226; Đặt hàng trong khung giờ hành chính (Thứ 2 đến thứ 7 vào 8h - 17h30): hàng sẽ được đóng gói và gửi đi trong ngày. <br />&#8226; Đặt hàng ngoài khung giờ hành chính (sau 17h30 và Chủ Nhật): hàng sẽ được đóng gói và gửi đi vào ngày hôm sau. <br />&#8226; Ngày nghỉ, lễ, Tết: hàng sẽ được gói và gửi đi khi đơn vị vận chuyển làm việc.</p>"
+          },
+          {
+            "subQuestionId": "02",
+            "subQuestion": "Tôi muốn thay đổi đơn hàng phải làm sao?",
+            "subAnswer": "<p>Bạn vui lòng hủy đơn hàng hiện tại và đặt lại đơn mới. Hoặc liên hệ số điện thoại hotline 1900 066 878 để Hello Mama tư vấn trực tiếp.</p>"
+          },
+          {
+            "subQuestionId": "03",
+            "subQuestion": "Làm cách nào để đặt đơn hàng hỏa tốc? ",
+            "subAnswer": "<p>Chọn vào “Giao hàng giao tốc” tại trang đặt hàng.</p>"
+          },
+          {
+            "subQuestionId": "04",
+            "subQuestion": "Chính sách trả hàng",
+            "subAnswer": "<p></p>"
+          },
+          {
+            "subQuestionId": "05",
+            "subQuestion": "Hướng dẫn đổi phương thức thanh toán",
+            "subAnswer": "<p></p>"
+          },
+          {
+            "subQuestionId": "06",
+            "subQuestion": "Hello Mama chấp nhận các hình thức thanh toán: VN Pay, Momo, mã QR, và COD.",
+            "subAnswer": "<p></p>"
+          }
+        ]
+      },
+      {
+        "answerId": "02",
+        "answer": "Thời gian vận chuyển",
+        "sub": [
+          {
+            "subQuestionId": "07",
+            "subQuestion": "Tôi cần chờ bao lâu mới nhận được đơn hàng?",
+            "subAnswer": "<p>Thời gian nhận hàng trung bình: Từ 3 - 5 ngày. <br />&#8226; Đặt hàng trong khung giờ hành chính (Thứ 2 đến thứ 7 vào 8h - 17h30): hàng sẽ được đóng gói và gửi đi trong ngày. <br />&#8226; Đặt hàng ngoài khung giờ hành chính (sau 17h30 và Chủ Nhật): hàng sẽ được đóng gói và gửi đi vào ngày hôm sau. <br />&#8226; Ngày nghỉ, lễ, Tết: hàng sẽ được gói và gửi đi khi đơn vị vận chuyển làm việc.</p>"
+          },
+          {
+            "subQuestionId": "09",
+            "subQuestion": "Làm cách nào để đặt đơn hàng hỏa tốc? ",
+            "subAnswer": "<p>Chọn vào “Giao hàng giao tốc” tại trang đặt hàng.</p>"
+          },
+          {
+            "subQuestionId": "10",
+            "subQuestion": "Chính sách trả hàng",
+            "subAnswer": "<p></p>"
+          },
+
+          {
+            "subQuestionId": "12",
+            "subQuestion": "Hello Mama chấp nhận các hình thức thanh toán: VN Pay, Momo, mã QR, và COD.",
+            "subAnswer": "<p></p>"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "questionId": "2",
+    "question": "Trả hàng & Hoàn tiền",
+    "answers": [
+      {
+        "answerId": "03",
+        "answer": "Gửi yêu cầu",
+        "sub": [
+          {
+            "subQuestionId": "13",
+            "subQuestion": "Tôi cần chờ bao lâu mới nhận được đơn hàng?",
+            "subAnswer": "<p>Thời gian nhận hàng trung bình: Từ 3 - 5 ngày. <br />&#8226; Đặt hàng trong khung giờ hành chính (Thứ 2 đến thứ 7 vào 8h - 17h30): hàng sẽ được đóng gói và gửi đi trong ngày. <br />&#8226; Đặt hàng ngoài khung giờ hành chính (sau 17h30 và Chủ Nhật): hàng sẽ được đóng gói và gửi đi vào ngày hôm sau. <br />&#8226; Ngày nghỉ, lễ, Tết: hàng sẽ được gói và gửi đi khi đơn vị vận chuyển làm việc.</p>"
+          },
+          {
+            "subQuestionId": "14",
+            "subQuestion": "Tôi muốn thay đổi đơn hàng phải làm sao?",
+            "subAnswer": "<p>Bạn vui lòng hủy đơn hàng hiện tại và đặt lại đơn mới. Hoặc liên hệ số điện thoại hotline 1900 066 878 để Hello Mama tư vấn trực tiếp.</p>"
+          },
+          {
+            "subQuestionId": "15",
+            "subQuestion": "Làm cách nào để đặt đơn hàng hỏa tốc? ",
+            "subAnswer": "<p>Chọn vào “Giao hàng giao tốc” tại trang đặt hàng.</p>"
+          },
+          {
+            "subQuestionId": "16",
+            "subQuestion": "Chính sách trả hàng",
+            "subAnswer": "<p></p>"
+          }
+        ]
+      },
+      {
+        "answerId": "04",
+        "answer": "Khiếu nại",
+        "sub": [
+          {
+            "subQuestionId": "13",
+            "subQuestion": "Tôi cần chờ bao lâu mới nhận được đơn hàng?",
+            "subAnswer": "<p>Thời gian nhận hàng trung bình: Từ 3 - 5 ngày. <br />&#8226; Đặt hàng trong khung giờ hành chính (Thứ 2 đến thứ 7 vào 8h - 17h30): hàng sẽ được đóng gói và gửi đi trong ngày. <br />&#8226; Đặt hàng ngoài khung giờ hành chính (sau 17h30 và Chủ Nhật): hàng sẽ được đóng gói và gửi đi vào ngày hôm sau. <br />&#8226; Ngày nghỉ, lễ, Tết: hàng sẽ được gói và gửi đi khi đơn vị vận chuyển làm việc.</p>"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "questionId": "3",
+    "question": "Thanh toán",
+    "answers": [
+      {
+        "answerId": "05",
+        "answer": "Phương thức thanh toán",
+        "sub": [
+          {
+            "subQuestionId": "19",
+            "subQuestion": "Tôi cần chờ bao lâu mới nhận được đơn hàng?",
+            "subAnswer": "<p>Thời gian nhận hàng trung bình: Từ 3 - 5 ngày. <br />&#8226; Đặt hàng trong khung giờ hành chính (Thứ 2 đến thứ 7 vào 8h - 17h30): hàng sẽ được đóng gói và gửi đi trong ngày. <br />&#8226; Đặt hàng ngoài khung giờ hành chính (sau 17h30 và Chủ Nhật): hàng sẽ được đóng gói và gửi đi vào ngày hôm sau. <br />&#8226; Ngày nghỉ, lễ, Tết: hàng sẽ được gói và gửi đi khi đơn vị vận chuyển làm việc.</p>"
+          },
+          {
+            "subQuestionId": "22",
+            "subQuestion": "Chính sách trả hàng",
+            "subAnswer": "<p></p>"
+          },
+          {
+            "subQuestionId": "23",
+            "subQuestion": "Hướng dẫn đổi phương thức thanh toán",
+            "subAnswer": "<p></p>"
+          },
+          {
+            "subQuestionId": "24",
+            "subQuestion": "Hello Mama chấp nhận các hình thức thanh toán: VN Pay, Momo, mã QR, và COD.",
+            "subAnswer": "<p></p>"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "questionId": "4",
+    "question": "Khuyến mãi & Ưu đãi",
+    "answers": [
+      {
+        "answerId": "06",
+        "answer": "Chương trình khuyến mãi",
+        "sub": [
+          {
+            "subQuestionId": "25",
+            "subQuestion": "Tôi cần chờ bao lâu mới nhận được đơn hàng?",
+            "subAnswer": "<p>Thời gian nhận hàng trung bình: Từ 3 - 5 ngày. <br />&#8226; Đặt hàng trong khung giờ hành chính (Thứ 2 đến thứ 7 vào 8h - 17h30): hàng sẽ được đóng gói và gửi đi trong ngày. <br />&#8226; Đặt hàng ngoài khung giờ hành chính (sau 17h30 và Chủ Nhật): hàng sẽ được đóng gói và gửi đi vào ngày hôm sau. <br />&#8226; Ngày nghỉ, lễ, Tết: hàng sẽ được gói và gửi đi khi đơn vị vận chuyển làm việc.</p>"
+          },
+          {
+            "subQuestionId": "26",
+            "subQuestion": "Tôi muốn thay đổi đơn hàng phải làm sao?",
+            "subAnswer": "<p>Bạn vui lòng hủy đơn hàng hiện tại và đặt lại đơn mới. Hoặc liên hệ số điện thoại hotline 1900 066 878 để Hello Mama tư vấn trực tiếp.</p>"
+          },
+          {
+            "subQuestionId": "29",
+            "subQuestion": "Hướng dẫn đổi phương thức thanh toán",
+            "subAnswer": "<p></p>"
+          },
+          {
+            "subQuestionId": "30",
+            "subQuestion": "Hello Mama chấp nhận các hình thức thanh toán: VN Pay, Momo, mã QR, và COD.",
+            "subAnswer": "<p></p>"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "questionId": "5",
+    "question": "Thông tin chung",
+    "answers": [
+      {
+        "answerId": "07",
+        "answer": "Ứng dụng Hello Mama",
+        "sub": [
+          {
+            "subQuestionId": "33",
+            "subQuestion": "Làm cách nào để đặt đơn hàng hỏa tốc? ",
+            "subAnswer": "<p>Chọn vào “Giao hàng giao tốc” tại trang đặt hàng.</p>"
+          },
+          {
+            "subQuestionId": "34",
+            "subQuestion": "Chính sách trả hàng",
+            "subAnswer": "<p></p>"
+          },
+          {
+            "subQuestionId": "35",
+            "subQuestion": "Hướng dẫn đổi phương thức thanh toán",
+            "subAnswer": "<p></p>"
+          },
+          {
+            "subQuestionId": "36",
+            "subQuestion": "Hello Mama chấp nhận các hình thức thanh toán: VN Pay, Momo, mã QR, và COD.",
+            "subAnswer": "<p></p>"
+          }
+        ]
+      },
+      {
+        "answerId": "08",
+        "answer": "Chính sách",
+        "sub": [
+          {
+            "subQuestionId": "37",
+            "subQuestion": "Tôi cần chờ bao lâu mới nhận được đơn hàng?",
+            "subAnswer": "<p>Thời gian nhận hàng trung bình: Từ 3 - 5 ngày. <br />&#8226; Đặt hàng trong khung giờ hành chính (Thứ 2 đến thứ 7 vào 8h - 17h30): hàng sẽ được đóng gói và gửi đi trong ngày. <br />&#8226; Đặt hàng ngoài khung giờ hành chính (sau 17h30 và Chủ Nhật): hàng sẽ được đóng gói và gửi đi vào ngày hôm sau. <br />&#8226; Ngày nghỉ, lễ, Tết: hàng sẽ được gói và gửi đi khi đơn vị vận chuyển làm việc.</p>"
+          },
+          {
+            "subQuestionId": "38",
+            "subQuestion": "Tôi cần chờ bao lâu mới nhận được đơn hàng?",
+            "subAnswer": "<p>Thời gian nhận hàng trung bình: Từ 3 - 5 ngày. <br />&#8226; Đặt hàng trong khung giờ hành chính (Thứ 2 đến thứ 7 vào 8h - 17h30): hàng sẽ được đóng gói và gửi đi trong ngày. <br />&#8226; Đặt hàng ngoài khung giờ hành chính (sau 17h30 và Chủ Nhật): hàng sẽ được đóng gói và gửi đi vào ngày hôm sau. <br />&#8226; Ngày nghỉ, lễ, Tết: hàng sẽ được gói và gửi đi khi đơn vị vận chuyển làm việc.</p>"
+          }
+        ]
+      }
+    ]
+  }
+]

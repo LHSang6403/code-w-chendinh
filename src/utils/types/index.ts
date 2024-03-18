@@ -30,6 +30,7 @@ export interface ProductType {
 }
 
 export type ShipmentNameType = "" | "GHTK" | "GHN" | null;
+export type PaymentType = "" | "cod" | "momo" | null;
 
 export interface OrderType {
   id: string;
@@ -37,7 +38,6 @@ export interface OrderType {
   shipment_name: ShipmentNameType;
   shipment_label_code: string | null;
   products: ProductType[];
-  product_quantities: number[];
   state: "pending" | "shipping" | "delivered" | "canceled" | "returned";
   customer_id: string; // f_key
   customer_name: string; // f_key
@@ -45,6 +45,7 @@ export interface OrderType {
   shipping_fee: number; // api call
   insurance_fee: number; // api call
   total_price: number;
+  payment: PaymentType;
   note: string;
   address: string;
   ward: string;

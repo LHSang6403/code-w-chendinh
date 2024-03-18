@@ -101,6 +101,7 @@ export default function ContactForm() {
           <Button
             className="group mx-auto flex w-fit flex-row gap-1 px-16"
             type="submit"
+            disabled={!form.formState.isValid}
           >
             <span className="bg-gradient-to-b from-[#1E588F] via-[#0E7BB8] to-[#0E7BB8] bg-clip-text text-lg font-light text-transparent group-hover:text-white">
               Gửi

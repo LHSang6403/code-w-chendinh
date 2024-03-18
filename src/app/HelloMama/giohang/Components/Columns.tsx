@@ -4,7 +4,7 @@ import { ColumnDef } from "@tanstack/react-table";
 import Image from "next/image";
 import QuantityButtons from "./QuantityButtons";
 import formatCurrency from "@utils/functions/formatCurrency";
-import { CartTableType } from "./CartTable";
+import { CartTableType } from "@/utils/types";
 
 export const columns: ColumnDef<CartTableType>[] = [
   {

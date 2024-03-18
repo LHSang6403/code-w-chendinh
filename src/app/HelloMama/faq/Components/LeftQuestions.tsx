@@ -1,3 +1,6 @@
+"use client";
+
+import { useFAQ } from "@/zustand/useFAQ";
 import {
   Accordion,
   AccordionContent,
@@ -6,33 +9,14 @@ import {
 } from "@components/ui/accordion";
 import { ChevronDown } from "lucide-react";
 
+import questions from "../static-data/questions.json";
+
 export default function LeftQuestions() {
-  const leftQuestions = [
-    {
-      question: "Đơn hàng & Vận chuyển",
-      answer: ["Đơn hàng", "Thời gian vận chuyển"],
-    },
-    {
-      question: "Trả hàng & Hoàn tiền",
-      answer: ["Gửi yêu cầu", "Khiếu nại"],
-    },
-    {
-      question: "Thanh toán",
-      answer: ["Phương thức thanh toán"],
-    },
-    {
-      question: "Khuyến mãi & Ưu đãi",
-      answer: ["Chương trình khuyến mãi"],
-    },
-    {
-      question: "Thông tin chung",
-      answer: ["Ứng dụng Hello Mama", "Chính sách"],
-    },
-  ];
+  const { setQuestionId, setAnswerId } = useFAQ();
 
   return (
     <Accordion type="multiple">
-      {leftQuestions.map((question, index) => (
+      {questions.map((question, index) => (
         <AccordionItem
           value={index.toString()}
           key={index}
@@ -45,9 +29,16 @@ export default function LeftQuestions() {
             <ChevronDown className="h-4.5 w-4.5 shrink-0 text-[#0E7BB8] transition-transform duration-200" />
           </AccordionTrigger>
           <AccordionContent className="-mb-1 flex flex-col justify-start gap-3 font-extralight xl:gap-4">
-            {question.answer.map((item, index) => (
-              <span key={index} className="text-base hover:cursor-pointer">
-                {item}
+            {question.answers.map((ans, index) => (
+              <span
+                onClick={() => {
+                  setQuestionId(question.questionId);
+                  setAnswerId(ans.answerId);
+                }}
+                key={index}
+                className="text-base hover:cursor-pointer"
+              >
+                {ans.answer}
               </span>
             ))}
           </AccordionContent>
