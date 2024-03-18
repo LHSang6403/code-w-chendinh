@@ -3,9 +3,9 @@
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import * as z from "zod";
-
 import { Form, FormControl, FormField, FormItem } from "@/components/ui/form";
 import { Input } from "../../Shadcn/Input";
+import { useDebouncedCallback } from "use-debounce";
 
 const FormSchema = z.object({
   searchText: z.string(),
@@ -24,10 +24,17 @@ export default function Search() {
     console.log(data);
   }
 
+  const debounced = useDebouncedCallback((value) => {
+    onSubmit(value);
+  }, 1000);
+
   return (
     <div className="flex w-full flex-row">
       <Form {...form}>
-        <form className="w-full" onChange={form.handleSubmit(onSubmit)}>
+        <form
+          className="w-full"
+          onChange={form.handleSubmit((value) => debounced(value))}
+        >
           <FormField
             control={form.control}
             name="searchText"
