@@ -21,7 +21,7 @@ export const columns: ColumnDef<CartTableType>[] = [
 
       return (
         <div className="flex flex-col">
-          <div className="flex w-[700px] flex-row items-center justify-start gap-6 xl:w-full lg:gap-2">
+          <div className="flex w-full flex-row items-center justify-start gap-6 lg:gap-2">
             <div className="w-40 bg-gradient-to-r from-[#F5E45F] via-[#FCF9A0] to-[#E9CD91] p-[2px] xl:w-32 sm:w-24">
               <Image
                 alt="Sản phẩm"
@@ -51,7 +51,7 @@ export const columns: ColumnDef<CartTableType>[] = [
     accessorKey: "quantity",
     header: () => {
       return (
-        <div className="mb-2 w-full border-b border-[#A19C9C] pb-3 text-left text-xl font-light text-[#A19C9C] xl:w-full sm:hidden">
+        <div className="mx-auto mb-2 w-full border-b border-[#A19C9C] pb-3 text-left text-xl font-light text-[#A19C9C] xl:w-full sm:hidden">
           Số lượng
         </div>
       );
@@ -79,7 +79,7 @@ export const columns: ColumnDef<CartTableType>[] = [
       const data = row.original;
 
       return (
-        <div className="text-right text-xl font-light sm:pb-10">
+        <div className="ml-auto w-36 overflow-ellipsis text-right text-xl font-light xl:w-36 sm:w-32 sm:pb-10">
           {formatCurrency(data.product.price * data.product_quantity)}đ
         </div>
       );

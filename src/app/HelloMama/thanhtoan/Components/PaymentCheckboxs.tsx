@@ -33,6 +33,7 @@ export default function PaymentCheckboxs() {
         >
           <div className="flex h-fit w-52 flex-row items-center justify-between rounded bg-white px-1.5 sm:w-full">
             <Checkbox
+              disabled={!order || order?.price === 0}
               id={method.id}
               checked={order?.payment === method.id}
               onCheckedChange={(value) => {

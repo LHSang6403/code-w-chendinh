@@ -2,326 +2,326 @@
   {
     "idProvince": "01",
     "name": "Thành phố Hà Nội",
-    "areaId": "1"
+    "idArea": "1"
   },
   {
     "idProvince": "79",
     "name": "Thành phố Hồ Chí Minh",
-    "areaId": "3"
+    "idArea": "3"
   },
   {
     "idProvince": "31",
     "name": "Thành phố Hải Phòng",
-    "areaId": "1"
+    "idArea": "1"
   },
   {
     "idProvince": "48",
     "name": "Thành phố Đà Nẵng",
-    "areaId": "2"
+    "idArea": "2"
   },
   {
     "idProvince": "92",
     "name": "Thành phố Cần Thơ",
-    "areaId": "3"
+    "idArea": "3"
   },
   {
     "idProvince": "02",
     "name": "Tỉnh Hà Giang",
-    "areaId": "1"
+    "idArea": "1"
   },
   {
     "idProvince": "04",
     "name": "Tỉnh Cao Bằng",
-    "areaId": "1"
+    "idArea": "1"
   },
   {
     "idProvince": "06",
     "name": "Tỉnh Bắc Kạn",
-    "areaId": "1"
+    "idArea": "1"
   },
   {
     "idProvince": "08",
     "name": "Tỉnh Tuyên Quang",
-    "areaId": "1"
+    "idArea": "1"
   },
   {
     "idProvince": "10",
     "name": "Tỉnh Lào Cai",
-    "areaId": "1"
+    "idArea": "1"
   },
   {
     "idProvince": "11",
     "name": "Tỉnh Điện Biên",
-    "areaId": "1"
+    "idArea": "1"
   },
   {
     "idProvince": "12",
     "name": "Tỉnh Lai Châu",
-    "areaId": "1"
+    "idArea": "1"
   },
   {
     "idProvince": "14",
     "name": "Tỉnh Sơn La",
-    "areaId": "1"
+    "idArea": "1"
   },
   {
     "idProvince": "15",
     "name": "Tỉnh Yên Bái",
-    "areaId": "1"
+    "idArea": "1"
   },
   {
     "idProvince": "17",
     "name": "Tỉnh Hoà Bình",
-    "areaId": "1"
+    "idArea": "1"
   },
   {
     "idProvince": "19",
     "name": "Tỉnh Thái Nguyên",
-    "areaId": "1"
+    "idArea": "1"
   },
   {
     "idProvince": "20",
     "name": "Tỉnh Lạng Sơn",
-    "areaId": "1"
+    "idArea": "1"
   },
   {
     "idProvince": "22",
     "name": "Tỉnh Quảng Ninh",
-    "areaId": "1"
+    "idArea": "1"
   },
   {
     "idProvince": "24",
     "name": "Tỉnh Bắc Giang",
-    "areaId": "1"
+    "idArea": "1"
   },
   {
     "idProvince": "25",
     "name": "Tỉnh Phú Thọ",
-    "areaId": "1"
+    "idArea": "1"
   },
   {
     "idProvince": "26",
     "name": "Tỉnh Vĩnh Phúc",
-    "areaId": "1"
+    "idArea": "1"
   },
   {
     "idProvince": "27",
     "name": "Tỉnh Bắc Ninh",
-    "areaId": "1"
+    "idArea": "1"
   },
   {
     "idProvince": "30",
     "name": "Tỉnh Hải Dương",
-    "areaId": "1"
+    "idArea": "1"
   },
   {
     "idProvince": "33",
     "name": "Tỉnh Hưng Yên",
-    "areaId": "1"
+    "idArea": "1"
   },
   {
     "idProvince": "34",
     "name": "Tỉnh Thái Bình",
-    "areaId": "1"
+    "idArea": "1"
   },
   {
     "idProvince": "35",
     "name": "Tỉnh Hà Nam",
-    "areaId": "1"
+    "idArea": "1"
   },
   {
     "idProvince": "36",
     "name": "Tỉnh Nam Định",
-    "areaId": "1"
+    "idArea": "1"
   },
   {
     "idProvince": "37",
     "name": "Tỉnh Ninh Bình",
-    "areaId": "1"
+    "idArea": "1"
   },
   {
     "idProvince": "38",
     "name": "Tỉnh Thanh Hóa",
-    "areaId": "2"
+    "idArea": "2"
   },
   {
     "idProvince": "40",
     "name": "Tỉnh Nghệ An",
-    "areaId": "2"
+    "idArea": "2"
   },
   {
     "idProvince": "42",
     "name": "Tỉnh Hà Tĩnh",
-    "areaId": "2"
+    "idArea": "2"
   },
   {
     "idProvince": "44",
     "name": "Tỉnh Quảng Bình",
-    "areaId": "2"
+    "idArea": "2"
   },
   {
     "idProvince": "45",
     "name": "Tỉnh Quảng Trị",
-    "areaId": "2"
+    "idArea": "2"
   },
   {
     "idProvince": "46",
     "name": "Tỉnh Thừa Thiên Huế",
-    "areaId": "2"
+    "idArea": "2"
   },
   {
     "idProvince": "49",
     "name": "Tỉnh Quảng Nam",
-    "areaId": "2"
+    "idArea": "2"
   },
   {
     "idProvince": "51",
     "name": "Tỉnh Quảng Ngãi",
-    "areaId": "2"
+    "idArea": "2"
   },
   {
     "idProvince": "52",
     "name": "Tỉnh Bình Định",
-    "areaId": "2"
+    "idArea": "2"
   },
   {
     "idProvince": "54",
     "name": "Tỉnh Phú Yên",
-    "areaId": "2"
+    "idArea": "2"
   },
   {
     "idProvince": "56",
     "name": "Tỉnh Khánh Hòa",
-    "areaId": "2"
+    "idArea": "2"
   },
   {
     "idProvince": "58",
     "name": "Tỉnh Ninh Thuận",
-    "areaId": "2"
+    "idArea": "2"
   },
   {
     "idProvince": "60",
     "name": "Tỉnh Bình Thuận",
-    "areaId": "2"
+    "idArea": "2"
   },
   {
     "idProvince": "62",
     "name": "Tỉnh Kon Tum",
-    "areaId": "2"
+    "idArea": "2"
   },
   {
     "idProvince": "64",
     "name": "Tỉnh Gia Lai",
-    "areaId": "2"
+    "idArea": "2"
   },
   {
     "idProvince": "66",
     "name": "Tỉnh Đắk Lắk",
-    "areaId": "2"
+    "idArea": "2"
   },
   {
     "idProvince": "67",
     "name": "Tỉnh Đắk Nông",
-    "areaId": "2"
+    "idArea": "2"
   },
   {
     "idProvince": "68",
     "name": "Tỉnh Lâm Đồng",
-    "areaId": "2"
+    "idArea": "2"
   },
   {
     "idProvince": "70",
     "name": "Tỉnh Bình Phước",
-    "areaId": "3"
+    "idArea": "3"
   },
   {
     "idProvince": "72",
     "name": "Tỉnh Tây Ninh",
-    "areaId": "3"
+    "idArea": "3"
   },
   {
     "idProvince": "74",
     "name": "Tỉnh Bình Dương",
-    "areaId": "3"
+    "idArea": "3"
   },
   {
     "idProvince": "75",
     "name": "Tỉnh Đồng Nai",
-    "areaId": "3"
+    "idArea": "3"
   },
   {
     "idProvince": "77",
     "name": "Tỉnh Bà Rịa - Vũng Tàu",
-    "areaId": "3"
+    "idArea": "3"
   },
   {
     "idProvince": "80",
     "name": "Tỉnh Long An",
-    "areaId": "3"
+    "idArea": "3"
   },
   {
     "idProvince": "82",
     "name": "Tỉnh Tiền Giang",
-    "areaId": "3"
+    "idArea": "3"
   },
   {
     "idProvince": "83",
     "name": "Tỉnh Bến Tre",
-    "areaId": "3"
+    "idArea": "3"
   },
   {
     "idProvince": "84",
     "name": "Tỉnh Trà Vinh",
-    "areaId": "3"
+    "idArea": "3"
   },
   {
     "idProvince": "86",
     "name": "Tỉnh Vĩnh Long",
-    "areaId": "3"
+    "idArea": "3"
   },
   {
     "idProvince": "87",
     "name": "Tỉnh Đồng Tháp",
-    "areaId": "3"
+    "idArea": "3"
   },
   {
     "idProvince": "89",
     "name": "Tỉnh An Giang",
-    "areaId": "3"
+    "idArea": "3"
   },
   {
     "idProvince": "91",
     "name": "Tỉnh Kiên Giang",
-    "areaId": "3"
+    "idArea": "3"
   },
   {
     "idProvince": "93",
     "name": "Tỉnh Cần Thơ",
-    "areaId": "3"
+    "idArea": "3"
   },
   {
     "idProvince": "94",
     "name": "Tỉnh Hậu Giang",
-    "areaId": "3"
+    "idArea": "3"
   },
   {
     "idProvince": "95",
     "name": "Tỉnh Sóc Trăng",
-    "areaId": "3"
+    "idArea": "3"
   },
   {
     "idProvince": "96",
     "name": "Tỉnh Trà Vinh",
-    "areaId": "3"
+    "idArea": "3"
   },
   {
     "idProvince": "97",
     "name": "Tỉnh Bạc Liêu",
-    "areaId": "3"
+    "idArea": "3"
   },
   {
     "idProvince": "98",
     "name": "Tỉnh Cà Mau",
-    "areaId": "3"
+    "idArea": "3"
   }
 ]

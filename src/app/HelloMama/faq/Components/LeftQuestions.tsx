@@ -9,7 +9,7 @@ import {
 } from "@components/ui/accordion";
 import { ChevronDown } from "lucide-react";
 
-import questions from "../static-data/questions.json";
+import questions from "../StaticData/questions.json";
 
 export default function LeftQuestions() {
   const { setQuestionId, setAnswerId } = useFAQ();

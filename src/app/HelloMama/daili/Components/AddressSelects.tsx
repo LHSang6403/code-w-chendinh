@@ -19,7 +19,7 @@ import district from "@/static-data/districts.json";
 interface ProvinceType {
   idProvince: string;
   name: string;
-  areaId: string;
+  idArea: string;
 }
 
 interface DistrictType {
@@ -36,12 +36,12 @@ export default function AddressSelects() {
 
   useEffect(() => {
     const provincesInArea = province.filter(
-      (pro) => pro.areaId === values.areaId
+      (pro) => pro.idArea === values.idArea
     );
     setProvinces(provincesInArea);
 
     const districtsInProvince = district.filter(
-      (dis) => dis.idProvince === values.provinceId
+      (dis) => dis.idProvince === values.idProvince
     );
     setDistricts(districtsInProvince);
   }, [values, setArea, setProvinces, setDistricts]);
@@ -61,7 +61,7 @@ export default function AddressSelects() {
         <Select
           onValueChange={(value) => {
             const parsedValue = JSON.parse(value);
-            setArea(parsedValue.area, parsedValue.areaId);
+            setArea(parsedValue.area, parsedValue.idArea);
             setProvince("", "");
             setDistrict("", "");
           }}
@@ -78,7 +78,7 @@ export default function AddressSelects() {
                 <SelectItem
                   key={index}
                   value={JSON.stringify({
-                    areaId: area.areaId.toString(),
+                    idArea: area.idArea.toString(),
                     area: area.area,
                   })}
                 >
@@ -91,7 +91,7 @@ export default function AddressSelects() {
       </div>
       <div className="col-span-2 xl:col-span-3">
         <Select
-          disabled={values.areaId === ""}
+          disabled={values.idArea === ""}
           onValueChange={(value) => {
             const parsedValue = JSON.parse(value);
             setProvince(parsedValue.name, parsedValue.id);
@@ -118,7 +118,7 @@ export default function AddressSelects() {
       </div>
       <div className="col-span-2 xl:col-span-6">
         <Select
-          disabled={values.provinceId === ""}
+          disabled={values.idProvince === ""}
           onValueChange={(value) => {
             const parsedValue = JSON.parse(value);
             setDistrict(parsedValue.name, parsedValue.id);

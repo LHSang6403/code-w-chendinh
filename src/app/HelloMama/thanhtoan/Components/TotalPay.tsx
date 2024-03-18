@@ -7,11 +7,11 @@ export default function TotalPay() {
   const { order } = useOrder();
 
   return (
-    <div className="mt-3 w-full text-right font-light">
-      <span className="mr-10 w-full">Tổng tiền:</span>{" "}
-      <span className="w-fit">
+    <div className="mt-3 flex w-full flex-row text-right font-light">
+      <div className="mx-auto w-fit">Tổng tiền:</div>{" "}
+      <div className="min-w-24">
         {order ? formatCurrency(order?.total_price) : 0}đ
-      </span>
+      </div>
     </div>
   );
 }

@@ -9,7 +9,7 @@ import {
 import { ChevronDown } from "lucide-react";
 import { useFAQ } from "@/zustand/useFAQ";
 
-import questions from "../static-data/questions.json";
+import questions from "../StaticData/questions.json";
 
 export default function RightQuestions() {
   const { questionId, answerId } = useFAQ();

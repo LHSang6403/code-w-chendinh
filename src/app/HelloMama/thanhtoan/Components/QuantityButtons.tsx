@@ -24,7 +24,7 @@ export default function QuantityButtons({ row }: { row: CartTableType }) {
             d="M12 4.5v15m7.5-7.5h-15"
           />
         </svg>
-        <span className="h-full border-l border-r border-black px-4 pt-[2px] text-[16px] font-light">
+        <span className="h-full w-9 border-l border-r border-black pt-[2px] text-center text-[16px] font-light">
           {row.product_quantity || 0}
         </span>
         <svg

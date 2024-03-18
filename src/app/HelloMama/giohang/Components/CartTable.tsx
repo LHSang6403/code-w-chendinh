@@ -9,7 +9,8 @@ import { transformOrderToListProducts } from "@/app/HelloMama/giohang/_actions";
 export default function CartTable() {
   const { order } = useOrder();
 
-  if (!order) return <div className="my-2 text-center">No data</div>;
+  if (!order)
+    return <div className="my-2 text-center">Bạn chưa chọn sản phẩm.</div>;
   const rows = transformOrderToListProducts(order as OrderType);
 
   return (

@@ -1,39 +1,21 @@
 "use client";
 
-import { zodResolver } from "@hookform/resolvers/zod";
-import { useForm } from "react-hook-form";
-import * as z from "zod";
 import { Form, FormControl, FormField, FormItem } from "@/components/ui/form";
 import { Input } from "../../Shadcn/Input";
-import { useDebouncedCallback } from "use-debounce";
 
-const FormSchema = z.object({
-  searchText: z.string(),
-});
-
-export default function Search() {
-  const form = useForm<z.infer<typeof FormSchema>>({
-    resolver: zodResolver(FormSchema),
-    defaultValues: {
-      searchText: "",
-    },
-  });
-
-  async function onSubmit(data: z.infer<typeof FormSchema>) {
-    // Call API
-    console.log(data);
-  }
-
-  const debounced = useDebouncedCallback((value) => {
-    onSubmit(value);
-  }, 1000);
-
+export default function Search({
+  form,
+  debounced,
+}: {
+  form: any;
+  debounced: any;
+}) {
   return (
     <div className="flex w-full flex-row">
       <Form {...form}>
         <form
           className="w-full"
-          onChange={form.handleSubmit((value) => debounced(value))}
+          onChange={form.handleSubmit((value: any) => debounced(value))}
         >
           <FormField
             control={form.control}

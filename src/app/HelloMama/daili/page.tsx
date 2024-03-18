@@ -11,10 +11,8 @@ export default function page() {
       <div className="flex w-[870px] justify-center xl:w-[600px] sm:w-full">
         <AddressSelects />
       </div>
-      <div className="mt-3 flex w-full flex-row justify-center gap-2 xl:w-full xl:flex-col sm:w-full">
-        <div className="">
-          <SearchList />
-        </div>
+      <div className="mt-3 flex w-full flex-row justify-center gap-2  xl:flex-col ">
+        <SearchList />
         <div className="h-fit w-96 xl:w-full">
           <Image
             alt="Dai li"

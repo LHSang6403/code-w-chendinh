@@ -4,19 +4,19 @@ interface useAddressPickerState {
   values: {
     address: string;
     area: string;
-    areaId: string;
+    idArea: string;
     province: string;
-    provinceId: string;
+    idProvince: string;
     district: string;
-    districtId: string;
+    idDistrict: string;
     commune: string;
-    communeId: string;
+    idCommune: string;
   };
   setAddress: (address: string) => void;
-  setArea: (area: string, areaId: string) => void;
-  setProvince: (province: string, provinceId: string) => void;
-  setDistrict: (district: string, districtId: string) => void;
-  setCommune: (commune: string, communeId: string) => void;
+  setArea: (area: string, idArea: string) => void;
+  setProvince: (province: string, idProvince: string) => void;
+  setDistrict: (district: string, idDistrict: string) => void;
+  setCommune: (commune: string, idCommune: string) => void;
   clearAll: () => void;
 }
 
@@ -24,29 +24,29 @@ const useAddressPicker = create<useAddressPickerState>((set) => ({
   values: {
     address: "",
     area: "",
-    areaId: "",
+    idArea: "",
     province: "",
-    provinceId: "",
+    idProvince: "",
     district: "",
-    districtId: "",
+    idDistrict: "",
     commune: "",
-    communeId: "",
+    idCommune: "",
   },
   setAddress: (address: string) =>
     set((state) => ({ values: { ...state.values, address } })),
-  setArea: (area: string, areaId: string) =>
-    set((state) => ({ values: { ...state.values, area, areaId } })),
-  setProvince: (province: string, provinceId: string) =>
+  setArea: (area: string, idArea: string) =>
+    set((state) => ({ values: { ...state.values, area, idArea } })),
+  setProvince: (province: string, idProvince: string) =>
     set((state) => ({
-      values: { ...state.values, province, provinceId },
+      values: { ...state.values, province, idProvince },
     })),
-  setDistrict: (district: string, districtId: string) =>
+  setDistrict: (district: string, idDistrict: string) =>
     set((state) => ({
-      values: { ...state.values, district, districtId },
+      values: { ...state.values, district, idDistrict },
     })),
-  setCommune: (commune: string, communeId: string) =>
+  setCommune: (commune: string, idCommune: string) =>
     set((state) => ({
-      values: { ...state.values, commune, communeId },
+      values: { ...state.values, commune, idCommune },
     })),
   clearAll: () => {},
 }));

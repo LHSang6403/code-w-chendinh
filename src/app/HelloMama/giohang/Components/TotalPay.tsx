@@ -17,13 +17,17 @@ export default function TotalPay() {
       <div className="flex flex-row justify-between text-xl">
         <span className="font-light">Tổng tiền:</span>
         <span className="line-clamp-1 overflow-ellipsis font-medium">
-          {order ? formatCurrency(order?.total_price) : 0}đ
+          {order ? formatCurrency(order?.total_price) : "0"}đ
         </span>
       </div>
       <span className="text-center text-[12px] font-light text-[#A19C9C]">
         Thuế và phí vận chuyển được tính khi thanh toán
       </span>
-      <Button onClick={handlePayment} className="group mt-2 w-full">
+      <Button
+        disabled={!order || order?.total_price === 0}
+        onClick={handlePayment}
+        className="group mt-2 w-full"
+      >
         <span className="bg-gradient-to-b from-[#1E588F] via-[#0E7BB8] to-[#0E7BB8] bg-clip-text text-lg font-light text-transparent group-hover:text-white">
           Tiến hành thanh toán
         </span>
