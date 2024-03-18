@@ -27,6 +27,7 @@ export default function PaymentCheckboxs() {
     <div className="flex h-fit w-fit flex-row justify-center gap-3 xl:w-full sm:gap-1">
       {methods.map((method, index) => (
         <div
+          onClick={() => setPayment(method.id as PaymentType)}
           key={index}
           className="rounded bg-gradient-to-r from-[#CD9F2D] via-[#F7EF8A] to-[#EDC967] p-[1px] sm:w-1/2"
         >
