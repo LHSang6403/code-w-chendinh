@@ -74,6 +74,15 @@ export default function AddressSelects() {
               <SelectLabel className="bg-gradient-to-r from-[#CE9F2E] via-[#F9F3A5] to-[#CE9F2E] bg-clip-text text-transparent">
                 Vùng
               </SelectLabel>
+              <SelectItem
+                key="all-area"
+                value={JSON.stringify({
+                  idArea: "0",
+                  area: "3 miền",
+                })}
+              >
+                Tất cả
+              </SelectItem>
               {areas.map((area, index) => (
                 <SelectItem
                   key={index}
@@ -91,7 +100,7 @@ export default function AddressSelects() {
       </div>
       <div className="col-span-2 xl:col-span-3">
         <Select
-          disabled={values.idArea === ""}
+          disabled={values.idArea === "" || values.idArea === "0"}
           onValueChange={(value) => {
             const parsedValue = JSON.parse(value);
             setProvince(parsedValue.name, parsedValue.id);
@@ -104,6 +113,12 @@ export default function AddressSelects() {
           <SelectContent>
             <SelectGroup>
               <SelectLabel>Tỉnh</SelectLabel>
+              <SelectItem
+                key="all-province"
+                value={JSON.stringify({ name: "Tất cả", id: "0" })}
+              >
+                Tất cả
+              </SelectItem>
               {provinces.map((pro, index) => (
                 <SelectItem
                   key={index}
@@ -118,7 +133,7 @@ export default function AddressSelects() {
       </div>
       <div className="col-span-2 xl:col-span-6">
         <Select
-          disabled={values.idProvince === ""}
+          disabled={values.idProvince === "" || values.idProvince === "0"}
           onValueChange={(value) => {
             const parsedValue = JSON.parse(value);
             setDistrict(parsedValue.name, parsedValue.id);
@@ -130,6 +145,12 @@ export default function AddressSelects() {
           <SelectContent>
             <SelectGroup>
               <SelectLabel>Quận</SelectLabel>
+              <SelectItem
+                key="all-district"
+                value={JSON.stringify({ name: "Tất cả", id: "0" })}
+              >
+                Tất cả
+              </SelectItem>
               {districts.map((dis, index) => (
                 <SelectItem
                   key={index}

@@ -8,7 +8,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import * as z from "zod";
 import { useDebouncedCallback } from "use-debounce";
-import { searchItems } from "../_actions/search";
+import { useState, useEffect } from "react";
 
 import daiLi from "../StaticData/daiLi.json";
 
@@ -27,29 +27,46 @@ export default function SearchList() {
   });
 
   const filteredDaiLi = daiLi.filter((item) => {
-    return values.district
-      ? item.idDistrict === values.idDistrict
-      : values.province
-      ? item.idProvince === values.idProvince
-      : values.idArea
-      ? item.idArea === values.idArea
-      : false;
+    if (values.idDistrict === "0") {
+      // all districts in province
+      return item.idProvince === values.idProvince;
+    } else if (values.idProvince === "0") {
+      // all provinces in area
+      return item.idArea === values.idArea;
+    } else if (values.idArea === "0") {
+      // Select all areas
+      return true;
+    } else if (values.district) {
+      return item.idDistrict === values.idDistrict;
+    } else if (values.province) {
+      return item.idProvince === values.idProvince;
+    } else {
+      return item.idArea === values.idArea;
+    }
   });
 
+  const [searchedItems, setSearchedItems] = useState(daiLi);
+
+  useEffect(() => {
+    setSearchedItems(filteredDaiLi);
+  }, [values]);
+
   async function onSubmit(data: z.infer<typeof FormSchema>) {
-    const searchedItems = searchItems(
-      filteredDaiLi,
-      data.searchText,
-      values.province,
-      values.district
-    );
+    const searchedItems = filteredDaiLi.filter((item) => {
+      const nameMatch = item.name
+        .toLowerCase()
+        .includes(data.searchText.toLowerCase());
+
+      return nameMatch;
+    });
 
     console.log(searchedItems);
+    setSearchedItems(searchedItems);
   }
 
   const debounced = useDebouncedCallback((value) => {
     onSubmit(value);
-  }, 0);
+  }, 200);
 
   return (
     <div className="h-fit w-fit min-w-72 xl:w-full sm:min-w-0">
@@ -57,7 +74,7 @@ export default function SearchList() {
         <Search form={form} debounced={debounced} />
       </div>
       <ul className="mt-2 flex max-h-[620px] w-full flex-col gap-2 overflow-y-scroll pr-1">
-        {filteredDaiLi.map((item, index) => (
+        {searchedItems.map((item, index) => (
           <SearchListItem key={index} row={item as SearchListItemProps} />
         ))}
       </ul>

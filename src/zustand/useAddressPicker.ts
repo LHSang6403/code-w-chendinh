@@ -23,8 +23,8 @@ interface useAddressPickerState {
 const useAddressPicker = create<useAddressPickerState>((set) => ({
   values: {
     address: "",
-    area: "",
-    idArea: "",
+    area: "3 miền",
+    idArea: "0",
     province: "",
     idProvince: "",
     district: "",

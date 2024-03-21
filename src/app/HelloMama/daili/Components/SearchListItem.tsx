@@ -15,7 +15,7 @@ export default function SearchListItem({ row }: { row: SearchListItemProps }) {
           {row.name}
         </div>
         <div className="line-clamp-1 overflow-ellipsis text-[14px] text-[#1c1c1c] group-hover:text-white">
-          {row.address}, {row.province}, {row.district}
+          {row.address}, {row.district}, {row.province}
         </div>
         <div className="flex flex-row  items-center gap-1 text-[14px]">
           <svg
