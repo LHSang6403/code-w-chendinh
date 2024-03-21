@@ -1,6 +1,6 @@
 import AddressSelects from "./Components/AddressSelects";
 import SearchList from "./Components/SearchList";
-import Image from "next/image";
+import SelectedDaiLiImages from "./Components/SelectedDaiLiImages";
 
 export default function page() {
   return (
@@ -13,15 +13,7 @@ export default function page() {
       </div>
       <div className="mt-3 flex w-full flex-row justify-center gap-2  xl:flex-col ">
         <SearchList />
-        <div className="h-fit w-96 xl:w-full">
-          <Image
-            alt="Dai li"
-            src="/assets/images/HelloMama/daili_ads_image.png"
-            className="object-fit !relative z-0 h-full !w-full xl:object-cover"
-            layout="fill"
-            quality={100}
-          />
-        </div>
+        <SelectedDaiLiImages />
       </div>
     </div>
   );

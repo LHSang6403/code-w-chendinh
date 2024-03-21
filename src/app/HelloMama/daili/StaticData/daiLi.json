@@ -10,7 +10,7 @@
     "district": "Yên Thành",
     "address": "Xóm 6 Viên Thánh",
     "phones": ["097 703 5205"],
-    "images": ["/assets/images/HelloMama/daili_ads_image.png"]
+    "images": ["/assets/images/HelloMama/daili/daili-1.jpg"]
   },
   {
     "id": "02",
@@ -23,7 +23,7 @@
     "district": "Lập Thạch",
     "address": "Ngã 3 Xuân Lôi",
     "phones": ["097 768 8327", "086 810 0190"],
-    "images": ["/assets/images/HelloMama/daili_ads_image.png"]
+    "images": ["/assets/images/HelloMama/daili/daili-2.jpg"]
   },
   {
     "id": "03",
@@ -36,7 +36,7 @@
     "district": "Thành phố Vĩnh Yên",
     "address": "Vĩnh Yên",
     "phones": ["098 753 0579", "097 438 7589"],
-    "images": ["/assets/images/HelloMama/daili_ads_image.png"]
+    "images": ["/assets/images/HelloMama/daili/daili-3.jpg"]
   },
   {
     "id": "04",
@@ -49,7 +49,7 @@
     "district": "Lập Thạch",
     "address": "Tử Du",
     "phones": ["098 753 0579", "097 438 7589"],
-    "images": ["/assets/images/HelloMama/daili_ads_image.png"]
+    "images": ["/assets/images/HelloMama/daili/daili-1.jpg"]
   },
   {
     "id": "05",
@@ -62,7 +62,7 @@
     "district": "Bình Xuyên",
     "address": "Thôn Thiện Kế, Xã Thiện Kế",
     "phones": ["088 928 4567"],
-    "images": ["/assets/images/HelloMama/daili_ads_image.png"]
+    "images": ["/assets/images/HelloMama/daili/daili-2.jpg"]
   },
   {
     "id": "06",
@@ -75,7 +75,7 @@
     "district": "Thanh Sơn",
     "address": "Dẹ 1 Văn Miếu",
     "phones": ["096 681 2959", "039 989 8211"],
-    "images": ["/assets/images/HelloMama/daili_ads_image.png"]
+    "images": ["/assets/images/HelloMama/daili/daili-3.jpg"]
   },
   {
     "id": "07",
@@ -88,7 +88,7 @@
     "district": "Thanh Sơn",
     "address": "Thạch Khoán",
     "phones": ["096 681 2959"],
-    "images": ["/assets/images/HelloMama/daili_ads_image.png"]
+    "images": ["/assets/images/HelloMama/daili/daili-1.jpg"]
   },
   {
     "id": "08",
@@ -101,7 +101,7 @@
     "district": "Tân Sơn",
     "address": "Mai Đãi",
     "phones": ["096 681 2959"],
-    "images": ["/assets/images/HelloMama/daili_ads_image.png"]
+    "images": ["/assets/images/HelloMama/daili/daili-2.jpg"]
   },
   {
     "id": "09",
@@ -114,7 +114,7 @@
     "district": "Tam Đảo",
     "address": "Chợ Tam Quan",
     "phones": ["096 681 2959"],
-    "images": ["/assets/images/HelloMama/daili_ads_image.png"]
+    "images": ["/assets/images/HelloMama/daili/daili-3.jpg"]
   },
   {
     "id": "10",
@@ -127,7 +127,7 @@
     "district": "Bình Xuyên",
     "address": "Hương Sơn",
     "phones": ["096 681 2959"],
-    "images": ["/assets/images/HelloMama/daili_ads_image.png"]
+    "images": ["/assets/images/HelloMama/daili/daili-1.jpg"]
   },
   {
     "id": "11",
@@ -140,7 +140,7 @@
     "district": "Sông Lô",
     "address": "Lãng Công",
     "phones": ["096 681 2959"],
-    "images": ["/assets/images/HelloMama/daili_ads_image.png"]
+    "images": ["/assets/images/HelloMama/daili/daili-2.jpg"]
   },
   {
     "id": "13",
@@ -153,7 +153,7 @@
     "district": "Thành phố Phúc Yên",
     "address": "Ngọc Thanh",
     "phones": ["096 681 2959"],
-    "images": ["/assets/images/HelloMama/daili_ads_image.png"]
+    "images": ["/assets/images/HelloMama/daili/daili-3.jpg"]
   },
   {
     "id": "14",
@@ -166,7 +166,7 @@
     "district": "Đông Anh",
     "address": "72, Đường Nam Hồng",
     "phones": ["096 681 2959"],
-    "images": ["/assets/images/HelloMama/daili_ads_image.png"]
+    "images": ["/assets/images/HelloMama/daili/daili-1.jpg"]
   },
   {
     "id": "15",
@@ -179,7 +179,7 @@
     "district": "Tam Đảo",
     "address": "Minh Quang",
     "phones": ["096 681 2959"],
-    "images": ["/assets/images/HelloMama/daili_ads_image.png"]
+    "images": ["/assets/images/HelloMama/daili/daili-2.jpg"]
   },
   {
     "id": "16",
@@ -192,7 +192,7 @@
     "district": "Lập Thạch",
     "address": "Trường Cấp 1 Liên Hòa, Xã Liên Hòa",
     "phones": ["096 681 2959"],
-    "images": ["/assets/images/HelloMama/daili_ads_image.png"]
+    "images": ["/assets/images/HelloMama/daili/daili-3.jpg"]
   },
   {
     "id": "17",
@@ -205,7 +205,7 @@
     "district": "Tam Dương",
     "address": "Khu may mặc Kim Long",
     "phones": ["096 681 2959"],
-    "images": ["/assets/images/HelloMama/daili_ads_image.png"]
+    "images": ["/assets/images/HelloMama/daili/daili-1.jpg"]
   },
   {
     "id": "18",
@@ -218,7 +218,7 @@
     "district": "Vĩnh Yên",
     "address": "Đ.Nguyễn Tất Thành, Khai Quang",
     "phones": ["096 681 2959"],
-    "images": ["/assets/images/HelloMama/daili_ads_image.png"]
+    "images": ["/assets/images/HelloMama/daili/daili-2.jpg"]
   },
   {
     "id": "19",
@@ -231,7 +231,7 @@
     "district": "Bình Xuyên",
     "address": "Xóm Hến, Bá Hến",
     "phones": ["096 681 2959"],
-    "images": ["/assets/images/HelloMama/daili_ads_image.png"]
+    "images": ["/assets/images/HelloMama/daili/daili-3.jpg"]
   },
   {
     "id": "20",
@@ -244,7 +244,7 @@
     "district": "Thành phố Chí Linh",
     "address": "249 Yết Kiêu, Sao Đỏ",
     "phones": ["096 681 2959"],
-    "images": ["/assets/images/HelloMama/daili_ads_image.png"]
+    "images": ["/assets/images/HelloMama/daili/daili-1.jpg"]
   },
   {
     "id": "21",
@@ -257,7 +257,7 @@
     "district": "Sông Lô",
     "address": "Thôn Khoái Thượng, Đức Bác",
     "phones": ["096 681 2959"],
-    "images": ["/assets/images/HelloMama/daili_ads_image.png"]
+    "images": ["/assets/images/HelloMama/daili/daili-2.jpg"]
   },
   {
     "id": "22",
@@ -270,6 +270,6 @@
     "district": "Sông Lô",
     "address": "Thôn Khoái Thượng, Đức Bác",
     "phones": ["096 681 2959"],
-    "images": ["/assets/images/HelloMama/daili_ads_image.png"]
+    "images": ["/assets/images/HelloMama/daili/daili-3.jpg"]
   }
 ]

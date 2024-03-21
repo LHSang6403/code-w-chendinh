@@ -71,3 +71,12 @@ export interface CartTableType {
   product: ProductType;
   product_quantity: number;
 }
+
+export interface SearchListItemProps {
+  name: string;
+  province: string;
+  district: string;
+  address: string;
+  phones: string[];
+  images: string[];
+}

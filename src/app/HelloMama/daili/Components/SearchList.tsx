@@ -2,13 +2,14 @@
 
 import Search from "./Search";
 import SearchListItem from "./SearchListItem";
-import { SearchListItemProps } from "./SearchListItem";
+import { SearchListItemProps } from "@utils/types";
 import useAddressPicker from "@/zustand/useAddressPicker";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import * as z from "zod";
 import { useDebouncedCallback } from "use-debounce";
 import { useState, useEffect } from "react";
+import { useDaiLiSelect } from "@/zustand/useDaiLiSelect";
 
 import daiLi from "../StaticData/daiLi.json";
 
@@ -18,6 +19,8 @@ const FormSchema = z.object({
 
 export default function SearchList() {
   const { values } = useAddressPicker();
+
+  const { setDaiLi } = useDaiLiSelect();
 
   const form = useForm<z.infer<typeof FormSchema>>({
     resolver: zodResolver(FormSchema),
@@ -72,10 +75,16 @@ export default function SearchList() {
       <div className="w-[383px] xl:w-full">
         <Search form={form} debounced={debounced} />
       </div>
-      <ul className="mt-2 flex max-h-[620px] w-full flex-col gap-2 overflow-y-scroll pr-1">
-        {searchedItems.map((item, index) => (
-          <SearchListItem key={index} row={item as SearchListItemProps} />
-        ))}
+      <ul className="mt-2 flex max-h-[620px] w-full flex-col gap-2 overflow-y-scroll pr-1 sm:max-h-[500px]">
+        {searchedItems.length > 0 ? (
+          searchedItems.map((item, index) => (
+            <span onClick={() => setDaiLi(item)}>
+              <SearchListItem key={index} row={item as SearchListItemProps} />
+            </span>
+          ))
+        ) : (
+          <div className="mx-2">Không có đại lí đại đây.</div>
+        )}
       </ul>
     </div>
   );
