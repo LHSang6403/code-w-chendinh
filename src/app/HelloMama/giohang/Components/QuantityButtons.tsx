@@ -20,7 +20,9 @@ export default function QuantityButtons({ row }: { row: CartTableType }) {
         >
           <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14" />
         </svg>
-        <span className="text-xl font-light">{row.product_quantity || 0}</span>
+        <span className="mx-2 text-xl font-light">
+          {row.product_quantity || 0}
+        </span>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
