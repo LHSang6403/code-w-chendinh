@@ -32,7 +32,7 @@ export const columns: ColumnDef<CartTableType>[] = [
               />
             </div>
             <div className="flex flex-col items-start gap-1">
-              <span className="line-clamp-2 overflow-ellipsis text-left text-xl font-light sm:text-lg">
+              <span className="line-clamp-2 overflow-ellipsis text-left text-xl font-light sm:text-base">
                 {data.product.name}
               </span>
               <span className="line-clamp-1 overflow-ellipsis text-left font-light text-[#A19C9C]">
@@ -79,7 +79,7 @@ export const columns: ColumnDef<CartTableType>[] = [
       const data = row.original;
 
       return (
-        <div className="ml-auto w-36 overflow-ellipsis text-right text-xl font-light xl:w-36 sm:w-32 sm:pb-10">
+        <div className="ml-auto w-36 overflow-ellipsis text-right text-xl font-light xl:w-36 sm:w-28 sm:pb-10 sm:text-base">
           {formatCurrency(data.product.price * data.product_quantity)}đ
         </div>
       );

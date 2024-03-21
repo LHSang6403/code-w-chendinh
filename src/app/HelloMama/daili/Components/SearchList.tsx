@@ -60,7 +60,6 @@ export default function SearchList() {
       return nameMatch;
     });
 
-    console.log(searchedItems);
     setSearchedItems(searchedItems);
   }
 

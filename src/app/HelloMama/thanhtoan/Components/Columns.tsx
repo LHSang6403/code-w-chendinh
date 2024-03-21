@@ -4,7 +4,7 @@ import { ColumnDef } from "@tanstack/react-table";
 import Image from "next/image";
 import formatCurrency from "@/utils/functions/formatCurrency";
 import QuantityButtons from "./QuantityButtons";
-import {  CartTableType } from "@/utils/types";
+import { CartTableType } from "@/utils/types";
 
 export const columns: ColumnDef<CartTableType>[] = [
   {
@@ -32,7 +32,7 @@ export const columns: ColumnDef<CartTableType>[] = [
                 {data.product.name}
               </span>
               <span className="line-clamp-1 overflow-ellipsis text-left font-light">
-                {formatCurrency(data.product.price)}đ
+                {formatCurrency(data.product.price * data.product_quantity)}đ
               </span>
               <div className="mt-3">
                 <QuantityButtons row={data} />
