@@ -60,7 +60,19 @@ export default function SearchList() {
         .toLowerCase()
         .includes(data.searchText.toLowerCase());
 
-      return nameMatch;
+      const provinceMatch = item.province
+        .toLowerCase()
+        .includes(data.searchText.toLowerCase());
+
+      const districtMatch = item.district
+        .toLowerCase()
+        .includes(data.searchText.toLowerCase());
+
+      const addressMatch = item.address
+        .toLowerCase()
+        .includes(data.searchText.toLowerCase());
+
+      return nameMatch || provinceMatch || districtMatch || addressMatch;
     });
 
     setSearchedItems(searchedItems);
