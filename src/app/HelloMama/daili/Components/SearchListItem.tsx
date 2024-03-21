@@ -4,25 +4,34 @@ import { useDaiLiSelect } from "@/zustand/useDaiLiSelect";
 export default function SearchListItem({ row }: { row: SearchListItemProps }) {
   const { selectedDaiLi } = useDaiLiSelect();
 
+  const isSeleted = selectedDaiLi.name === row.name;
+
   return (
-    <li className="rounded-lg bg-gradient-to-r from-[#CD9F2D] via-[#F7EF8A] to-[#EDC967] p-[1px] hover:cursor-pointer hover:bg-gradient-to-b hover:from-[#1E588F] hover:via-[#0E7BB8] hover:to-[#0E7BB8]">
+    <li
+      className={`rounded-lg bg-gradient-to-r 
+      from-[#CD9F2D] via-[#F7EF8A] to-[#EDC967] 
+      p-[1px] hover:cursor-pointer hover:bg-gradient-to-b 
+      hover:from-[#1E588F] hover:via-[#0E7BB8] hover:to-[#0E7BB8] ${
+        isSeleted ? "!from-[#1E588F] !via-[#0E7BB8] !to-[#0E7BB8]" : ""
+      }`}
+    >
       <div
         className={`h-16 w-72 rounded-lg bg-white px-2 py-1 xl:w-full sm:h-fit ${
-          selectedDaiLi.name === row.name
+          isSeleted
             ? "bg-gradient-to-b from-[#1E588F] via-[#0E7BB8] to-[#0E7BB8]"
             : ""
         }`}
       >
         <div
           className={`line-clamp-1 overflow-ellipsis text-sm text-black ${
-            selectedDaiLi.name === row.name ? "text-white" : ""
+            isSeleted ? "text-white" : ""
           }`}
         >
           {row.name}
         </div>
         <div
           className={`line-clamp-1 overflow-ellipsis text-[14px] text-[#1c1c1c] ${
-            selectedDaiLi.name === row.name ? "text-white" : ""
+            isSeleted ? "text-white" : ""
           }`}
         >
           {row.address}, {row.district}, {row.province}
@@ -34,9 +43,7 @@ export default function SearchListItem({ row }: { row: SearchListItemProps }) {
             viewBox="0 0 24 24"
             stroke-width="1.5"
             stroke="currentColor"
-            className={`h-3 w-3 ${
-              selectedDaiLi.name === row.name ? "text-white" : ""
-            }`}
+            className={`h-3 w-3 ${isSeleted ? "text-white" : ""}`}
           >
             <path
               stroke-linecap="round"
@@ -46,7 +53,7 @@ export default function SearchListItem({ row }: { row: SearchListItemProps }) {
           </svg>
           <span
             className={`line-clamp-1 overflow-ellipsis text-[#1c1c1c] ${
-              selectedDaiLi.name === row.name ? "text-white" : ""
+              isSeleted ? "text-white" : ""
             }`}
           >
             {row.phones.join(" - ")}
