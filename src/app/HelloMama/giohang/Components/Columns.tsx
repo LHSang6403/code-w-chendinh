@@ -79,7 +79,7 @@ export const columns: ColumnDef<CartTableType>[] = [
       const data = row.original;
 
       return (
-        <div className="ml-auto w-36 overflow-ellipsis text-right text-xl font-light xl:w-36 sm:w-28 sm:pb-10 sm:text-base">
+        <div className="ml-auto w-36 overflow-ellipsis text-right text-xl font-light xl:w-36 sm:w-28 sm:pb-10 sm:text-lg">
           {formatCurrency(data.product.price * data.product_quantity)}đ
         </div>
       );
