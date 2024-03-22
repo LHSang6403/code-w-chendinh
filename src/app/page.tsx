@@ -8,9 +8,9 @@ export default async function Home() {
     <>
       <Header />
       <Template>
-        <main className="animate-in w-screen min-h-screen px-3">
+        <main className="min-h-screen w-screen px-3 animate-in">
           Home, code & chill here.
-          <div className="w-[80%] mx-auto">
+          <div className="mx-auto w-[80%]">
             <HomeSlider />
           </div>
         </main>
@@ -19,3 +19,5 @@ export default async function Home() {
     </>
   );
 }
+
+
