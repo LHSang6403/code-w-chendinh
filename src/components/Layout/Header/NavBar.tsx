@@ -16,9 +16,16 @@ export default function NavBar() {
     <NavigationMenu>
       <NavigationMenuList className="h-fit w-fit justify-center lg:grid lg:grid-cols-2 lg:gap-2">
         <NavigationMenuItem>
+          <Link href="/practice" legacyBehavior passHref>
+            <NavigationMenuLink className="hover:text-accent-foreground focus:text-accent-foreground group mx-1 inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent focus:bg-accent focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50 xl:w-[150px]">
+              Practice
+            </NavigationMenuLink>
+          </Link>
+        </NavigationMenuItem>
+        <NavigationMenuItem>
           <Link href="/HelloMama/tintuc" legacyBehavior passHref>
             <NavigationMenuLink className="hover:text-accent-foreground focus:text-accent-foreground group mx-1 inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent focus:bg-accent focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50 xl:w-[150px]">
-              Hello Mama Project
+              Hello Mama
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
