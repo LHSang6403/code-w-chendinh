@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Logos() {
   return (
-    <div className="mx-auto grid w-fit grid-cols-4 content-end justify-items-center xl:grid-cols-2 xl:gap-20 sm:grid-cols-1">
+    <div className="mx-auto grid w-fit grid-cols-4 content-end justify-items-center gap-4 xl:grid-cols-2 xl:gap-20 sm:grid-cols-1">
       <div className="mt-0.5">
         <Image
           alt="Forbes"
