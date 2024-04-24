@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function Footer() {
   return (
     <footer className="flex h-fit w-full flex-col justify-between bg-[#0D0B56] text-white">
-      <div className="mx-auto my-16 flex w-fit flex-row justify-center gap-28 px-6 xl:gap-10 md:flex-col sm:gap-10 sm:px-4">
+      <div className="mx-auto my-16 flex w-fit flex-row justify-center gap-28 px-6 xl:gap-10 md:my-6 md:flex-col sm:gap-10 sm:px-4">
         <div className="mt-8 w-full xl:mt-4">
           <h1 className="text-3xl font-semibold">BUSINESS</h1>
           <p className="ml-5 mt-2 font-extralight">
@@ -41,7 +41,7 @@ export default function Footer() {
           <h3 className="w-fit text-center text-xl font-medium xl:text-start">
             socila links
           </h3>
-          <div className="flex flex-row gap-1">
+          <div className="flex flex-row gap-1 md:mt-3 md:gap-4 md:pl-5">
             <Link href="#">
               <Image
                 alt="Facebook"

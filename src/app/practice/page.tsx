@@ -135,7 +135,7 @@ export default function page() {
               height={15}
             />
           </div>
-          <span className="text-sm">30 Day Free Trial</span>
+          <span className="text-sm sm:text-lg">30 Day Free Trial</span>
         </div>
         <div className="flex flex-row items-center gap-1 font-light">
           <div>
@@ -146,7 +146,7 @@ export default function page() {
               height={15}
             />
           </div>
-          <span className="text-sm">No Hidden Fees</span>
+          <span className="text-sm sm:text-lg">No Hidden Fees</span>
         </div>
         <div className="flex flex-row items-center gap-1 font-light">
           <div>
@@ -157,7 +157,7 @@ export default function page() {
               height={15}
             />
           </div>
-          <span className="text-sm">Free to cancel anytime</span>
+          <span className="text-sm sm:text-lg">Free to cancel anytime</span>
         </div>
       </div>
       <hr className="mx-auto my-10 w-72 border-[0.5px] border-[#47457E]"></hr>
