@@ -171,7 +171,7 @@ export default function page() {
           />
           <div className="relative">
             <div className="absolute left-6 right-6 top-6 h-fit w-auto">
-              <h2 className="text-4xl font-bold sm:text-2xl">
+              <h2 className="text-4xl font-bold xl:text-center sm:text-2xl">
                 We Will Help you to Grow
               </h2>
               <div className="mt-5 flex flex-row items-center justify-between gap-3 sm:mt-0 sm:flex-col">
