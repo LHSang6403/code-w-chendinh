@@ -84,7 +84,7 @@ export default function Plans() {
         <div className="flex h-12 w-full items-center justify-center bg-gradient-to-r from-[#2E3F83] to-[#BC208C] pb-2 font-medium text-white">
           <span className="w-fit">POPULAR</span>
         </div>
-        <div className="-mt-2 flex h-fit w-full flex-col items-center rounded-md bg-red-200 bg-white">
+        <div className="-mt-2 flex h-fit w-full flex-col items-center rounded-md bg-white">
           <div className="mx-auto mt-6 w-fit rounded-full bg-[#9BA5C5] px-6 text-white">
             PROFESSIONAL
           </div>
