@@ -4,9 +4,9 @@ import { Button } from "@/components/ui/button";
 export default function Plans() {
   return (
     <div className="flex w-full flex-row gap-4 xl:-mt-6 xl:flex-col xl:items-center">
-      <div className="relative flex h-[660px] w-1/3 flex-col justify-between overflow-hidden rounded-md xl:h-[580px] xl:w-[90%]">
-        <div className="flex h-12 w-full items-center justify-center pb-2 font-medium text-white"></div>
-        <div className="absolute top-12 -mt-2 flex h-fit w-full flex-col items-center xl:top-0">
+      <div className="flex h-fit w-1/3 flex-col justify-between overflow-hidden rounded-md xl:w-[90%]">
+        <div className="flex h-12 w-full items-center justify-center pb-2 font-medium text-white xl:hidden"></div>
+        <div className="top-12 -mt-2 flex h-fit w-full flex-col items-center xl:top-0">
           <div className="mx-auto mt-6 w-fit rounded-full bg-[#9BA5C5] px-6 text-white">
             STARTER
           </div>
@@ -62,7 +62,7 @@ export default function Plans() {
             <p>Business Management</p>
           </div>
         </div>
-        <div className="flex flex-col gap-2 p-3 pt-8">
+        <div className="flex flex-col gap-2 p-3 pt-4">
           <div className="mb-3 ml-auto flex flex-row gap-1 text-[#514B4B]">
             <div className="-my-3 text-[54px] font-bold">$19</div>
             <div className="line-clamp-2 w-fit break-words font-extralight leading-5">
@@ -80,11 +80,11 @@ export default function Plans() {
           </Button>
         </div>
       </div>
-      <div className="relative flex h-[660px] w-1/3 flex-col justify-between overflow-hidden rounded-md shadow-[rgba(216,215,215,1)_0px_0px_10px_10px] xl:w-[90%]">
+      <div className="flex h-[660px] w-1/3 flex-col items-center overflow-hidden rounded-md shadow-[rgba(216,215,215,1)_0px_0px_10px_10px] xl:w-[90%]">
         <div className="flex h-12 w-full items-center justify-center bg-gradient-to-r from-[#2E3F83] to-[#BC208C] pb-2 font-medium text-white">
           <span className="w-fit">POPULAR</span>
         </div>
-        <div className="absolute top-12 -mt-2 flex h-fit w-full flex-col items-center rounded-md bg-white">
+        <div className="-mt-2 flex h-fit w-full flex-col items-center rounded-md bg-red-200 bg-white">
           <div className="mx-auto mt-6 w-fit rounded-full bg-[#9BA5C5] px-6 text-white">
             PROFESSIONAL
           </div>
@@ -140,7 +140,7 @@ export default function Plans() {
             <p>Business Management</p>
           </div>
         </div>
-        <div className="flex flex-col gap-2 bg-[#1A3476] p-3 pt-8">
+        <div className="-z-10 -mt-2 flex h-fit w-full flex-col gap-2 bg-[#1A3476] p-3 pt-6">
           <div className="mb-3 ml-auto flex flex-row gap-1 text-white">
             <div className="-my-3 text-[54px] font-bold">$29</div>
             <div className="line-clamp-2 w-fit break-words font-extralight leading-5">
@@ -158,9 +158,9 @@ export default function Plans() {
           </Button>
         </div>
       </div>
-      <div className="relative flex h-[660px] w-1/3 flex-col justify-between overflow-hidden rounded-md xl:h-[580px] xl:w-[90%]">
-        <div className="flex h-12 w-full items-center justify-center pb-2 font-medium text-white"></div>
-        <div className="absolute top-12 -mt-2 flex h-fit w-full flex-col items-center xl:top-0">
+      <div className="flex h-fit w-1/3 flex-col justify-between overflow-hidden rounded-md xl:w-[90%]">
+        <div className="flex h-12 w-full items-center justify-center pb-2 font-medium text-white xl:hidden"></div>
+        <div className="top-12 -mt-2 flex h-fit w-full flex-col items-center xl:top-0">
           <div className="mx-auto mt-6 w-fit rounded-full bg-[#9BA5C5] px-6 text-white">
             ENTERPRISE
           </div>
@@ -216,7 +216,7 @@ export default function Plans() {
             <p>Business Management</p>
           </div>
         </div>
-        <div className="flex flex-col gap-2 p-3 pt-8">
+        <div className="flex flex-col gap-2 p-3 pt-4">
           <div className="mb-3 ml-auto flex flex-row gap-1 text-[#514B4B]">
             <div className="-my-3 text-[54px] font-bold">$69</div>
             <div className="line-clamp-2 w-fit break-words font-extralight leading-5">

@@ -33,7 +33,7 @@ export default function page() {
           src="/assets/images/practice/main-image.png"
           width={1600}
           height={1000}
-          className="xl:h-[450px] xl:object-cover sm:h-80"
+          className="xl:h-[500px] xl:object-cover"
         />
       </div>
       <div className="relative mb-16 mt-12 flex h-fit w-full flex-col items-center gap-10">
@@ -65,9 +65,10 @@ export default function page() {
             src="/assets/images/practice/consult.png"
             width={1500}
             height={600}
+            quality={100}
           />
         </div>
-        <div className="flex w-1/2 flex-col gap-6 bg-[#050829] p-4 pb-6 text-white xl:w-full xl:px-6 xl:pb-12 xl:pt-10">
+        <div className="flex w-1/2 flex-col gap-6 bg-[#050829] p-4 pb-6 text-white xl:w-full xl:px-6 xl:pb-12 xl:pt-10 sm:px-4">
           <h2 className="text-4xl font-semibold">
             Driving Business <br></br> Excellence
           </h2>

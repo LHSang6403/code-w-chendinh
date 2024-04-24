@@ -4,23 +4,25 @@ import Image from "next/image";
 export default function Footer() {
   return (
     <footer className="flex h-fit w-full flex-col justify-between bg-[#0D0B56] text-white">
-      <div className="mx-auto my-16 grid w-fit grid-cols-4 justify-items-center gap-28 xl:grid-cols-2 sm:grid-cols-1 sm:gap-10">
-        <div className="mt-8 w-full">
+      <div className="mx-auto my-16 flex w-fit flex-row justify-center gap-28 px-6 xl:gap-10 md:flex-col sm:gap-10 sm:px-4">
+        <div className="mt-8 w-full xl:mt-4">
           <h1 className="text-3xl font-semibold">BUSINESS</h1>
           <p className="ml-5 mt-2 font-extralight">
-            Drive Your Business To <br></br> Success With Us
+            Drive Your Business To <br className="md:hidden"></br> Success With
+            Us
           </p>
         </div>
-        <div className="w-full xl:w-fit sm:w-full">
+        <div className="w-full">
           <h3 className="text-2xl font-medium">how to find us</h3>
-          <p className="mt-3 font-extralight leading-5">
-            10 Downing Street <br></br> London <br></br> SW1A 2AA <br></br>{" "}
-            United Kingdom
+          <p className="mt-3 font-extralight leading-5 md:ml-5">
+            10 Downing Street <br className="md:hidden"></br> London{" "}
+            <br className="md:hidden"></br> SW1A 2AA{" "}
+            <br className="md:hidden"></br> United Kingdom
           </p>
         </div>
         <div className="flex w-full flex-col">
           <h3 className="text-2xl font-medium">company</h3>
-          <div className="flex flex-col pl-3">
+          <div className="flex flex-col pl-3 md:pl-5">
             <Link href="#" className="mt-3 font-extralight">
               home
             </Link>
@@ -35,7 +37,7 @@ export default function Footer() {
             </Link>
           </div>
         </div>
-        <div className="w-full xl:w-fit sm:w-full">
+        <div className="w-full">
           <h3 className="w-fit text-center text-xl font-medium xl:text-start">
             socila links
           </h3>
