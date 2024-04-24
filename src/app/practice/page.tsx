@@ -33,7 +33,7 @@ export default function page() {
           src="/assets/images/practice/main-image.png"
           width={1600}
           height={1000}
-          className="sm:h-80 sm:object-cover"
+          className="xl:h-[450px] xl:object-cover sm:h-80"
         />
       </div>
       <div className="relative mb-16 mt-12 flex h-fit w-full flex-col items-center gap-10">
@@ -99,7 +99,7 @@ export default function page() {
         </h1>
         <People />
       </div>
-      <div className="relative mx-auto flex w-[1100px] flex-col items-center gap-16 pb-12 pt-16 xl:w-full sm:pb-6">
+      <div className="relative mx-auto flex w-full max-w-[1200px] flex-col items-center gap-16 pb-12 pt-16 xl:w-full sm:pb-6">
         <div className="absolute left-4 top-16">
           <Image
             alt="Decor"
