@@ -2,17 +2,20 @@ import Link from "next/link";
 
 export default function Nav() {
   return (
-    <div className="flex flex-row gap-4 font-medium sm:text-sm">
-      <Link href="#" className="border-b-[4px] px-1.5">
+    <div className="flex w-full flex-row gap-4 overflow-x-auto font-medium sm:text-sm">
+      <Link
+        href="#"
+        className="w-fit text-nowrap border-b-[4px] px-1.5 sm:px-0"
+      >
         home
       </Link>
-      <Link href="#" className="px-1">
+      <Link href="#" className="w-fit text-nowrap px-1 sm:px-0">
         about us
       </Link>
-      <Link href="#" className="px-1">
+      <Link href="#" className="w-fit text-nowrap px-1 sm:px-0">
         services
       </Link>
-      <Link href="#" className="px-1">
+      <Link href="#" className="w-fit text-nowrap px-1 sm:px-0">
         contact us
       </Link>
     </div>

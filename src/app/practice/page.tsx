@@ -21,7 +21,7 @@ export default function page() {
             Unleashing Potential <br></br> With Innovative Business <br></br>{" "}
             Solutions
           </h1>
-          <p className="mx-4 mb-7 mt-3 text-xl xl:mb-4 xl:mt-1 sm:text-sm">
+          <p className="mb-7 mr-4 mt-3 text-xl xl:mb-4 xl:mt-1 sm:text-sm">
             Transforming visions into reality: your success is our mission
           </p>
           <Button className="w-fit rounded-xl bg-white text-base text-[#0D0B56]">
