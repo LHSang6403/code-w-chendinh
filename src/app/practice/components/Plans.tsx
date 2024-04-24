@@ -80,7 +80,7 @@ export default function Plans() {
           </Button>
         </div>
       </div>
-      <div className="flex h-[660px] w-1/3 flex-col items-center overflow-hidden rounded-md shadow-[rgba(216,215,215,1)_0px_0px_10px_10px] xl:w-[90%]">
+      <div className="flex h-fit w-1/3 flex-col items-center overflow-hidden rounded-md shadow-[rgba(216,215,215,1)_0px_0px_10px_10px] xl:w-[90%]">
         <div className="flex h-12 w-full items-center justify-center bg-gradient-to-r from-[#2E3F83] to-[#BC208C] pb-2 font-medium text-white">
           <span className="w-fit">POPULAR</span>
         </div>
