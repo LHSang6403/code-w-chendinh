@@ -38,9 +38,9 @@ export default function page() {
         <div className="mr-auto w-fit rounded-full bg-gradient-to-r from-[#1B377D] to-[#3060DB] px-6 py-1 text-2xl font-medium text-white">
           About Company
         </div>
-        <div className="mb-16 mt-12 flex flex-row items-center justify-between xl:items-start sm:mt-8 sm:flex-col">
+        <div className="mb-16 mt-12 flex flex-row items-center justify-between xl:items-start xl:gap-4 sm:mb-10 sm:mt-8 sm:flex-col">
           <h2 className="text-4xl font-semibold text-[#514B4B] xl:w-1/2 sm:w-full">
-            Discover Our Story of <br className="sm:hidden"></br> Success
+            Discover Our Story of <br className="xl:hidden"></br> Success
           </h2>
           <p className="font-light leading-8 text-[#898989] xl:w-1/2 sm:w-full">
             From humble beginnings to industry leadership, we’ve{" "}
@@ -65,7 +65,7 @@ export default function page() {
           </span>
         </div>
       </div>
-      <div className="relative mb-12 flex flex-row gap-8 px-8 pt-16 xl:px-6 lg:mb-16 lg:flex-col sm:px-4">
+      <div className="relative mb-12 flex flex-row gap-6 px-8 pt-16 xl:px-6 lg:mb-12 lg:flex-col lg:gap-8 sm:px-4">
         <div className="absolute right-28 top-4 -scale-[0.9]">
           <Image
             alt="Decor"

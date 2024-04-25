@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function LeftBanner() {
   return (
-    <div className="z-10 flex h-fit w-1/2 justify-center px-32 xl:w-full xl:px-10 lg:-ml-6 lg:mb-20 sm:-ml-12 sm:px-0">
+    <div className="z-10 flex h-fit w-1/2 justify-center bg-red-200 px-28 xl:w-full xl:px-10 lg:-ml-6 lg:mb-20 sm:-ml-12 sm:px-0">
       <div className="relative h-fit w-fit">
         <div className="relative sm:w-full">
           <Image
