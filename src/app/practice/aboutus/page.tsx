@@ -3,6 +3,7 @@ import Nav from "../components/Nav";
 import Items from "./Components/Items";
 import Footer from "../components/Footer";
 import People from "./Components/People";
+import LeftBanner from "./Components/LeftBanner";
 
 export default function page() {
   return (
@@ -25,7 +26,7 @@ export default function page() {
           className="xl:h-[400px] xl:object-cover"
         />
       </div>
-      <div className="relative px-8 py-16 xl:py-10 sm:px-4">
+      <div className="relative px-8 py-16 xl:px-6 xl:py-10 sm:px-4">
         <div className="absolute -right-2 top-6 -scale-[0.8]">
           <Image
             alt="Decor"
@@ -64,7 +65,7 @@ export default function page() {
           </span>
         </div>
       </div>
-      <div className="relative flex flex-row px-8 pt-16 xl:mb-10 xl:flex-col sm:px-4">
+      <div className="relative mb-12 flex flex-row gap-8 px-8 pt-16 xl:mb-16 xl:flex-col xl:px-6 sm:px-4">
         <div className="absolute right-28 top-4 -scale-[0.9]">
           <Image
             alt="Decor"
@@ -74,40 +75,8 @@ export default function page() {
           />
         </div>
         <div className="absolute -right-[225px] top-1/2 z-0 h-[500px] w-[500px] -translate-y-1/3 rounded-full bg-[#DEDDE4]"></div>
-        <div className="relative z-10 w-1/2 pl-10 pr-16 xl:w-full sm:pl-0 sm:pr-10">
-          <div className="relative ml-20 h-fit w-fit sm:ml-0 sm:w-full">
-            <Image
-              alt="People"
-              src="/assets/images/practice/aboutus/people1.png"
-              width={400}
-              height={600}
-            />
-            <div className="absolute left-0 top-0 h-full w-full rounded-2xl bg-black opacity-30"></div>
-          </div>
-          <div className="absolute left-72 top-52 sm:left-24 sm:top-44 sm:w-44">
-            <Image
-              alt="People"
-              src="/assets/images/practice/aboutus/people2.png"
-              width={300}
-              height={400}
-            />
-          </div>
-          <div className="relative -top-64 left-6 h-32 w-32 rounded-full bg-[#0F29B2] p-4 text-5xl text-white shadow-lg sm:-top-[400px] sm:left-44">
-            <p className="mr-4 text-center font-extrabold">10</p>
-            <div className="absolute right-2 top-2 flex h-8 w-8 items-center justify-center rounded-full bg-[#FBB90F] pt-1 font-extrabold text-white">
-              <Image
-                alt="Plus"
-                src="/assets/images/practice/aboutus/plus.png"
-                width={30}
-                height={30}
-              />
-            </div>
-            <p className="text-center text-sm font-bold">
-              Years In Gobal Market
-            </p>
-          </div>
-        </div>
-        <div className="z-10 flex w-1/2 flex-col gap-6 xl:w-full">
+        <LeftBanner />
+        <div className="z-10 flex w-1/2 flex-col gap-6 xl:w-full sm:mt-20">
           <div className="mr-auto w-fit rounded-full bg-gradient-to-r from-[#1B377D] to-[#3060DB] px-6 py-1 text-2xl font-medium text-white">
             Our Values
           </div>

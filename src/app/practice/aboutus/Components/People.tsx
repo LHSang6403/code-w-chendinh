@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function People() {
   return (
-    <div className="mx-2 my-12 grid w-auto grid-cols-4 justify-center gap-3 xl:grid-cols-2 xl:px-6 sm:grid-cols-1 sm:gap-4 sm:px-2">
+    <div className="mx-2 my-12 grid w-auto grid-cols-4 justify-center gap-3 xl:grid-cols-2 xl:gap-6 xl:px-20 lg:px-10 sm:grid-cols-1 sm:gap-4 sm:px-2">
       <div className="relative">
         <Image
           alt="Person"
