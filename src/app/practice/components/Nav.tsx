@@ -1,23 +1,32 @@
-import Link from "next/link";
+"use client";
+
+import { usePathname } from "next/navigation";
+import { useRouter } from "next/navigation";
+
+const urls = [
+  { href: "/practice", label: "home" },
+  { href: "/practice/aboutus", label: "about us" },
+  { href: "#", label: "services" },
+  { href: "#", label: "contact us" },
+];
 
 export default function Nav() {
+  const pathname = usePathname();
+  const router = useRouter();
+
   return (
-    <div className="flex w-fit flex-row gap-4 overflow-x-auto font-medium sm:text-sm">
-      <Link
-        href="#"
-        className="w-fit text-nowrap border-b-[4px] px-1.5 sm:px-0"
-      >
-        home
-      </Link>
-      <Link href="#" className="w-fit text-nowrap px-1 sm:px-0">
-        about us
-      </Link>
-      <Link href="#" className="w-fit text-nowrap px-1 sm:px-0">
-        services
-      </Link>
-      <Link href="#" className="w-fit text-nowrap px-1 sm:px-0">
-        contact us
-      </Link>
+    <div className="z-10 flex w-fit flex-row gap-4 overflow-x-auto font-medium sm:text-sm">
+      {urls.map(({ href, label }, index) => (
+        <button
+          key={index}
+          onClick={() => router.push(href)}
+          className={`w-fit hover:cursor-pointer ${
+            pathname === href ? "border-b-[4px]" : ""
+          } px-1.5 sm:px-0`}
+        >
+          {label}
+        </button>
+      ))}
     </div>
   );
 }

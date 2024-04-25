@@ -9,7 +9,7 @@ import Nav from "./components/Nav";
 
 export default function page() {
   return (
-    <div className="-z-10 flex h-auto w-full max-w-[1600px] flex-col overflow-hidden bg-[#F5F4F4]">
+    <div className="flex h-auto w-full max-w-[1600px] flex-col overflow-hidden bg-[#F5F4F4]">
       <div className="relative text-white sm:h-fit">
         <div className="bg-white/30 absolute left-0 top-0 h-full w-full backdrop-brightness-[0.4]"></div>
         <div className="absolute left-0 top-5 flex h-fit w-full flex-row justify-between px-28 xl:px-6 sm:flex-col sm:gap-2 sm:px-4">
