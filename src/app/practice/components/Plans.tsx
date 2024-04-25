@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 
 export default function Plans() {
   return (
-    <div className="flex w-full flex-row gap-4 xl:-mt-6 xl:flex-col xl:items-center">
+    <div className="z-0 flex w-full flex-row gap-4 xl:-mt-6 xl:flex-col xl:items-center">
       <div className="flex h-fit w-1/3 flex-col justify-between overflow-hidden rounded-md xl:w-[90%]">
         <div className="flex h-12 w-full items-center justify-center pb-2 font-medium text-white xl:hidden"></div>
         <div className="top-12 -mt-2 flex h-fit w-full flex-col items-center xl:top-0">
