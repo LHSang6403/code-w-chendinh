@@ -109,7 +109,7 @@ export default function page() {
         </div>
       </div>
       <div className="w-full">
-        <h1 className="text-center text-4xl font-semibold text-[#514B4B]">
+        <h1 className="mx-4 text-center text-4xl font-semibold text-[#514B4B]">
           We Are Here to Help You
         </h1>
         <People />
