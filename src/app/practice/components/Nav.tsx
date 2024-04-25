@@ -6,8 +6,8 @@ import { useRouter } from "next/navigation";
 const urls = [
   { href: "/practice", label: "home" },
   { href: "/practice/aboutus", label: "about us" },
-  { href: "#", label: "services" },
-  { href: "#", label: "contact us" },
+  { href: "/practice/services", label: "services" },
+  { href: "/practice/contactus", label: "contact us" },
 ];
 
 export default function Nav() {

@@ -22,12 +22,12 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <body className="bg-background text-foreground">
-        <ThemeProvider>
+        {/* <ThemeProvider> */}
           <main className="mx-auto flex min-h-screen w-auto max-w-[2200px] flex-col items-center overflow-hidden">
             {children}
             {/* <NavDrawer /> */}
           </main>
-        </ThemeProvider>
+        {/* </ThemeProvider> */}
       </body>
     </html>
   );
