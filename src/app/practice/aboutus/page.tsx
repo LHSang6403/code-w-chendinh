@@ -65,7 +65,7 @@ export default function page() {
           </span>
         </div>
       </div>
-      <div className="relative mb-12 flex flex-row gap-8 px-8 pt-16 xl:mb-16 xl:flex-col xl:px-6 sm:px-4">
+      <div className="relative mb-12 flex flex-row gap-8 px-8 pt-16 xl:px-6 lg:mb-16 lg:flex-col sm:px-4">
         <div className="absolute right-28 top-4 -scale-[0.9]">
           <Image
             alt="Decor"
@@ -81,14 +81,16 @@ export default function page() {
             Our Values
           </div>
           <h2 className="mt-2 text-4xl font-semibold text-[#514B4B]">
-            Empowering Success <br></br> Through Insightful <br></br> Solutions
+            Empowering Success <br className="xl:hidden"></br> Through
+            Insightful <br className="xl:hidden"></br> Solutions
           </h2>
           <p className="font-light leading-8 text-[#898989]">
-            At our consulting firm, we are dedicated to delivering <br></br>{" "}
-            insightful and innovative solutions tailored to each <br></br>{" "}
-            client’s unique needs. Our unwavering commitment <br></br> is to
-            drive our clients’ success, treating their <br></br> objectives as
-            our own. 
+            At our consulting firm, we are dedicated to delivering{" "}
+            <br className="xl:hidden"></br> insightful and innovative solutions
+            tailored to each <br className="xl:hidden"></br> client’s unique
+            needs. Our unwavering commitment <br className="xl:hidden"></br> is
+            to drive our clients’ success, treating their{" "}
+            <br className="xl:hidden"></br> objectives as our own. 
           </p>
           <div className="flex flex-row gap-4">
             <Image
