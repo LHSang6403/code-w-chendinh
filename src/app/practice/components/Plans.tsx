@@ -63,7 +63,7 @@ export default function Plans() {
           </div>
         </div>
         <div className="flex flex-col gap-2 p-3 pt-4">
-          <div className="mb-3 ml-auto flex flex-row gap-1 text-[#514B4B]">
+          <div className="mb-3 ml-auto flex flex-row items-center gap-1 text-[#514B4B]">
             <div className="-my-3 text-[54px] font-bold">$19</div>
             <div className="line-clamp-2 w-fit break-words font-extralight leading-5">
               Per User/Month <br></br> Billed Annually*
@@ -141,7 +141,7 @@ export default function Plans() {
           </div>
         </div>
         <div className="-z-10 -mt-2 flex h-fit w-full flex-col gap-2 bg-[#1A3476] p-3 pt-6">
-          <div className="mb-3 ml-auto flex flex-row gap-1 text-white">
+          <div className="mb-3 ml-auto flex flex-row items-center gap-1 text-white">
             <div className="-my-3 text-[54px] font-bold">$29</div>
             <div className="line-clamp-2 w-fit break-words font-extralight leading-5">
               Per User/Month <br></br> Billed Annually*
@@ -217,7 +217,7 @@ export default function Plans() {
           </div>
         </div>
         <div className="flex flex-col gap-2 p-3 pt-4">
-          <div className="mb-3 ml-auto flex flex-row gap-1 text-[#514B4B]">
+          <div className="mb-3 ml-auto flex flex-row items-center gap-1 text-[#514B4B]">
             <div className="-my-3 text-[54px] font-bold">$69</div>
             <div className="line-clamp-2 w-fit break-words font-extralight leading-5">
               Per User/Month <br></br> Billed Annually*
