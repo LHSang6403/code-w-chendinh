@@ -10,7 +10,7 @@ export default function page() {
     <div className="flex h-auto w-full max-w-[1600px] flex-col overflow-hidden bg-[#F5F4F4]">
       <div className="relative">
         <div className="absolute left-0 right-0 top-0 z-10 flex h-full w-full items-center justify-center bg-[#282660] opacity-80">
-          <span className="text-[80px] font-bold text-white xl:text-[65px] sm:text-[45px]">
+          <span className="text-[80px] font-bold text-white xl:text-[65px] sm:mt-10 sm:text-[45px]">
             Who We Are?
           </span>
         </div>
