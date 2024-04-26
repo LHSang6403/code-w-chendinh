@@ -69,12 +69,12 @@ export default function Plans() {
               Per User/Month <br></br> Billed Annually*
             </div>
           </div>
-          <Button className="rounded bg-[#1B367C] font-light text-white hover:bg-white">
+          <Button className="rounded bg-[#1B367C] font-light text-white hover:cursor-pointer hover:bg-[#1B367C] hover:text-white">
             Join to Plan
           </Button>
           <Button
             variant="ghost"
-            className="rounded bg-none font-light text-[#514B4B] hover:bg-[#1A3476]"
+            className="rounded bg-none font-light text-[#514B4B] hover:text-[#514B4B]"
           >
             Cancel anytime
           </Button>
@@ -147,12 +147,12 @@ export default function Plans() {
               Per User/Month <br></br> Billed Annually*
             </div>
           </div>
-          <Button className="rounded bg-white font-light hover:bg-white">
+          <Button className="rounded bg-white font-light hover:cursor-pointer hover:bg-white">
             Join to Plan
           </Button>
           <Button
             variant="ghost"
-            className="rounded bg-none font-light text-white hover:bg-[#1A3476]"
+            className="hover:cursor-pointe rounded bg-none font-light text-white hover:bg-[#1A3476]"
           >
             Cancel anytime
           </Button>
@@ -223,12 +223,12 @@ export default function Plans() {
               Per User/Month <br></br> Billed Annually*
             </div>
           </div>
-          <Button className="rounded bg-[#1B367C] font-light text-white hover:bg-white">
+          <Button className="rounded bg-[#1B367C] font-light text-white hover:cursor-pointer hover:bg-[#1B367C] hover:text-white">
             Join to Plan
           </Button>
           <Button
             variant="ghost"
-            className="rounded bg-none font-light text-[#514B4B] hover:bg-[#1A3476]"
+            className="rounded bg-none font-light text-[#514B4B] hover:text-[#514B4B]"
           >
             Cancel anytime
           </Button>
