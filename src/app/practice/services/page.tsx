@@ -167,7 +167,7 @@ export default function page() {
       <div className="relative mb-20 mt-4">
         <hr className="mx-auto w-[96%] border-[#1B367C] sm:hidden"></hr>
         <div className="absolute left-1/2 top-1/2 flex -translate-x-1/2 -translate-y-1/2 flex-row items-center justify-center gap-2 rounded-full bg-gradient-to-r from-[#1C3880] to-[#3061DE] px-10 py-1.5 shadow-[rgba(216,215,215,1)_0px_4px_8px_4px] sm:w-[90%]">
-          <span className="whitespace-nowrap font-extralight text-white underline decoration-1 underline-offset-4">
+          <span className="whitespace-nowrap text-lg font-extralight text-white underline decoration-1 underline-offset-4">
             Book Free Consultation
           </span>
         </div>
