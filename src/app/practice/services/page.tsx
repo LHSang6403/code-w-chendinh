@@ -63,7 +63,7 @@ export default function page() {
           <h1 className="mt-6 text-3xl font-semibold text-[#514B4B]">
             Achieving Your Business <br></br> Goals Efficiently
           </h1>
-          <p className="mt-4 max-w-[670px] font-light leading-[38px] text-[#898989] xl:max-w-0">
+          <p className="mt-4 max-w-[670px] font-light leading-[38px] text-[#898989] xl:max-w-full">
             From humble beginnings to industry leadership, we’ve taken bold
             steps towards excellence. Join us in our ongoing pursuit of
             innovation. <br className="xl:hidden"></br> Welcome to our journey.
