@@ -2,19 +2,19 @@ import Image from "next/image";
 
 export default function LeftBanner() {
   return (
-    <div className="z-10 flex h-fit w-1/2 justify-center pl-28 pr-10 xl:w-full xl:px-10 lg:-ml-6 lg:mb-20 sm:-ml-12 sm:px-0">
+    <div className="z-10 flex h-fit w-1/2 justify-center pl-32 pr-10 xl:w-full xl:px-10 lg:-ml-6 lg:mb-20 sm:-ml-12 sm:px-0">
       <div className="relative h-fit w-fit">
         <div className="relative sm:w-full">
           <Image
             alt="People"
             src="/assets/images/practice/aboutus/people1.png"
-            width={300}
-            height={400}
+            width={350}
+            height={450}
             className="lg:w-[380px] sm:w-44"
           />
           <div className="absolute left-0 top-0 h-full w-full rounded-xl bg-black opacity-30"></div>
         </div>
-        <div className="absolute -right-24 top-36 lg:top-44 ">
+        <div className="absolute -right-16 top-44">
           <Image
             alt="People"
             src="/assets/images/practice/aboutus/people2.png"
