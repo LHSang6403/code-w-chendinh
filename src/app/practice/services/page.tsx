@@ -66,8 +66,9 @@ export default function page() {
           <p className="mt-4 max-w-[670px] font-light leading-[38px] text-[#898989]">
             From humble beginnings to industry leadership, we’ve taken bold
             steps towards excellence. Join us in our ongoing pursuit of
-            innovation. <br></br> Welcome to our journey. From humble beginnings
-            to industry leadership, we’ve taken bold steps towards excellence.{" "}
+            innovation. <br className="xl:hidden"></br> Welcome to our journey.
+            From humble beginnings to industry leadership, we’ve taken bold
+            steps towards excellence.{" "}
           </p>
           <div className="absolute -bottom-16 left-0 flex h-fit w-fit flex-row items-center gap-2 rounded-md rounded-br-[35px] bg-gradient-to-r from-[#22207F] to-[#0A80B2] py-1 pl-4 pr-24 sm:-bottom-20">
             <Image
