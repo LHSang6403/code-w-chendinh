@@ -102,7 +102,7 @@ export default function page() {
           Our Services
         </h1>
       </div>
-      <div className="z-10 bg-[#1A367C]">
+      <div className="z-10 flex justify-center bg-[#1A367C]">
         <Cards />
       </div>
       <div className="relative flex justify-center pb-20 pt-32 xl:pb-16">
@@ -136,11 +136,11 @@ export default function page() {
                 height={500}
               />
             </div>
-            <div className="flex flex-col items-end gap-8">
-              <h2 className="max-w-[500px] text-3xl font-semibold text-[#514B4B] sm:px-4 sm:text-center">
+            <div className="flex flex-col items-end gap-8 xl:items-center">
+              <h2 className="max-w-[500px] text-3xl font-semibold text-[#514B4B] xl:max-w-full sm:px-4 sm:text-center">
                 How We Can Benefit You and Your Business
               </h2>
-              <div className="max-w-[500px] rounded-[45px] bg-[#EAEAEA] py-6 shadow-[rgba(216,215,215,1)_0px_4px_8px_4px]">
+              <div className="max-w-[500px] rounded-[45px] bg-[#EAEAEA] py-6 shadow-[rgba(216,215,215,1)_0px_4px_8px_4px] xl:max-w-full">
                 <div className="px-10">
                   <h3 className="font-medium">
                     What challenges does business face today?

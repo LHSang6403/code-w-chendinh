@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Cards() {
   return (
-    <div className="z-10 mx-auto grid h-fit w-fit grid-cols-3 justify-center gap-4 px-6 lg:grid-cols-2 sm:grid-cols-1">
+    <div className="z-10 grid h-fit w-fit grid-cols-3 justify-center gap-4 px-6 lg:grid-cols-2 sm:grid-cols-1 sm:px-4">
       {Array.from({ length: 3 }).map((_, index) => (
         <div
           key={index}
@@ -11,8 +11,8 @@ export default function Cards() {
           <Image
             alt="People"
             src="/assets/images/practice/services/people.png"
-            width={400}
-            height={300}
+            width={500}
+            height={500}
           />
           <div className="mt-2 text-lg">Strategy planning</div>
           <p className="text-center text-[#898989]">
