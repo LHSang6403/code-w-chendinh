@@ -24,7 +24,7 @@ export default function page() {
           <p className="mb-7 mr-4 mt-3 text-xl xl:mb-4 xl:mt-1 sm:text-sm">
             Transforming visions into reality: your success is our mission
           </p>
-          <Button className="w-fit rounded-xl bg-white text-base text-[#0D0B56]">
+          <Button className="w-fit rounded-xl bg-white text-base hover:bg-white text-[#0D0B56]">
             Contact us today
           </Button>
         </div>
@@ -160,7 +160,7 @@ export default function page() {
           <span className="text-sm">Free to cancel anytime</span>
         </div>
       </div>
-      <hr className="mx-auto my-10 w-72 border-[0.5px] border-[#47457E]"></hr>
+      <hr className="mx-auto my-10 w-72 border-[0.5px] border-[#47457E] sm:w-[calc(_100vw_-_3rem)]"></hr>
       <div className="text-white">
         <div className="flex h-full w-full flex-row xl:flex-col">
           <Image
@@ -195,7 +195,7 @@ export default function page() {
           </div>
         </div>
       </div>
-      <hr className="mx-auto my-10 w-72 border-[0.5px] border-[#47457E]"></hr>
+      <hr className="mx-auto my-10 w-72 border-[0.5px] border-[#47457E] sm:w-[calc(_100vw_-_3rem)]"></hr>
       <Footer />
     </div>
   );

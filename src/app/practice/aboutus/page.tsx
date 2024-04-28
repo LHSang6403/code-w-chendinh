@@ -14,6 +14,11 @@ export default function page() {
             Who We Are?
           </span>
         </div>
+        <div className="absolute left-0 right-0 top-0 z-10 flex h-full w-full items-center justify-center">
+          <span className="text-[80px] font-bold text-white xl:text-[65px] sm:mt-10 sm:text-[45px]">
+            Who We Are?
+          </span>
+        </div>
         <div className="absolute left-0 top-5 z-20 flex h-fit w-full flex-row justify-between px-28 text-white xl:px-6 sm:flex-col sm:gap-2 sm:px-4">
           <h1 className="text-2xl font-bold">BUSINESS</h1>
           <Nav />
@@ -53,7 +58,7 @@ export default function page() {
       </div>
       <div className="relative my-4">
         <hr className="mx-auto w-[96%] border-[#1B367C] sm:hidden"></hr>
-        <div className="absolute left-1/2 top-1/2 flex -translate-x-1/2 -translate-y-1/2 flex-row items-center justify-center gap-2 rounded-full bg-gradient-to-r from-[#1C3880] to-[#3061DE] px-6 py-1.5 shadow-[rgba(216,215,215,1)_0px_4px_8px_4px] sm:w-[90%]">
+        <div className="absolute left-1/2 top-1/2 flex -translate-x-1/2 -translate-y-1/2 flex-row items-center justify-center gap-2 rounded-full bg-gradient-to-r from-[#1C3880] to-[#3061DE] px-6 py-1.5 shadow-[rgba(216,215,215,1)_0px_4px_8px_4px] sm:w-[calc(_100vw_-_3rem)]">
           <Image
             alt="Talk"
             src="/assets/images/practice/aboutus/talk-icon.png"
@@ -116,8 +121,8 @@ export default function page() {
       </div>
       <div className="relative mb-20 mt-8 xl:mb-16 xl:mt-6">
         <hr className="mx-auto w-[96%] border-[#1B367C] sm:hidden"></hr>
-        <div className="absolute left-1/2 top-1/2 flex -translate-x-1/2 -translate-y-1/2 flex-row items-center gap-2 rounded-full bg-gradient-to-r from-[#1C3880] to-[#3061DE] px-6 py-1.5 shadow-[rgba(216,215,215,1)_0px_4px_8px_4px] sm:w-[90%]">
-          <span className="whitespace-nowrap text-lg font-extralight text-white underline decoration-1 underline-offset-4">
+        <div className="absolute left-1/2 top-1/2 flex -translate-x-1/2 -translate-y-1/2 flex-row items-center justify-center gap-2 rounded-full bg-gradient-to-r from-[#1C3880] to-[#3061DE] px-6 py-1.5 shadow-[rgba(216,215,215,1)_0px_4px_8px_4px] sm:w-[calc(_100vw_-_3rem)]">
+          <span className="w-fit whitespace-nowrap text-lg font-extralight text-white underline decoration-1 underline-offset-4">
             Book Free Consultation
           </span>
         </div>

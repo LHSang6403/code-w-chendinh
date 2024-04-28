@@ -12,6 +12,11 @@ export default function page() {
             Services
           </span>
         </div>
+        <div className="absolute left-0 right-0 top-0 z-10 flex h-full w-full items-center justify-center">
+          <span className="text-[80px] font-bold text-white xl:text-[65px] sm:mt-10 sm:text-[45px]">
+            Services
+          </span>
+        </div>
         <div className="absolute left-0 top-5 z-20 flex h-fit w-full flex-row justify-between px-28 text-white xl:px-6 sm:flex-col sm:gap-2 sm:px-4">
           <h1 className="text-2xl font-bold">BUSINESS</h1>
           <Nav />
@@ -70,7 +75,7 @@ export default function page() {
             From humble beginnings to industry leadership, we’ve taken bold
             steps towards excellence.{" "}
           </p>
-          <div className="absolute -bottom-16 left-0 flex h-fit w-fit flex-row items-center gap-2 rounded-md rounded-br-[35px] bg-gradient-to-r from-[#22207F] to-[#0A80B2] py-1 pl-4 pr-24 sm:-bottom-20">
+          <div className="absolute -bottom-16 left-0 flex h-fit w-fit flex-row items-center gap-2 rounded-md rounded-br-[35px] bg-gradient-to-r from-[#22207F] to-[#0A80B2] py-1 pl-4 pr-24 sm:-bottom-20 sm:pr-4">
             <Image
               alt="Award"
               src="/assets/images/practice/services/award.png"
@@ -107,7 +112,7 @@ export default function page() {
       </div>
       <div className="relative flex justify-center pb-20 pt-32 xl:pb-16">
         <div className="absolute -right-[300px] -top-16 z-0 h-[550px] w-[550px] rounded-full bg-[#DFE1E8]"></div>
-        <div className="absolute right-56 top-4 -rotate-[40deg]">
+        <div className="absolute right-56 top-4 -rotate-[40deg] sm:right-10">
           <Image
             alt="Decor"
             src="/assets/images/practice/bg-decor.png"
@@ -115,7 +120,7 @@ export default function page() {
             height={120}
           />
         </div>
-        <div className="absolute left-52 top-4">
+        <div className="absolute left-52 top-4 sm:left-12">
           <Image
             alt="Decor"
             src="/assets/images/practice/bg-decor.png"
@@ -166,7 +171,7 @@ export default function page() {
       </div>
       <div className="relative mb-20 mt-4">
         <hr className="mx-auto w-[96%] border-[#1B367C] sm:hidden"></hr>
-        <div className="absolute left-1/2 top-1/2 flex -translate-x-1/2 -translate-y-1/2 flex-row items-center justify-center gap-2 rounded-full bg-gradient-to-r from-[#1C3880] to-[#3061DE] px-10 py-1.5 shadow-[rgba(216,215,215,1)_0px_4px_8px_4px] sm:w-[90%]">
+        <div className="absolute left-1/2 top-1/2 flex -translate-x-1/2 -translate-y-1/2 flex-row items-center justify-center gap-2 rounded-full bg-gradient-to-r from-[#1C3880] to-[#3061DE] px-10 py-1.5 shadow-[rgba(216,215,215,1)_0px_4px_8px_4px] sm:w-[calc(100vw_-_3rem)]">
           <span className="whitespace-nowrap text-lg font-extralight text-white underline decoration-1 underline-offset-4">
             Book Free Consultation
           </span>

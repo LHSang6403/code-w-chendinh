@@ -138,14 +138,14 @@ export default function Forms() {
               <FormControl>
                 <Textarea
                   placeholder="Describe your message here"
-                  className="min-h-36 rounded-none border-l-0 border-r-0 border-t-0 border-b-[#898989] bg-transparent px-0 text-base font-light text-[#D3D1D1]"
+                  className="min-h-36 resize-none rounded-none border-l-0 border-r-0 border-t-0 border-b-[#898989] bg-transparent px-0 text-base font-light text-[#D3D1D1]"
                 />
               </FormControl>
               <FormMessage />
             </FormItem>
           )}
         />
-        <Button className="w-fit rounded bg-[#1A367C] px-6 py-7 text-xl font-normal text-white">
+        <Button className="w-fit rounded bg-[#1A367C] px-8 py-7 text-xl font-normal text-white">
           Send message
         </Button>
       </form>
