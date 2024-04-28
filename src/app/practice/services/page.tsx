@@ -25,7 +25,7 @@ export default function page() {
           className="xl:h-[400px] xl:object-cover"
         />
       </div>
-      <div className="relative flex flex-row justify-center gap-10 py-16 xl:flex-col-reverse xl:px-6 sm:px-4 sm:pb-16 sm:pt-12">
+      <div className="relative flex flex-row justify-center gap-10 py-16 xl:flex-col-reverse xl:px-6 sm:px-4 sm:pb-16">
         <div className="absolute -left-44 top-20 z-0 h-80 w-80 rounded-full bg-[#DEE0E7]"></div>
         <div className="z-10 flex h-fit w-[520px] flex-col bg-white shadow-[rgba(216,215,215,1)_0px_4px_8px_4px] xl:mt-16 xl:w-full">
           <div className="flex h-28 flex-row items-center gap-6 px-10 xl:justify-center">
