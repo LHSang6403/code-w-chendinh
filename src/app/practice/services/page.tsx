@@ -61,7 +61,7 @@ export default function page() {
             </p>
           </div>
         </div>
-        <div className="relative h-full w-fit xl:-mt-6 xl:w-full">
+        <div className="relative h-full w-fit xl:-mt-6 xl:w-full sm:pb-10">
           <div className="mr-auto w-fit rounded-full bg-gradient-to-r from-[#1B377D] to-[#3060DB] px-6 py-1 text-2xl font-medium text-white">
             The Way We Work
           </div>
@@ -75,7 +75,7 @@ export default function page() {
             From humble beginnings to industry leadership, we’ve taken bold
             steps towards excellence.{" "}
           </p>
-          <div className="absolute -bottom-16 left-0 flex h-fit w-fit flex-row items-center gap-2 rounded-md rounded-br-[35px] bg-gradient-to-r from-[#22207F] to-[#0A80B2] py-1 pl-4 pr-24 sm:-bottom-20 sm:pr-4">
+          <div className="absolute -bottom-16 left-0 flex h-fit w-fit flex-row items-center gap-2 rounded-md rounded-br-[35px] bg-gradient-to-r from-[#22207F] to-[#0A80B2] py-1 pl-4 pr-24 sm:-bottom-16 sm:pr-4">
             <Image
               alt="Award"
               src="/assets/images/practice/services/award.png"
