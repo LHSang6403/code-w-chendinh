@@ -72,7 +72,7 @@ export default function page() {
           <h2 className="text-4xl font-semibold">
             Driving Business <br></br> Excellence
           </h2>
-          <p className="max-w-[80%] sm:max-w-full">
+          <p className="max-w-[80%] xl:max-w-full">
             Expert consultation for your business growth: we provide
             personalized strategies to navigate your business towards success.
             Our mission is to unlock your potential and transform your vision

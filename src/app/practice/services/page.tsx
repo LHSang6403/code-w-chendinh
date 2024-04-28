@@ -7,11 +7,7 @@ export default function page() {
   return (
     <div className="flex h-auto w-full max-w-[1600px] flex-col overflow-hidden bg-[#F5F4F4]">
       <div className="relative">
-        <div className="absolute left-0 right-0 top-0 z-10 flex h-full w-full items-center justify-center bg-black opacity-60">
-          <span className="text-[80px] font-bold text-white xl:text-[65px] sm:mt-10 sm:text-[45px]">
-            Services
-          </span>
-        </div>
+        <div className="absolute left-0 right-0 top-0 z-10 flex h-full w-full items-center justify-center bg-black opacity-60"></div>
         <div className="absolute left-0 right-0 top-0 z-10 flex h-full w-full items-center justify-center">
           <span className="text-[80px] font-bold text-white xl:text-[65px] sm:mt-10 sm:text-[45px]">
             Services
@@ -29,7 +25,7 @@ export default function page() {
           className="xl:h-[400px] xl:object-cover"
         />
       </div>
-      <div className="relative flex flex-row justify-center gap-10 py-16 xl:flex-col-reverse xl:px-6 sm:px-4">
+      <div className="relative flex flex-row justify-center gap-10 py-16 xl:flex-col-reverse xl:px-6 sm:px-4 sm:pb-16 sm:pt-12">
         <div className="absolute -left-44 top-20 z-0 h-80 w-80 rounded-full bg-[#DEE0E7]"></div>
         <div className="z-10 flex h-fit w-[520px] flex-col bg-white shadow-[rgba(216,215,215,1)_0px_4px_8px_4px] xl:mt-16 xl:w-full">
           <div className="flex h-28 flex-row items-center gap-6 px-10 xl:justify-center">
@@ -61,7 +57,7 @@ export default function page() {
             </p>
           </div>
         </div>
-        <div className="relative h-full w-fit xl:-mt-6 xl:w-full sm:pb-10">
+        <div className="relative h-full w-fit xl:-mt-6 xl:w-full sm:pb-6">
           <div className="mr-auto w-fit rounded-full bg-gradient-to-r from-[#1B377D] to-[#3060DB] px-6 py-1 text-2xl font-medium text-white">
             The Way We Work
           </div>
@@ -82,7 +78,9 @@ export default function page() {
               width={40}
               height={40}
             />
-            <div className="text-2xl text-white">Winner Agency of Decade</div>
+            <div className="text-2xl text-white">
+              Winner Agency of <br className="hidden sm:visible"></br> Decade
+            </div>
           </div>
         </div>
       </div>
@@ -110,7 +108,7 @@ export default function page() {
       <div className="z-10 flex justify-center bg-[#1A367C]">
         <Cards />
       </div>
-      <div className="relative flex justify-center pb-20 pt-32 xl:pb-16">
+      <div className="relative flex justify-center pb-20 pt-32 xl:pb-16 sm:pb-12">
         <div className="absolute -right-[300px] -top-16 z-0 h-[550px] w-[550px] rounded-full bg-[#DFE1E8]"></div>
         <div className="absolute right-56 top-4 -rotate-[40deg] sm:right-10">
           <Image
@@ -129,7 +127,7 @@ export default function page() {
           />
         </div>
         <div className="z-10 w-fit xl:px-6 sm:px-4">
-          <div className="ml-auto w-fit rounded-full bg-gradient-to-r from-[#1B377D] to-[#3060DB] px-6 py-1 text-3xl font-medium text-white sm:mx-4 sm:text-2xl">
+          <div className="ml-auto w-fit rounded-full bg-gradient-to-r from-[#1B377D] to-[#3060DB] px-6 py-1 text-3xl font-medium text-white sm:mx-0 sm:w-full sm:text-2xl">
             FREQUENTLY ASKED QUESTIONS
           </div>
           <div className="mt-6 flex flex-row items-start justify-center gap-10 lg:flex-col lg:items-center">
@@ -169,7 +167,7 @@ export default function page() {
           </div>
         </div>
       </div>
-      <div className="relative mb-20 mt-4">
+      <div className="relative mb-20 mt-4 sm:mb-16">
         <hr className="mx-auto w-[96%] border-[#1B367C] sm:hidden"></hr>
         <div className="absolute left-1/2 top-1/2 flex -translate-x-1/2 -translate-y-1/2 flex-row items-center justify-center gap-2 rounded-full bg-gradient-to-r from-[#1C3880] to-[#3061DE] px-10 py-1.5 shadow-[rgba(216,215,215,1)_0px_4px_8px_4px] sm:w-[calc(100vw_-_3rem)]">
           <span className="whitespace-nowrap text-lg font-extralight text-white underline decoration-1 underline-offset-4">
