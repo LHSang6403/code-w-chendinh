@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function LeftBanner() {
   return (
-    <div className="z-10 flex h-fit w-1/2 justify-center pl-32 pr-10 xl:w-full xl:px-10 lg:-ml-6 lg:mb-20 sm:-ml-12 sm:px-0">
+    <div className="z-10 flex h-fit w-1/2 justify-center pl-32 pr-10 xl:w-full xl:px-10 lg:-ml-6 lg:mb-20 sm:-ml-8   sm:px-0">
       <div className="relative h-fit w-fit">
         <div className="relative sm:w-full">
           <Image
@@ -10,7 +10,7 @@ export default function LeftBanner() {
             src="/assets/images/practice/aboutus/people1.png"
             width={350}
             height={450}
-            className="lg:w-[380px] sm:w-44"
+            className="lg:w-[380px] sm:w-52"
           />
           <div className="absolute left-0 top-0 h-full w-full rounded-xl bg-black opacity-30"></div>
         </div>
