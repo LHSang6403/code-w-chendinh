@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function People() {
   return (
-    <div className="mx-auto grid w-fit grid-cols-3 gap-3 xl:w-full xl:grid-cols-1 xl:gap-24 sm:pr-4 sm:pl-12">
+    <div className="mx-auto grid w-fit grid-cols-3 gap-3 xl:w-full xl:grid-cols-1 xl:gap-24 sm:pl-12 sm:pr-5">
       {Array.from({ length: 3 }, (_, index) => (
         <div
           key={index}

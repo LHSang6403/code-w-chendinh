@@ -52,7 +52,7 @@ export default function page() {
         />
       </div>
       <div className="z-10 px-10 pb-16 pt-4 xl:px-6 sm:px-4">
-        <div className="w-fit rounded-full bg-gradient-to-r from-[#1B377D] to-[#3060DB] px-6 py-1 text-3xl font-medium text-white xl:mx-auto xl:mt-4 sm:mx-4 sm:text-2xl">
+        <div className="w-fit rounded-full bg-gradient-to-r from-[#1B377D] to-[#3060DB] px-6 py-1 text-3xl font-medium text-white xl:mx-auto xl:mt-4 sm:mx-0 sm:w-full sm:text-2xl">
           GET IN TOUCH WITH US
         </div>
         <div className="relative flex w-full flex-col items-center">
@@ -83,7 +83,7 @@ export default function page() {
       </div>
       <div className="relative z-10 mb-20 mt-4 sm:-mt-2 sm:mb-16">
         <hr className="mx-10 w-auto border-[#1B367C] xl:mx-6 sm:mx-4 sm:hidden"></hr>
-        <div className="absolute left-1/2 top-1/2 flex -translate-x-1/2 -translate-y-1/2 flex-row items-center justify-center gap-2 rounded-full bg-gradient-to-r from-[#1C3880] to-[#3061DE] px-10 py-1.5 shadow-[rgba(216,215,215,1)_0px_4px_8px_4px] sm:w-[calc(_100vw_-_2.5rem)]">
+        <div className="absolute left-1/2 top-1/2 flex -translate-x-1/2 -translate-y-1/2 flex-row items-center justify-center gap-2 rounded-full bg-gradient-to-r from-[#1C3880] to-[#3061DE] px-10 py-1.5 shadow-[rgba(216,215,215,1)_0px_4px_8px_4px] sm:w-[calc(_100vw_-_2rem)]">
           <span className="whitespace-nowrap text-lg font-extralight text-white underline decoration-1 underline-offset-4">
             Book Free Consultation
           </span>
