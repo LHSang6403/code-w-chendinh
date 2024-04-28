@@ -2,11 +2,11 @@ import Image from "next/image";
 
 export default function People() {
   return (
-    <div className="mx-auto grid w-fit grid-cols-3 gap-3 xl:w-full xl:grid-cols-1 xl:gap-24 sm:pl-4">
+    <div className="mx-auto grid w-fit grid-cols-3 gap-3 xl:w-full xl:grid-cols-1 xl:gap-24 sm:pr-4 sm:pl-12">
       {Array.from({ length: 3 }, (_, index) => (
         <div
           key={index}
-          className="relative h-52 w-60 rounded-xl bg-[#FFFEFE] shadow-[rgba(216,215,215,1)_0px_0px_10px_5px] xl:mx-auto xl:w-[80%]"
+          className="relative h-52 w-60 rounded-xl bg-[#FFFEFE] shadow-[rgba(216,215,215,1)_0px_0px_10px_5px] xl:mx-auto xl:w-[80%] sm:w-full"
         >
           <div className="absolute -top-10 left-[50%] translate-x-[-50%]">
             <Image
