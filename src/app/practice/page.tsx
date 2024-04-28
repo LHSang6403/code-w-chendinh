@@ -17,7 +17,7 @@ export default function page() {
           <Nav />
         </div>
         <div className="absolute left-28 top-[30%] h-fit xl:!bottom-6 xl:left-6 xl:top-auto sm:left-4">
-          <h1 className="text-[67px] font-bold leading-tight xl:text-[40px] sm:text-xl">
+          <h1 className="text-[67px] font-bold leading-tight xl:text-[40px] sm:text-2xl">
             Unleashing Potential <br></br> With Innovative Business <br></br>{" "}
             Solutions
           </h1>
