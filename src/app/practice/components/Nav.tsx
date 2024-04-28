@@ -21,7 +21,7 @@ export default function Nav() {
           key={index}
           onClick={() => router.push(href)}
           className={`w-fit hover:cursor-pointer ${
-            pathname === href ? "border-b-[4px]" : ""
+            pathname === href ? "border-b-[4px] pt-[4px]" : ""
           } px-1.5 sm:px-0`}
         >
           {label}
