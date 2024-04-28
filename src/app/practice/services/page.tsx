@@ -61,7 +61,7 @@ export default function page() {
           <div className="mr-auto w-fit rounded-full bg-gradient-to-r from-[#1B377D] to-[#3060DB] px-6 py-1 text-2xl font-medium text-white">
             The Way We Work
           </div>
-          <h1 className="mt-6 text-3xl font-semibold text-[#514B4B]">
+          <h1 className="mt-6 text-4xl font-semibold text-[#514B4B] sm:text-3xl">
             Achieving Your Business <br></br> Goals Efficiently
           </h1>
           <p className="mt-4 max-w-[670px] font-light leading-[38px] text-[#898989] xl:max-w-full">

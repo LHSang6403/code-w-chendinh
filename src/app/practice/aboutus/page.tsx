@@ -40,7 +40,7 @@ export default function page() {
           About Company
         </div>
         <div className="mb-16 mt-12 flex flex-row items-center justify-between xl:items-start xl:gap-4 sm:mb-10 sm:mt-8 sm:flex-col">
-          <h2 className="text-4xl font-semibold text-[#514B4B] xl:w-1/2 sm:w-full">
+          <h2 className="text-4xl font-semibold text-[#514B4B] xl:w-1/2 sm:w-full sm:text-3xl">
             Discover Our Story of <br className="xl:hidden"></br> Success
           </h2>
           <p className="font-light leading-8 text-[#898989] xl:w-1/2 sm:w-full">
@@ -81,7 +81,7 @@ export default function page() {
           <div className="mr-auto w-fit rounded-full bg-gradient-to-r from-[#1B377D] to-[#3060DB] px-6 py-1 text-2xl font-medium text-white">
             Our Values
           </div>
-          <h2 className="mt-2 text-4xl font-semibold text-[#514B4B]">
+          <h2 className="mt-2 text-4xl font-semibold text-[#514B4B] sm:text-3xl">
             Empowering Success <br className="xl:hidden"></br> Through
             Insightful <br className="xl:hidden"></br> Solutions
           </h2>
@@ -110,7 +110,7 @@ export default function page() {
         </div>
       </div>
       <div className="w-full">
-        <h1 className="mx-4 text-center text-4xl font-semibold text-[#514B4B]">
+        <h1 className="mx-4 text-center text-4xl font-semibold text-[#514B4B] sm:text-3xl">
           We Are Here to Help You
         </h1>
         <People />

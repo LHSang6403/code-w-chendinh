@@ -34,7 +34,7 @@ export default function page() {
         />
       </div>
       <div className="flex flex-row items-center justify-between gap-10 px-10 pb-8 pt-16 xl:flex-col xl:px-6 sm:gap-6 sm:px-4 sm:py-6">
-        <h1 className="text-4xl font-medium text-[#514B4B] sm:text-3xl">
+        <h1 className="text-4xl font-semibold text-[#514B4B] sm:text-3xl">
           Want to make your business better? Contact us today!
         </h1>
         <p className="text-lg font-light text-[#898989]">
@@ -72,7 +72,7 @@ export default function page() {
               height={140}
             />
           </div>
-          <h1 className="mb-16 mt-12 text-4xl text-[#514B4B] sm:mb-12 sm:text-3xl">
+          <h1 className="mb-16 mt-12 text-4xl font-semibold text-[#514B4B] sm:mb-12 sm:text-3xl">
             How we can assist you?
           </h1>
           <Forms />
