@@ -24,7 +24,7 @@ export default function page() {
           <p className="mb-7 mr-4 mt-3 text-xl xl:mb-4 xl:mt-1 sm:text-sm">
             Transforming visions into reality: your success is our mission
           </p>
-          <Button className="w-fit rounded-xl bg-white text-base hover:bg-white text-[#0D0B56]">
+          <Button className="w-fit rounded-xl bg-white text-base text-[#0D0B56] hover:bg-white">
             Contact us today
           </Button>
         </div>
@@ -83,7 +83,7 @@ export default function page() {
           </Button>
         </div>
       </div>
-      <div className="relative flex flex-col items-center gap-12 py-6">
+      <div className="relative flex flex-col items-center gap-12 pb-6 pt-8">
         <div className="absolute -top-28 -z-10 h-fit pt-2 text-[380px] font-extrabold tracking-[2rem] text-[#F0EFEF]">
           RATF
         </div>
@@ -95,7 +95,7 @@ export default function page() {
             height={145}
           />
         </div>
-        <h1 className="mb-4 text-4xl font-bold text-[#0D0B56] sm:text-3xl">
+        <h1 className="mb-6 text-4xl font-bold text-[#0D0B56] sm:text-3xl">
           testomonials
         </h1>
         <People />
