@@ -79,7 +79,7 @@ export default function page() {
               height={40}
             />
             <div className="text-2xl text-white">
-              Winner Agency of <br className="hidden sm:visible"></br> Decade
+              Winner Agency of <br className="hidden sm:block"></br> Decade
             </div>
           </div>
         </div>
