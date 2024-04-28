@@ -113,7 +113,9 @@ export default function page() {
         <h1 className="mx-4 text-center text-4xl font-semibold text-[#514B4B] sm:text-3xl">
           We Are Here to Help You
         </h1>
-        <People />
+        <div className="flex justify-center">
+          <People />
+        </div>
       </div>
       <div className="relative mb-20 mt-8 xl:mb-16 xl:mt-6">
         <hr className="mx-auto w-[96%] border-[#1B367C] sm:hidden"></hr>

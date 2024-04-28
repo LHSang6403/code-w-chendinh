@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function People() {
   return (
-    <div className="mx-6 my-12 grid w-fit grid-cols-4 justify-center gap-3 xl:mx-auto xl:grid-cols-2 xl:gap-6 sm:mx-4 sm:grid-cols-1 sm:gap-4 sm:px-0">
+    <div className="mx-6 my-12 grid w-fit grid-cols-4 justify-center gap-3 xl:grid-cols-2 xl:gap-6 sm:mx-4 sm:grid-cols-1 sm:gap-4 sm:px-0">
       {Array.from({ length: 4 }).map((_, index) => (
         <div key={index} className="relative">
           <Image
