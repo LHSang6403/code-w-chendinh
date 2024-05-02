@@ -12,7 +12,7 @@ export default function Header() {
       </div>
       <nav className="w-full flex flex-row gap-6 justify-end sm:justify-center items-center border-b border-b-foreground/10">
         <NavBar />
-        <SearchBar />
+        {/* <SearchBar /> */}
       </nav>
       <div className="flex items-center gap-2">
         <ThemeButton />
