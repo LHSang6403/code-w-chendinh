@@ -3,22 +3,101 @@ import Image from "next/image";
 
 export default function Header() {
   return (
-    <header className="flex w-full flex-row items-center justify-between py-3">
-      <div className="w-44">
-        <Image
-          alt="Raycast"
-          src="/assets/images/practice2/raycast.png"
-          width={120}
-          height={80}
-        ></Image>
+    <header className="w-full">
+      <div className="flex w-full flex-row items-center justify-between py-3 xl:pb-0">
+        <div className="w-44 xl:w-fit">
+          <Image
+            alt="Raycast"
+            src="/assets/images/practice2/raycast.png"
+            width={120}
+            height={80}
+          ></Image>
+        </div>
+        <div className="flex flex-row xl:hidden">
+          <Button
+            variant="ghost"
+            className="border-none text-[16px] font-light text-[#A19AA7]"
+          >
+            Store
+          </Button>
+          <Button
+            variant="ghost"
+            className="border-none text-[16px] font-light text-[#A19AA7]"
+          >
+            Developer
+          </Button>
+          <Button
+            variant="ghost"
+            className="border-none text-[16px] font-light text-[#A19AA7]"
+          >
+            Teams
+          </Button>
+          <Button
+            variant="ghost"
+            className="flex flex-row gap-1 border-none text-[16px] font-light text-[#A19AA7]"
+          >
+            <span>Pro</span>
+            <Image
+              alt="Raycast"
+              src="/assets/images/practice2/new.png"
+              width={35}
+              height={30}
+            ></Image>
+          </Button>
+          <Button
+            variant="ghost"
+            className="border-none text-[16px] font-light text-[#A19AA7]"
+          >
+            Changelog
+          </Button>
+          <Button
+            variant="ghost"
+            className="border-none text-[16px] font-light text-[#A19AA7]"
+          >
+            Pricing
+          </Button>
+          <Button
+            variant="ghost"
+            className="border-none text-[16px] font-light text-[#A19AA7]"
+          >
+            Blog
+          </Button>
+        </div>
+        <div className="flex w-44 flex-row items-center justify-end xl:w-fit">
+          <Button
+            variant="ghost"
+            className="border-none text-[16px] font-light text-[#A19AA7]"
+          >
+            Log in
+          </Button>
+          <Button className="h-fit border-none bg-gradient-to-r from-[#160E22] to-[#120E1B] py-1.5 text-[16px] font-light text-[#A19AA7]">
+            Download
+          </Button>
+        </div>
       </div>
-      <div className="flex flex-row">
-        <Button className="bg- border-none font-light text-white">Store</Button>
-        <Button className="bg- border-none font-light text-white">
+      <div className="hidden w-full flex-row justify-center overflow-x-auto xl:flex">
+        <Button
+          variant="ghost"
+          className="border-none text-[16px] font-light text-[#A19AA7]"
+        >
+          Store
+        </Button>
+        <Button
+          variant="ghost"
+          className="border-none text-[16px] font-light text-[#A19AA7]"
+        >
           Developer
         </Button>
-        <Button className="bg- border-none font-light text-white">Teams</Button>
-        <Button className="bg- flex flex-row gap-1 border-none font-light text-white">
+        <Button
+          variant="ghost"
+          className="border-none text-[16px] font-light text-[#A19AA7]"
+        >
+          Teams
+        </Button>
+        <Button
+          variant="ghost"
+          className="flex flex-row gap-1 border-none text-[16px] font-light text-[#A19AA7]"
+        >
           <span>Pro</span>
           <Image
             alt="Raycast"
@@ -27,20 +106,23 @@ export default function Header() {
             height={30}
           ></Image>
         </Button>
-        <Button className="bg- border-none font-light text-white">
+        <Button
+          variant="ghost"
+          className="border-none text-[16px] font-light text-[#A19AA7]"
+        >
           Changelog
         </Button>
-        <Button className="bg- border-none font-light text-white">
+        <Button
+          variant="ghost"
+          className="border-none text-[16px] font-light text-[#A19AA7]"
+        >
           Pricing
         </Button>
-        <Button className="bg- border-none font-light text-white">Blog</Button>
-      </div>
-      <div className="flex w-44 flex-row justify-end">
-        <Button className="bg- border-none font-light text-white">
-          Log in
-        </Button>
-        <Button className="bg- border-none font-light text-white">
-          Download
+        <Button
+          variant="ghost"
+          className="border-none text-[16px] font-light text-[#A19AA7]"
+        >
+          Blog
         </Button>
       </div>
     </header>

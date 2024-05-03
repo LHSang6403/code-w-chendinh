@@ -15,7 +15,9 @@ export default function SocialForm() {
               height={25}
             />
           </div>
-          <h3 className="text-sm font-medium text-white">Stay up to date</h3>
+          <h3 className="-mb-2 text-sm font-medium text-white">
+            Stay up to date
+          </h3>
           <p className="text-sm font-light text-[#A6B2C2]">
             We’d love to stay connected with you. If the feeling’s mutual,
             follow <span className="font-medium text-white">@raycastapp</span>{" "}
@@ -31,7 +33,7 @@ export default function SocialForm() {
               height={25}
             />
           </div>
-          <h3 className="text-sm font-medium text-white">
+          <h3 className="-mb-3 text-sm font-medium text-white">
             Help shape the product
           </h3>
           <p className="text-sm font-light text-[#A6B2C2]">
@@ -56,7 +58,9 @@ export default function SocialForm() {
               placeholder="james@java-lang.ca"
               className="border-[#1D1924] bg-[#120E19] opacity-60"
             ></Input>
-            <Button className="bg-[#CFCFD1] px-8 font-light">Subscribe</Button>
+            <Button className="bg-[#CFCFD1] px-8 text-sm font-light">
+              Subscribe
+            </Button>
           </div>
           <p className="text-[14px] font-light text-[#69676E]">
             By submitting your email address, you agree to receive Raycast’s

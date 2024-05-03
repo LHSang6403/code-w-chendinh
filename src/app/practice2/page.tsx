@@ -18,7 +18,7 @@ export default function page() {
         width={1000}
         height={1000}
       ></Image>
-      <div className="absolute top-6">
+      <div className="absolute -top-10">
         <Image
           alt="Decor"
           src="/assets/images/practice2/bg.png"
@@ -26,34 +26,39 @@ export default function page() {
           height={1000}
           className="opacity-10"
         ></Image>
+        <div className="relative">
+          <div className="absolute -top-[600px] left-24 h-[350px] w-[350px] rounded-full bg-[#F73A4B] opacity-20 shadow-[rgba(247,58,75,100)_0px_0px_400px_150px]"></div>
+          <div className="absolute -top-[900px] right-24 h-[400px] w-[350px] rounded-full bg-[#7000FF] opacity-20 shadow-[rgba(112,0,255,100)_0px_0px_400px_150px]"></div>
+          <div className="absolute -top-[494px] mt-4 w-full text-center">
+            <h1 className="w-full text-6xl font-bold leading-[80px] text-white">
+              <span className="w-full bg-gradient-to-r from-[#F73A4B] to-[#7000FF] bg-clip-text px-4 text-center italic text-transparent">
+                Supercharged
+              </span>{" "}
+              <br></br>
+              productivity
+            </h1>
+            <p className="mt-3 font-light text-[#86727A]">
+              Raycast is a blazingly fast, totally extendable launcher. It lets
+              you
+              <br></br>
+              complete tasks, calculate, share common links, and much more.
+            </p>
+          </div>
+        </div>
       </div>
-      <div className="absolute left-36 top-80 h-[350px] w-[350px] rounded-full bg-[#F73A4B] opacity-20 shadow-[rgba(247,58,75,100)_0px_0px_400px_150px]"></div>
-      <div className="absolute right-28 top-12 h-[400px] w-[400px] rounded-full bg-[#7000FF] opacity-20 shadow-[rgba(112,0,255,100)_0px_0px_400px_150px]"></div>
-      <div className="absolute top-[590px] w-full text-center">
-        <h1 className="w-full text-[70px] font-bold leading-[65px] text-white">
-          <span className="w-full bg-gradient-to-r from-[#F73A4B] to-[#7000FF] bg-clip-text px-4 text-center italic text-transparent">
-            Supercharged
-          </span>{" "}
-          <br></br>
-          productivity
-        </h1>
-        <p className="mt-3 font-light text-[#86727A]">
-          Raycast is a blazingly fast, totally extendable launcher. It lets you
-          <br></br>
-          complete tasks, calculate, share common links, and much more.
-        </p>
-      </div>
-      <div className="mt-56 flex flex-col items-center justify-center">
+      <div className="mt-36 flex flex-col items-center justify-center pt-2">
         <Button className="bg-white px-6">Download for Mac</Button>
-        <div className="mt-4 flex flex-row justify-center gap-4 text-[12px] font-extralight text-white">
+        <div className="mt-4 flex flex-row items-center justify-center gap-4 text-[12px] font-extralight text-[#756B76]">
           <div>v1.70.3</div>
-          <div className="border-l border-r border-white px-4">macOS 12+</div>
+          <div className="h-2 w-[0.5px] bg-[#756B76]"></div>
+          <div>macOS 12+</div>
+          <div className="h-2 w-[0.5px] bg-[#756B76]"></div>
           <div>Install via Homebrew</div>
         </div>
       </div>
       <div className="mt-28">
         <div className="h-full w-full rounded-xl bg-gradient-to-r from-[#882E20] to-[#62042D] p-[4px] shadow-[rgba(46,10,19,100)_0px_0px_8px_4px]">
-          <div className="flex flex-row items-center justify-between rounded-[12px] border-[#321D20] bg-[#1E060A] py-8">
+          <div className="flex flex-row items-center justify-between gap-16 rounded-[12px] border-[#321D20] bg-[#1E060A] px-10 py-8 sm:flex-col sm:gap-8">
             <div className="text-white">
               <h2 className="text-xl">Raycast Merch</h2>
               <p className="mt-2 text-sm text-[#D2C0C8]">
@@ -70,13 +75,13 @@ export default function page() {
         </div>
       </div>
       <EasyInstalled />
-      <Productivity />
-      <YourRaycat />
-      <RaycatTeams />
-      <ProductivityLevelled />
-      <MoreFocus />
-      <TakeOff />
-      <SocialForm />
+      {/* <Productivity /> */}
+      {/* <YourRaycat /> */}
+      {/* <RaycatTeams /> */}
+      {/* <ProductivityLevelled /> */}
+      {/* <MoreFocus /> */}
+      {/* <TakeOff /> */}
+      {/* <SocialForm /> */}
     </div>
   );
 }

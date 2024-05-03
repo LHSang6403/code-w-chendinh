@@ -5,20 +5,48 @@ import Link from "next/link";
 export default function Productivity() {
   return (
     <>
-      <div className="">
+      <div className="mt-36">
         <div className="flex flex-col items-center gap-8">
-          <h1 className="text-center text-4xl font-bold text-white">
-            Put the Pro<br></br> in Productivity
+          <h1 className="text-center text-4xl font-semibold text-white">
+            Put the{" "}
+            <div className="relative inline-block">
+              <div className="absolute -right-[22px] -top-[20px] h-20 w-24">
+                <Image
+                  alt="Blur"
+                  src="/assets/images/practice2/red-drop.png"
+                  width={400}
+                  height={150}
+                />
+              </div>
+              <span className="text-[#FFE2E2] shadow-red-500 [text-shadow:0.5px_1px_10px_var(--tw-shadow-color)]">
+                Pro
+              </span>
+            </div>
+            <br></br> in{" "}
+            <div className="relative inline-block">
+              <div className="absolute -right-[22px] -top-[20px] h-20 w-24">
+                <Image
+                  alt="Blur"
+                  src="/assets/images/practice2/red-drop.png"
+                  width={400}
+                  height={150}
+                />
+              </div>
+              <span className="text-[#FFE2E2] shadow-red-500 [text-shadow:0.5px_1px_10px_var(--tw-shadow-color)]">
+                Pro
+              </span>
+            </div>
+            ductivity
           </h1>
-          <p className="-mt-2 text-center text-sm font-extralight text-[#9B999E]">
+          <p className="-mt-2 text-center font-light text-[#9B999E]">
             Turn Pro to harness the power of AI, make Raycast your own with
             custom themes,<br></br> keep your Macs in sync and more.
           </p>
-          <Button className="h-fit rounded-full border border-[#5F4451] bg-gradient-to-r from-[#432331] to-[#41323B] py-1.5 text-white">
+          <Button className="h-fit rounded-full border border-[#5F4451] bg-gradient-to-r from-[#432331] to-[#41323B] py-1.5 text-sm font-light text-white">
             Introducing Pro {"->"}
           </Button>
         </div>
-        <div className="relative mt-36">
+        <div className="relative mt-32">
           <div className="absolute -top-24 left-1/2 -translate-x-1/2">
             <Image
               alt="Code"
@@ -45,7 +73,7 @@ export default function Productivity() {
             width={400}
             height={400}
           />
-          <h3 className="px-3.5 text-lg font-semibold">Always-on ChatGPT</h3>
+          <h3 className="px-3.5 text-base font-semibold">Always-on ChatGPT</h3>
           <p className="px-3.5 text-sm font-light text-[#D0CFD1]">
             Ask anything, anytime, anywhere. Stuck while programming? Need some
             copy? Or just have a question - Ask AI.
@@ -58,7 +86,7 @@ export default function Productivity() {
             width={400}
             height={400}
           />
-          <h3 className="px-3.5 text-lg font-semibold">Cloud Sync</h3>
+          <h3 className="px-3.5 text-base font-semibold">Cloud Sync</h3>
           <p className="px-3.5 text-sm font-light text-[#D0CFD1]">
             Keep everything safe and updated across your Macs. Perfect to switch
             between personal and work setup.
@@ -71,7 +99,9 @@ export default function Productivity() {
             width={400}
             height={400}
           />
-          <h3 className="px-3.5 text-lg font-semibold">Custom Themes & more</h3>
+          <h3 className="px-3.5 text-base font-semibold">
+            Custom Themes & more
+          </h3>
           <p className="px-3.5 text-sm font-light text-[#D0CFD1]">
             Make Raycast your own with gorgeous pre-made themes or design your
             own and share it with the community.
@@ -79,7 +109,7 @@ export default function Productivity() {
         </div>
       </div>
       <div className="my-10">
-        <Link href="#" className="text-sm font-light text-white">
+        <Link href="#" className="text-sm font-extralight text-white">
           Learn about Raycast Pro {"->"}
         </Link>
       </div>

@@ -4,12 +4,12 @@ import Link from "next/link";
 export default function ProductivityLevelled() {
   return (
     <>
-      <div className="mt-20 h-auto w-full">
+      <div className="mt-36 h-auto w-full">
         <div className="flex flex-col items-center gap-8">
-          <h1 className="text-center text-4xl font-bold text-white">
+          <h1 className="text-center text-4xl font-semibold text-white">
             Productivity,<br></br> levelled up.
           </h1>
-          <p className="-mt-2 text-center text-sm font-extralight text-[#9B999E]">
+          <p className="-mt-2 text-center font-light text-[#9B999E]">
             Make Raycast your own, using the bundle of features available from
             day one.
           </p>
@@ -70,7 +70,7 @@ export default function ProductivityLevelled() {
                       />
                     </div>
                   </div>
-                  <div className="px-6 py-5 text-sm text-white">
+                  <div className="px-6 py-5 text-sm font-light text-white">
                     <p>
                       Knight Rider. A shadowy flight into the dangerous world of
                       a man who does not exist.
@@ -136,14 +136,6 @@ export default function ProductivityLevelled() {
               </div>
               <div className="h-fit rounded-xl bg-gradient-to-r from-[#160E23] to-[#170F22]">
                 <div className="p-8">
-                  <div>
-                    <Image
-                      alt="Icon"
-                      src="/assets/images/practice2/siri.png"
-                      width={40}
-                      height={40}
-                    />
-                  </div>
                   <h2 className="mt-5 text-xl font-medium text-white">
                     System Commands
                   </h2>
@@ -180,7 +172,7 @@ export default function ProductivityLevelled() {
                 <div>
                   <Image
                     alt="Icon"
-                    src="/assets/images/practice2/siri.png"
+                    src="/assets/images/practice2/search-red.png"
                     width={40}
                     height={40}
                   />
@@ -206,7 +198,7 @@ export default function ProductivityLevelled() {
                   <div>
                     <Image
                       alt="Icon"
-                      src="/assets/images/practice2/siri.png"
+                      src="/assets/images/practice2/search-red.png"
                       width={40}
                       height={40}
                     />
@@ -248,7 +240,7 @@ export default function ProductivityLevelled() {
               <h2 className="mt-5 text-xl font-medium text-white">
                 Calculator
               </h2>
-              <p className="mt-4 max-w-72 text-sm font-extralight text-[#A29EA6]">
+              <p className="mt-4 max-w-64 text-sm font-extralight text-[#A29EA6]">
                 Solve simple math expressions, convert units, check timezones,
                 calculate differences between days, months, and years, and do
                 much more in natural language. Copy the answer to your clipboard
@@ -292,7 +284,7 @@ export default function ProductivityLevelled() {
                   running ones, copy details, search menu items and more.
                 </p>
               </div>
-              <div className="-ml-2">
+              <div className="-ml-3">
                 <Image
                   alt="Search"
                   src="/assets/images/practice2/search_dialog4.png"
@@ -328,9 +320,7 @@ export default function ProductivityLevelled() {
                   height={40}
                 />
               </div>
-              <h2 className="mt-5 text-xl font-medium text-white">
-                Script Commands
-              </h2>
+              <h2 className="mt-5 text-xl font-medium text-white">Snippets</h2>
               <p className="mt-4 text-sm font-extralight text-[#A29EA6]">
                 Write faster by inserting frequently typed text such as canned
                 emails, code pieces and more. Use keywords to auto-expand
@@ -365,7 +355,7 @@ export default function ProductivityLevelled() {
                 straight in to your calls. Check your upcoming schedule, block
                 focus time or get an overview of your daily plan.
               </p>
-              <div className="mt-4">
+              <div className="mt-3.5">
                 <Image
                   alt="Apps"
                   src="/assets/images/practice2/apps2.png"
@@ -378,7 +368,7 @@ export default function ProductivityLevelled() {
         </div>
       </div>
       <div className="my-10">
-        <Link href="#" className="text-sm font-light text-white">
+        <Link href="#" className="text-sm font-extralight text-white">
           Explore the manuals {"->"}
         </Link>
       </div>
