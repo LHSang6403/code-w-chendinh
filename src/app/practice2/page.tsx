@@ -75,13 +75,13 @@ export default function page() {
         </div>
       </div>
       <EasyInstalled />
-      {/* <Productivity /> */}
-      {/* <YourRaycat /> */}
-      {/* <RaycatTeams /> */}
-      {/* <ProductivityLevelled /> */}
-      {/* <MoreFocus /> */}
-      {/* <TakeOff /> */}
-      {/* <SocialForm /> */}
+      <Productivity />
+      <YourRaycat />
+      <RaycatTeams />
+      <ProductivityLevelled />
+      <MoreFocus />
+      <TakeOff />
+      <SocialForm />
     </div>
   );
 }
