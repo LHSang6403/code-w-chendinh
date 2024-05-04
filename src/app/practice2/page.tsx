@@ -28,8 +28,8 @@ export default function page() {
             className="mx-auto opacity-10"
           />
           <div className="relative">
-            <div className="absolute -top-[600px] left-60 h-[350px] w-[350px] appearance-none rounded-full bg-[#F73A4B] opacity-20 shadow-[rgba(247,58,75,100)_0px_0px_400px_150px] xl:left-10 sm:-top-[200px]"></div>
-            <div className="absolute -top-[900px] right-60 h-[400px] w-[350px] appearance-none rounded-full bg-[#7000FF] opacity-20 shadow-[rgba(112,0,255,100)_0px_0px_400px_150px] xl:right-10 sm:-top-[500px]"></div>
+            <div className="absolute -top-[600px] left-60 h-[350px] w-[350px] appearance-none rounded-full bg-[#F73A4B] opacity-20 shadow-[rgba(247,58,75,100)_0px_0px_100px_150px] xl:left-10 sm:-top-[200px] sm:h-[100px] sm:w-[200px]"></div>
+            <div className="absolute -top-[900px] right-60 h-[400px] w-[350px] appearance-none rounded-full bg-[#7000FF] opacity-20 shadow-[rgba(112,0,255,100)_0px_0px_100px_150px] xl:right-10 sm:-top-[500px] sm:h-[250px] sm:w-[250px]"></div>
             <div className="absolute -top-[494px] mt-4 w-full text-center xl:-top-[440px] lg:-top-[350px] sm:-top-[200px]">
               <h1 className="w-full text-6xl font-bold leading-[80px] text-white lg:text-5xl sm:text-4xl">
                 <span className="w-full appearance-none bg-gradient-to-r from-[#F73A4B] to-[#7000FF] bg-clip-text px-4 text-center italic text-transparent">

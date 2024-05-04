@@ -4,6 +4,10 @@
 
 @layer base {
   :root {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
     --background: 0 0% 100%;
     --foreground: 222.2 84% 4.9%;
 
@@ -119,6 +123,9 @@
     appearance: none;
   }
   body {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
     @apply bg-background text-foreground;
   }
 }
