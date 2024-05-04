@@ -15,7 +15,7 @@ export default function RaycatTeams() {
             shared space<br className="xl:hidden"></br> in Raycast.
           </p>
         </div>
-        <div className="mt-20 flex h-[600px] w-full flex-row items-center rounded-2xl bg-gradient-to-r from-[#37B9EC] to-[#152871]">
+        <div className="mt-20 flex h-[600px] w-full flex-row items-center rounded-2xl bg-gradient-to-r from-[#37B9EC] to-[#152871] sm:h-fit">
           <div className="w-1/2 px-10 text-white xl:w-[70%] sm:py-6 sm:pl-6 sm:pr-0">
             <Image
               alt="Up"
