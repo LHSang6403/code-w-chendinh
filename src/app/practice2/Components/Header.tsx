@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Header() {
   return (
-    <header className="w-full">
+    <header className="!z-20 w-full">
       <div className="flex w-full flex-row items-center justify-between py-3 xl:pb-0">
         <div className="w-44 xl:w-fit">
           <Image
@@ -70,7 +70,10 @@ export default function Header() {
           >
             Log in
           </Button>
-          <Button className="h-fit border-none bg-gradient-to-r from-[#160E22] to-[#120E1B] py-1.5 text-[16px] font-light text-[#A19AA7]">
+          <Button
+            variant="ghost"
+            className="h-fit border-none  py-1.5 text-[16px] font-light text-[#A19AA7]"
+          >
             Download
           </Button>
         </div>
