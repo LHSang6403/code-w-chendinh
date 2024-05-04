@@ -47,6 +47,7 @@ export default function RaycatTeams() {
                 src="/assets/images/practice2/img7.png"
                 width={800}
                 height={600}
+                className="md:w-[600px]"
               />
             </div>
           </div>

@@ -48,7 +48,7 @@ export default function page() {
           </div>
         </div>
       </div>
-      <div className="!z-20 mt-44 flex flex-col items-center justify-center pt-2">
+      <div className="!z-20 mt-44 flex flex-col items-center justify-center pt-2 md:mt-32">
         <Button className="bg-white px-6">Download for Mac</Button>
         <div className="mt-4 flex flex-row items-center justify-center gap-4 text-[12px] font-extralight text-[#756B76]">
           <div>v1.70.3</div>
