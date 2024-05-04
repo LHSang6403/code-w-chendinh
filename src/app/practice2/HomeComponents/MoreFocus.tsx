@@ -13,7 +13,7 @@ export default function MoreFocus() {
         </p>
       </div>
       <div className="mt-16 grid grid-cols-4 gap-2 px-6 xl:grid-cols-2 xl:px-0 sm:grid-cols-1">
-        <div className="h-auto w-full rounded-xl bg-[#0D0914] p-6">
+        <div className="h-auto w-full rounded-xl bg-[#0D0914] p-8 sm:p-6">
           <Image
             alt="Icon"
             src="/assets/images/practice2/security.png"
@@ -28,7 +28,7 @@ export default function MoreFocus() {
             sensitive is tracked. You and your personal data stay anonymous.
           </p>
         </div>
-        <div className="h-auto w-full rounded-xl bg-[#0D0914] p-6">
+        <div className="h-auto w-full rounded-xl bg-[#0D0914] p-8 sm:p-6">
           <Image
             alt="Icon"
             src="/assets/images/practice2/chip3.png"
@@ -44,7 +44,7 @@ export default function MoreFocus() {
             workflow.
           </p>
         </div>
-        <div className="h-auto w-full rounded-xl bg-[#0D0914] p-6">
+        <div className="h-auto w-full rounded-xl bg-[#0D0914] p-8 sm:p-6">
           <Image
             alt="Icon"
             src="/assets/images/practice2/cmd.png"
@@ -59,7 +59,7 @@ export default function MoreFocus() {
             commands, and follow the same structure to make you more productive.
           </p>
         </div>
-        <div className="h-auto w-full rounded-xl bg-[#0D0914] p-6">
+        <div className="h-auto w-full rounded-xl bg-[#0D0914] p-8 sm:p-6">
           <Image
             alt="Icon"
             src="/assets/images/practice2/speed.png"

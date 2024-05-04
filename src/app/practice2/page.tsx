@@ -60,7 +60,7 @@ export default function page() {
       </div>
       <div className="mt-28">
         <div className="h-full w-full rounded-xl bg-gradient-to-r from-[#882E20] to-[#62042D] p-[4px] shadow-[rgba(46,10,19,100)_0px_0px_8px_4px]">
-          <div className="flex flex-row items-center justify-between gap-16 rounded-[12px] border-[#321D20] bg-[#1E060A] px-10 py-8 sm:flex-col sm:gap-8">
+          <div className="flex flex-row items-center justify-between gap-16 rounded-[12px] border-[#321D20] bg-[#1E060A] px-10 py-8 sm:flex-col sm:gap-4 sm:p-4">
             <div className="text-white">
               <h2 className="text-xl">Raycast Merch</h2>
               <p className="mt-2 text-sm text-[#D2C0C8]">

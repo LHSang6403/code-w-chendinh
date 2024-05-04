@@ -17,7 +17,7 @@ export default function ProductivityLevelled() {
         <div className="mx-auto mt-16 flex h-fit w-full max-w-[1440px] flex-col gap-4 px-20 lg:px-0">
           <div className="grid h-fit w-full grid-cols-3 gap-4 xl:grid-cols-2">
             <div className="flex h-fit w-full flex-col gap-4 sm:col-span-2">
-              <div className="flex h-[450px] flex-col justify-center rounded-xl bg-gradient-to-r from-[#160E23] to-[#170F22] p-8 sm:h-fit sm:w-full">
+              <div className="flex h-[450px] flex-col justify-center rounded-xl bg-gradient-to-r from-[#160E23] to-[#170F22] p-8 sm:h-fit sm:w-full sm:p-6">
                 <div>
                   <Image
                     alt="Icon"
@@ -53,7 +53,7 @@ export default function ProductivityLevelled() {
               </div>
               <div className="h-fit overflow-hidden rounded-xl bg-gradient-to-r from-[#160E23] to-[#170F22] sm:w-full">
                 <div className="flex h-fit w-full flex-col bg-gradient-to-br from-[#7754AC] to-[#9D2C3A]">
-                  <div className="relative h-8">
+                  <div className="relative h-8 sm:h-10">
                     <div className="absolute left-0 top-0 flex h-full w-full bg-black opacity-30"></div>
                     <div className="absolute left-0 top-0 z-10 flex h-full w-full flex-row items-center justify-between px-4">
                       <Image
@@ -70,7 +70,7 @@ export default function ProductivityLevelled() {
                       />
                     </div>
                   </div>
-                  <div className="px-8 py-5 text-sm font-light text-white">
+                  <div className="px-8 py-5 text-sm font-light text-white sm:px-6">
                     <p>
                       Knight Rider. A shadowy flight into the dangerous world of
                       a man who does not exist.
@@ -95,7 +95,7 @@ export default function ProductivityLevelled() {
                     </div>
                   </div>
                 </div>
-                <div className="flex h-[360px] flex-col justify-center p-8 sm:h-fit">
+                <div className="flex h-[360px] flex-col justify-center p-8 sm:h-fit sm:p-6">
                   <div className="h-fit">
                     <div>
                       <Image
@@ -117,7 +117,7 @@ export default function ProductivityLevelled() {
               </div>
             </div>
             <div className="flex h-full w-full flex-col gap-4 sm:col-span-2">
-              <div className="h-fit rounded-xl bg-gradient-to-r from-[#160E23] to-[#170F22] p-8">
+              <div className="h-fit rounded-xl bg-gradient-to-r from-[#160E23] to-[#170F22] p-8 sm:p-6">
                 <div>
                   <Image
                     alt="Icon"
@@ -135,8 +135,8 @@ export default function ProductivityLevelled() {
                 </p>
               </div>
               <div className="h-fit rounded-xl bg-gradient-to-r from-[#160E23] to-[#170F22]">
-                <div className="p-8">
-                  <h2 className="mt-5 text-xl font-medium text-white">
+                <div className="p-8 sm:p-6">
+                  <h2 className="mt-5 text-xl font-medium text-white sm:mt-0">
                     System Commands
                   </h2>
                   <p className="mt-4 text-sm font-extralight text-[#A29EA6]">
@@ -150,7 +150,7 @@ export default function ProductivityLevelled() {
                   src="/assets/images/practice2/icons2.png"
                   width={500}
                   height={400}
-                  className="my-4"
+                  className="my-4 sm:w-full"
                 />
               </div>
               <div className="flex h-full flex-col justify-center rounded-xl bg-gradient-to-r from-[#160E23] to-[#170F22] px-8 py-6">
@@ -168,7 +168,7 @@ export default function ProductivityLevelled() {
               </div>
             </div>
             <div className="flex h-full w-full flex-col gap-4 xl:col-span-2 xl:flex-row sm:flex-col">
-              <div className="flex h-[450px] flex-col justify-center rounded-xl bg-gradient-to-r from-[#160E23] to-[#170F22] p-8 xl:h-full xl:w-1/2 sm:h-fit sm:w-full">
+              <div className="flex h-[450px] flex-col justify-center rounded-xl bg-gradient-to-r from-[#160E23] to-[#170F22] p-8 xl:h-full xl:w-1/2 sm:h-fit sm:w-full sm:p-6">
                 <div>
                   <Image
                     alt="Icon"
@@ -194,7 +194,7 @@ export default function ProductivityLevelled() {
                 </div>
               </div>
               <div className="flex h-full flex-col justify-between overflow-hidden rounded-xl bg-gradient-to-r from-[#160E23] to-[#170F22] xl:w-1/2 sm:w-full">
-                <div className="flex h-full flex-col justify-center p-8">
+                <div className="flex h-full flex-col justify-center p-8 sm:p-6 sm:pb-0">
                   <div>
                     <Image
                       alt="Icon"
@@ -216,7 +216,7 @@ export default function ProductivityLevelled() {
                     websites, like below.
                   </p>
                 </div>
-                <div className="ml-3 sm:ml-1">
+                <div className="ml-3 sm:ml-0">
                   <Image
                     alt="Files"
                     src="/assets/images/practice2/search_dialog.png"
@@ -228,7 +228,7 @@ export default function ProductivityLevelled() {
             </div>
           </div>
           <div className="flex w-full flex-row items-center justify-between rounded-xl bg-[#190F21] sm:flex-col">
-            <div className="mt-8 p-8 pr-0 xl:w-1/2 sm:w-full">
+            <div className="mt-8 p-8 pr-0 xl:w-1/2 sm:mt-0 sm:w-full sm:p-6 sm:pb-0">
               <div>
                 <Image
                   alt="Calculator"
@@ -257,8 +257,8 @@ export default function ProductivityLevelled() {
             </div>
           </div>
           <div className="grid grid-cols-3 grid-rows-2 gap-4 xl:grid-cols-2 xl:grid-rows-1">
-            <div className="col-span-2 row-span-1 flex h-full w-full flex-row items-center justify-between rounded-xl bg-gradient-to-r from-[#160E23] to-[#170F22] px-8 lg:h-fit">
-              <div className="py-8">
+            <div className="col-span-2 row-span-1 flex h-full w-full flex-row items-center justify-between rounded-xl bg-gradient-to-r from-[#160E23] to-[#170F22] px-8 lg:h-fit sm:px-6 sm:pr-0">
+              <div className="py-8 sm:py-6">
                 <h2 className="text-xl font-medium text-white">
                   Window Management
                 </h2>
@@ -267,7 +267,7 @@ export default function ProductivityLevelled() {
                   your desktop on the fly and resizing app windows.
                 </p>
               </div>
-              <div>
+              <div className="flex flex-row items-end justify-end">
                 <Image
                   alt="Apps"
                   src="/assets/images/practice2/apps.png"
@@ -277,23 +277,24 @@ export default function ProductivityLevelled() {
               </div>
             </div>
             <div className="col-span-1 row-span-2 flex h-full flex-col justify-between rounded-xl bg-gradient-to-r from-[#160E23] to-[#170F22] lg:col-span-2 lg:row-span-1 lg:h-full lg:flex-row">
-              <div className="p-8 pb-0 lg:pb-8">
+              <div className="p-8 pb-0 lg:pb-8 sm:p-6">
                 <h2 className="text-xl font-medium text-white">Launch Apps</h2>
                 <p className="mt-4 text-sm font-extralight text-[#A29EA6]">
                   Launch and switch app windows with just a few keystrokes. Quit
                   running ones, copy details, search menu items and more.
                 </p>
               </div>
-              <div className="-ml-3 flex flex-row items-end justify-end">
+              <div className="-ml-3 flex flex-row items-end justify-end sm:w-full">
                 <Image
                   alt="Search"
                   src="/assets/images/practice2/search_dialog4.png"
                   width={400}
                   height={400}
+                  className="sm:w-full"
                 />
               </div>
             </div>
-            <div className="col-span-1 row-span-1 h-full rounded-xl bg-gradient-to-r from-[#160E23] to-[#170F22] p-8 sm:col-span-2">
+            <div className="col-span-1 row-span-1 h-full rounded-xl bg-gradient-to-r from-[#160E23] to-[#170F22] p-8 sm:col-span-2 sm:p-6">
               <div>
                 <Image
                   alt="Icon"
@@ -311,7 +312,7 @@ export default function ProductivityLevelled() {
                 access them quicker.
               </p>
             </div>
-            <div className="col-span-1 row-span-1 h-full rounded-xl bg-gradient-to-r from-[#160E23] to-[#170F22] p-8 sm:col-span-2">
+            <div className="col-span-1 row-span-1 h-full rounded-xl bg-gradient-to-r from-[#160E23] to-[#170F22] p-8 sm:col-span-2 sm:p-6">
               <div>
                 <Image
                   alt="Icon"

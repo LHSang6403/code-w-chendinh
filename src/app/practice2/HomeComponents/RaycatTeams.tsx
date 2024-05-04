@@ -16,7 +16,7 @@ export default function RaycatTeams() {
           </p>
         </div>
         <div className="mt-20 flex h-[600px] w-full flex-row items-center rounded-2xl bg-gradient-to-r from-[#37B9EC] to-[#152871]">
-          <div className="w-1/2 px-10 text-white xl:w-[70%] sm:py-6 sm:pr-0">
+          <div className="w-1/2 px-10 text-white xl:w-[70%] sm:py-6 sm:pl-6 sm:pr-0">
             <Image
               alt="Up"
               src="/assets/images/practice2/tick2.png"
@@ -53,7 +53,7 @@ export default function RaycatTeams() {
         </div>
       </div>
       <div className="mt-6 grid h-full grid-cols-3 gap-6 lg:grid-cols-2 sm:grid-cols-1">
-        <div className="aspect-square rounded-2xl bg-[#1E1A25] p-10 text-white xl:aspect-auto xl:h-full">
+        <div className="aspect-square rounded-2xl bg-[#1E1A25] p-10 text-white xl:aspect-auto xl:h-full sm:p-6">
           <div>
             <Image
               alt="Return"
@@ -69,7 +69,7 @@ export default function RaycatTeams() {
             in your private extension store.
           </p>
         </div>
-        <div className="aspect-square rounded-2xl bg-[#1E1A25] p-10 text-white xl:aspect-auto xl:h-full">
+        <div className="aspect-square rounded-2xl bg-[#1E1A25] p-10 text-white xl:aspect-auto xl:h-full sm:p-6">
           <div>
             <Image
               alt="Link"
@@ -85,7 +85,7 @@ export default function RaycatTeams() {
             dashboards - all with Quicklinks.
           </p>
         </div>
-        <div className="aspect-square rounded-2xl bg-[#1E1A25] p-10 text-white xl:aspect-auto xl:h-full">
+        <div className="aspect-square rounded-2xl bg-[#1E1A25] p-10 text-white xl:aspect-auto xl:h-full sm:p-6">
           <div>
             <Image
               alt="Paragraph"

@@ -6,7 +6,7 @@ export default function SocialForm() {
   return (
     <>
       <div className="flex h-44 w-full flex-row gap-6 lg:h-fit lg:flex-col">
-        <div className="flex h-full w-1/2 flex-col justify-center gap-4 rounded-xl bg-gradient-to-r from-[#315A6C] via-[#182955] to-[#0F0724] px-12 py-6 lg:w-full">
+        <div className="flex h-full w-1/2 flex-col justify-center gap-4 rounded-xl bg-gradient-to-r from-[#315A6C] via-[#182955] to-[#0F0724] px-12 py-6 lg:w-full sm:px-6">
           <div>
             <Image
               alt="Twitter"
@@ -24,7 +24,7 @@ export default function SocialForm() {
             on Twitter for the latest news and updates.
           </p>
         </div>
-        <div className="flex h-full w-1/2 flex-col justify-center gap-4 rounded-xl bg-gradient-to-r from-[#643A66] via-[#3B0B1E] to-[#170410] px-12 py-6 lg:w-full">
+        <div className="flex h-full w-1/2 flex-col justify-center gap-4 rounded-xl bg-gradient-to-r from-[#643A66] via-[#3B0B1E] to-[#170410] px-12 py-6 lg:w-full sm:px-6">
           <div>
             <Image
               alt="Twitter"

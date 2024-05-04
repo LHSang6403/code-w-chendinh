@@ -66,45 +66,45 @@ export default function Productivity() {
         </div>
       </div>
       <div className="mt-6 grid w-full grid-cols-3 gap-6 text-white lg:grid-cols-2 sm:grid-cols-1">
-        <div className="flex aspect-square h-full w-full flex-col justify-between rounded-xl bg-gradient-to-r from-[#14101B] to-[#100C18] p-5 pb-8 lg:aspect-auto">
+        <div className="flex aspect-square h-full w-full flex-col justify-between rounded-xl bg-gradient-to-r from-[#14101B] to-[#100C18] p-5 pb-8 lg:aspect-auto sm:p-4">
           <Image
             alt="Item"
             src="/assets/images/practice2/img3.png"
             width={400}
             height={400}
           />
-          <h3 className="px-3.5 text-base font-semibold sm:py-2">
+          <h3 className="px-3.5 text-base font-semibold sm:p-2">
             Always-on ChatGPT
           </h3>
-          <p className="px-3.5 text-sm font-light text-[#D0CFD1]">
+          <p className="px-3.5 text-sm font-light text-[#D0CFD1] sm:p-2">
             Ask anything, anytime, anywhere. Stuck while programming? Need some
             copy? Or just have a question - Ask AI.
           </p>
         </div>
-        <div className="flex aspect-square h-full w-full flex-col justify-between rounded-xl bg-gradient-to-r from-[#14101B] to-[#100C18] p-5 pb-8 lg:aspect-auto">
+        <div className="flex aspect-square h-full w-full flex-col justify-between rounded-xl bg-gradient-to-r from-[#14101B] to-[#100C18] p-5 pb-8 lg:aspect-auto sm:p-4">
           <Image
             alt="Item"
             src="/assets/images/practice2/img4.png"
             width={400}
             height={400}
           />
-          <h3 className="px-3.5 text-base font-semibold sm:py-2">Cloud Sync</h3>
-          <p className="px-3.5 text-sm font-light text-[#D0CFD1]">
+          <h3 className="px-3.5 text-base font-semibold sm:p-2">Cloud Sync</h3>
+          <p className="px-3.5 text-sm font-light text-[#D0CFD1] sm:p-2">
             Keep everything safe and updated across your Macs. Perfect to switch
             between personal and work setup.
           </p>
         </div>
-        <div className="flex aspect-square h-full w-full flex-col justify-between rounded-xl bg-gradient-to-r from-[#14101B] to-[#100C18] p-5 pb-8 lg:aspect-auto">
+        <div className="flex aspect-square h-full w-full flex-col justify-between rounded-xl bg-gradient-to-r from-[#14101B] to-[#100C18] p-5 pb-8 lg:aspect-auto sm:p-4">
           <Image
             alt="Item"
             src="/assets/images/practice2/img5.png"
             width={400}
             height={400}
           />
-          <h3 className="px-3.5 text-base font-semibold sm:py-2">
+          <h3 className="px-3.5 text-base font-semibold sm:p-2">
             Custom Themes & more
           </h3>
-          <p className="px-3.5 text-sm font-light text-[#D0CFD1]">
+          <p className="px-3.5 text-sm font-light text-[#D0CFD1] sm:p-2">
             Make Raycast your own with gorgeous pre-made themes or design your
             own and share it with the community.
           </p>

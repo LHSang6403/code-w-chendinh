@@ -39,7 +39,7 @@ export default function YourRaycat() {
               </div>
             </div>
           </div>
-          <div className="h-auto w-2/5 p-10 pl-0 pr-16 text-white xl:w-1/2 lg:w-3/4 lg:px-10 sm:w-[85%]">
+          <div className="h-auto w-2/5 p-10 pl-0 pr-16 text-white xl:w-1/2 lg:w-3/4 lg:px-10 sm:w-[85%] sm:p-6 sm:pl-12">
             <Image
               alt="Build"
               src="/assets/images/practice2/build.png"
@@ -66,7 +66,7 @@ export default function YourRaycat() {
       </div>
       <div className="mt-6 flex h-full flex-row gap-6 lg:flex-col">
         <div className="flex h-full w-3/5 flex-row items-center justify-between rounded-2xl bg-[#1D1B26] text-white lg:w-full">
-          <div className="p-8 lg:w-1/2">
+          <div className="p-8 lg:w-1/2 sm:p-6">
             <div>
               <Image
                 alt="Return"
@@ -93,7 +93,7 @@ export default function YourRaycat() {
             </div>
           </div>
         </div>
-        <div className="w-2/5 rounded-2xl bg-[#1D1B26] p-8 text-white lg:w-full">
+        <div className="w-2/5 rounded-2xl bg-[#1D1B26] p-8 text-white lg:w-full sm:p-6">
           <div>
             <Image
               alt="Book"
