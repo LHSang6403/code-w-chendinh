@@ -54,7 +54,7 @@ export default function Productivity() {
               src="/assets/images/practice2/code.png"
               width={700}
               height={700}
-              className="lg:mx-auto lg:w-[500px] sm:w-[400px]"
+              className="lg:mx-auto lg:w-[500px] sm:w-[300px]"
             />
           </div>
           <Image
