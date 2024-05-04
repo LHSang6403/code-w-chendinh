@@ -12,7 +12,9 @@ export default function TakeOff() {
           <br className="xl:hidden"></br> to new heights.
         </p>
         <div className="mt-2 h-fit w-fit rounded-[10px] bg-[#504D56] p-0.5 sm:w-full">
-          <Button className="w-60 bg-white sm:w-full">Download for Mac</Button>
+          <Button className="w-60 bg-white hover:bg-white sm:w-full">
+            Download for Mac
+          </Button>
         </div>
         <p className="text-sm font-light text-[#69676E]">or</p>
         <div className="relative h-11 w-60 sm:w-full">

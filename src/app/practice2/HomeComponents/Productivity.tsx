@@ -47,14 +47,14 @@ export default function Productivity() {
             Introducing Pro {"->"}
           </Button>
         </div>
-        <div className="relative mt-32">
-          <div className="absolute -top-24 left-1/2 -translate-x-1/2">
+        <div className="relative mt-32 w-full">
+          <div className="absolute -top-24 left-1/2 -translate-x-1/2 lg:w-full">
             <Image
               alt="Code"
               src="/assets/images/practice2/code.png"
               width={700}
               height={700}
-              quality={100}
+              className="lg:mx-auto lg:w-[500px] sm:w-[400px]"
             />
           </div>
           <Image
@@ -62,7 +62,6 @@ export default function Productivity() {
             src="/assets/images/practice2/img2.png"
             width={1440}
             height={1000}
-            quality={100}
           />
         </div>
       </div>

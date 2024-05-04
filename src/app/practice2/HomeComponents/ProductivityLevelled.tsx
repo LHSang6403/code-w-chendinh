@@ -70,7 +70,7 @@ export default function ProductivityLevelled() {
                       />
                     </div>
                   </div>
-                  <div className="px-6 py-5 text-sm font-light text-white">
+                  <div className="px-8 py-5 text-sm font-light text-white">
                     <p>
                       Knight Rider. A shadowy flight into the dangerous world of
                       a man who does not exist.
@@ -276,8 +276,8 @@ export default function ProductivityLevelled() {
                 />
               </div>
             </div>
-            <div className="col-span-1 row-span-2 flex h-full flex-col justify-between rounded-xl bg-gradient-to-r from-[#160E23] to-[#170F22] lg:col-span-2 lg:row-span-1 lg:h-full lg:flex-row sm:flex-col">
-              <div className="p-8 pb-0 lg:pb-8 sm:pb-0">
+            <div className="col-span-1 row-span-2 flex h-full flex-col justify-between rounded-xl bg-gradient-to-r from-[#160E23] to-[#170F22] lg:col-span-2 lg:row-span-1 lg:h-full lg:flex-row">
+              <div className="p-8 pb-0 lg:pb-8">
                 <h2 className="text-xl font-medium text-white">Launch Apps</h2>
                 <p className="mt-4 text-sm font-extralight text-[#A29EA6]">
                   Launch and switch app windows with just a few keystrokes. Quit

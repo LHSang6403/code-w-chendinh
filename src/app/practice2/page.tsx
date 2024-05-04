@@ -11,7 +11,7 @@ import SocialForm from "./HomeComponents/SocialForm";
 
 export default function page() {
   return (
-    <div className="flex w-full flex-col items-center bg-[#05010D] pt-12">
+    <div className="flex w-full max-w-[1440px] flex-col items-center bg-[#05010D] pt-12">
       <div className="relative flex h-fit w-full items-center justify-center">
         <Image
           alt="Search"
@@ -25,7 +25,7 @@ export default function page() {
             src="/assets/images/practice2/bg.png"
             width={1000}
             height={1000}
-            className="mx-auto opacity-100"
+            className="mx-auto opacity-10"
           />
           <div className="relative">
             <div className="absolute -top-[600px] left-60 h-[350px] w-[350px] rounded-full bg-[#F73A4B] opacity-20 shadow-[rgba(247,58,75,100)_0px_0px_400px_150px] xl:left-10 sm:-top-[200px]"></div>
@@ -48,7 +48,7 @@ export default function page() {
           </div>
         </div>
       </div>
-      <div className="mt-60 flex flex-col items-center justify-center pt-2 xl:mt-52">
+      <div className="mt-44 flex flex-col items-center justify-center pt-2">
         <Button className="bg-white px-6">Download for Mac</Button>
         <div className="mt-4 flex flex-row items-center justify-center gap-4 text-[12px] font-extralight text-[#756B76]">
           <div>v1.70.3</div>
