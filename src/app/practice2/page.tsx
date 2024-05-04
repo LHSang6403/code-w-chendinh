@@ -41,7 +41,7 @@ export default function page() {
               <p className="mt-3 font-light text-[#86727A]">
                 Raycast is a blazingly fast, totally extendable launcher. It
                 lets you
-                <br></br>
+                <br className="xl:hidden"></br>
                 complete tasks, calculate, share common links, and much more.
               </p>
             </div>
