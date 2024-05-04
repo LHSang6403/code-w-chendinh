@@ -11,42 +11,44 @@ import SocialForm from "./HomeComponents/SocialForm";
 
 export default function page() {
   return (
-    <div className="relative flex w-full flex-col items-center bg-[#05010D] pt-16">
-      <Image
-        alt="Search"
-        src="/assets/images/practice2/main.png"
-        width={1000}
-        height={1000}
-      ></Image>
-      <div className="absolute -top-10">
+    <div className="flex w-full flex-col items-center bg-[#05010D] pt-12">
+      <div className="relative flex h-fit w-full items-center justify-center">
         <Image
-          alt="Decor"
-          src="/assets/images/practice2/bg.png"
+          alt="Search"
+          src="/assets/images/practice2/main.png"
           width={1000}
           height={1000}
-          className="opacity-10"
         ></Image>
-        <div className="relative">
-          <div className="absolute -top-[600px] left-24 h-[350px] w-[350px] rounded-full bg-[#F73A4B] opacity-20 shadow-[rgba(247,58,75,100)_0px_0px_400px_150px]"></div>
-          <div className="absolute -top-[900px] right-24 h-[400px] w-[350px] rounded-full bg-[#7000FF] opacity-20 shadow-[rgba(112,0,255,100)_0px_0px_400px_150px]"></div>
-          <div className="absolute -top-[494px] mt-4 w-full text-center">
-            <h1 className="w-full text-6xl font-bold leading-[80px] text-white">
-              <span className="w-full bg-gradient-to-r from-[#F73A4B] to-[#7000FF] bg-clip-text px-4 text-center italic text-transparent">
-                Supercharged
-              </span>{" "}
-              <br></br>
-              productivity
-            </h1>
-            <p className="mt-3 font-light text-[#86727A]">
-              Raycast is a blazingly fast, totally extendable launcher. It lets
-              you
-              <br></br>
-              complete tasks, calculate, share common links, and much more.
-            </p>
+        <div className="absolute -top-24 h-full w-full">
+          <Image
+            alt="Decor"
+            src="/assets/images/practice2/bg.png"
+            width={1000}
+            height={1000}
+            className="mx-auto opacity-100"
+          />
+          <div className="relative">
+            <div className="absolute -top-[600px] left-60 h-[350px] w-[350px] rounded-full bg-[#F73A4B] opacity-20 shadow-[rgba(247,58,75,100)_0px_0px_400px_150px] xl:left-10 sm:-top-[200px]"></div>
+            <div className="absolute -top-[900px] right-60 h-[400px] w-[350px] rounded-full bg-[#7000FF] opacity-20 shadow-[rgba(112,0,255,100)_0px_0px_400px_150px] xl:right-10 sm:-top-[500px]"></div>
+            <div className="absolute -top-[494px] mt-4 w-full text-center xl:-top-[440px] lg:-top-[350px] sm:-top-[200px]">
+              <h1 className="w-full text-6xl font-bold leading-[80px] text-white lg:text-5xl sm:text-4xl">
+                <span className="w-full bg-gradient-to-r from-[#F73A4B] to-[#7000FF] bg-clip-text px-4 text-center italic text-transparent">
+                  Supercharged
+                </span>{" "}
+                <br></br>
+                productivity
+              </h1>
+              <p className="mt-3 font-light text-[#86727A]">
+                Raycast is a blazingly fast, totally extendable launcher. It
+                lets you
+                <br></br>
+                complete tasks, calculate, share common links, and much more.
+              </p>
+            </div>
           </div>
         </div>
       </div>
-      <div className="mt-36 flex flex-col items-center justify-center pt-2">
+      <div className="mt-60 flex flex-col items-center justify-center pt-2 xl:mt-52">
         <Button className="bg-white px-6">Download for Mac</Button>
         <div className="mt-4 flex flex-row items-center justify-center gap-4 text-[12px] font-extralight text-[#756B76]">
           <div>v1.70.3</div>

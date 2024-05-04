@@ -6,26 +6,29 @@ export default function EasyInstalled() {
   return (
     <>
       <div className="mt-36 text-center">
-        <h1 className="flex w-full flex-row items-center justify-center text-[55px] font-medium text-white">
-          It’s as easy as <span className="ml-3 text-[#59D499]">installed</span>
-          <div>
-            <Image
-              alt="Tick"
-              src="/assets/images/practice2/tick.png"
-              width={50}
-              height={50}
-            ></Image>
+        <h1 className="flex w-full flex-row items-center justify-center text-[55px] font-medium text-white lg:flex-col">
+          It’s as easy as
+          <div className="flex w-fit flex-row items-center">
+            <span className="ml-3 text-[#59D499]">installed</span>
+            <div>
+              <Image
+                alt="Tick"
+                src="/assets/images/practice2/tick.png"
+                width={50}
+                height={50}
+              />
+            </div>
           </div>
         </h1>
         <p className="mt-2 font-light text-[#9B999E]">
           Say hello to the Store. A home for Extensions published by our
-          community of<br></br> Developers using our API. Find extensions to the
-          tools you use in your day-to-day.
+          community of<br className="xl:hidden"></br> Developers using our API.
+          Find extensions to the tools you use in your day-to-day.
         </p>
       </div>
-      <div className="relative mt-16 w-full">
-        <div className="h-[600px] w-full rounded-2xl bg-gradient-to-r from-[#ED88AA] via-[#7F1199] to-[#18164D] sm:h-fit">
-          <div className="w-1/2 px-10 pt-24 text-white xl:w-[70%] xl:pb-12 sm:w-[86%] sm:px-4 sm:py-6">
+      <div className="mt-16 w-full">
+        <div className="flex h-[600px] w-full flex-row items-center rounded-2xl bg-gradient-to-r from-[#ED88AA] via-[#7F1199] to-[#18164D] sm:h-fit">
+          <div className="w-1/2 px-10 text-white xl:w-[70%] sm:px-4 sm:py-6">
             <Image
               alt="Up"
               src="/assets/images/practice2/up.png"
@@ -45,14 +48,16 @@ export default function EasyInstalled() {
               Browse Extensions
             </Button>
           </div>
-        </div>
-        <div className="absolute -right-20 top-6 xl:-right-3/4 sm:-right-1/2 sm:translate-x-1/2">
-          <Image
-            alt="Demo"
-            src="/assets/images/practice2/img1.png"
-            width={800}
-            height={600}
-          />
+          <div className="relative h-full w-1/2 xl:w-[30%]">
+            <div className="absolute -right-20 top-1/2 w-[800px] -translate-y-1/2 xl:left-0 xl:right-0">
+              <Image
+                alt="Demo"
+                src="/assets/images/practice2/img1.png"
+                width={800}
+                height={600}
+              />
+            </div>
+          </div>
         </div>
         <div className="mt-6 flex flex-row gap-6 text-white lg:flex-col">
           <div className="h-auto w-2/5 rounded-2xl bg-[#1E1A25] p-10 lg:w-full">
@@ -85,7 +90,7 @@ export default function EasyInstalled() {
               src="/assets/images/practice2/todos.png"
               width={500}
               height={500}
-              className="mt-20 lg:mt-16"
+              className="mx-auto mt-20 lg:mt-16"
             />
           </div>
           <div className="flex h-auto w-3/5 flex-col justify-between rounded-2xl bg-[#1E1A25] pt-10 lg:w-full">

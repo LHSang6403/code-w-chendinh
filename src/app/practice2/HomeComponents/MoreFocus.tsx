@@ -9,11 +9,11 @@ export default function MoreFocus() {
         </h1>
         <p className="-mt-2 text-center font-light text-[#9B999E]">
           Keep your workspace centralized, clean and tidy. Engineered with
-          performance<br></br> and your privacy in mind.
+          performance<br className="xl:hidden"></br> and your privacy in mind.
         </p>
       </div>
-      <div className="mt-16 flex flex-row gap-2 px-6">
-        <div className="h-64 w-1/4 rounded-xl bg-[#0D0914] p-6">
+      <div className="mt-16 grid grid-cols-4 gap-2 px-6 xl:grid-cols-2 xl:px-0 sm:grid-cols-1">
+        <div className="h-64 w-full rounded-xl bg-[#0D0914] p-6 xl:h-auto">
           <Image
             alt="Icon"
             src="/assets/images/practice2/security.png"
@@ -28,7 +28,7 @@ export default function MoreFocus() {
             sensitive is tracked. You and your personal data stay anonymous.
           </p>
         </div>
-        <div className="h-64 w-1/4 rounded-xl bg-[#0D0914] p-6">
+        <div className="h-64 w-full rounded-xl bg-[#0D0914] p-6 xl:h-auto">
           <Image
             alt="Icon"
             src="/assets/images/practice2/chip3.png"
@@ -44,7 +44,7 @@ export default function MoreFocus() {
             workflow.
           </p>
         </div>
-        <div className="h-64 w-1/4 rounded-xl bg-[#0D0914] p-6">
+        <div className="h-64 w-full rounded-xl bg-[#0D0914] p-6 xl:h-auto">
           <Image
             alt="Icon"
             src="/assets/images/practice2/cmd.png"
@@ -59,7 +59,7 @@ export default function MoreFocus() {
             commands, and follow the same structure to make you more productive.
           </p>
         </div>
-        <div className="h-64 w-1/4 rounded-xl bg-[#0D0914] p-6">
+        <div className="h-64 w-full rounded-xl bg-[#0D0914] p-6 xl:h-auto">
           <Image
             alt="Icon"
             src="/assets/images/practice2/speed.png"

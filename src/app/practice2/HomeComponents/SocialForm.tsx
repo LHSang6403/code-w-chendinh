@@ -5,8 +5,8 @@ import { Button } from "@/components/ui/button";
 export default function SocialForm() {
   return (
     <>
-      <div className="flex h-44 w-full flex-row gap-6">
-        <div className="flex h-full w-1/2 flex-col justify-center gap-4 rounded-xl bg-gradient-to-r from-[#315A6C] via-[#182955] to-[#0F0724] px-12 py-6">
+      <div className="flex h-44 w-full flex-row gap-6 lg:h-fit lg:flex-col">
+        <div className="flex h-full w-1/2 flex-col justify-center gap-4 rounded-xl bg-gradient-to-r from-[#315A6C] via-[#182955] to-[#0F0724] px-12 py-6 lg:w-full">
           <div>
             <Image
               alt="Twitter"
@@ -24,7 +24,7 @@ export default function SocialForm() {
             on Twitter for the latest news and updates.
           </p>
         </div>
-        <div className="flex h-full w-1/2 flex-col justify-center gap-4 rounded-xl bg-gradient-to-r from-[#643A66] via-[#3B0B1E] to-[#170410] px-12 py-6">
+        <div className="flex h-full w-1/2 flex-col justify-center gap-4 rounded-xl bg-gradient-to-r from-[#643A66] via-[#3B0B1E] to-[#170410] px-12 py-6 lg:w-full">
           <div>
             <Image
               alt="Twitter"
@@ -42,8 +42,8 @@ export default function SocialForm() {
           </p>
         </div>
       </div>
-      <div className="my-24 flex h-fit w-full flex-row gap-6 px-24">
-        <div className="flex h-full w-1/2 flex-col justify-start gap-3 rounded-xl py-6">
+      <div className="my-24 flex h-fit w-full flex-row gap-6 px-24 lg:flex-col lg:px-0">
+        <div className="flex h-full w-1/2 flex-col justify-start gap-3 rounded-xl py-6 lg:w-full">
           <h3 className="text-sm font-medium text-white">
             Subscribe to our newsletter
           </h3>
@@ -52,7 +52,7 @@ export default function SocialForm() {
             the scenes updates, and team picks.
           </p>
         </div>
-        <div className="flex h-full w-1/2 flex-col justify-start gap-4 rounded-xl py-6">
+        <div className="flex h-full w-1/2 flex-col justify-start gap-4 rounded-xl py-6 lg:w-full">
           <div className="flex flex-row gap-4">
             <Input
               placeholder="james@java-lang.ca"

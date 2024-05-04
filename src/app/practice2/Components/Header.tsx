@@ -75,7 +75,7 @@ export default function Header() {
           </Button>
         </div>
       </div>
-      <div className="hidden w-full flex-row justify-center overflow-x-auto xl:flex">
+      <div className="hidden w-full grid-cols-4 xl:grid sm:hidden">
         <Button
           variant="ghost"
           className="border-none text-[16px] font-light text-[#A19AA7]"
