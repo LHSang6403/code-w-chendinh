@@ -114,6 +114,9 @@
 
 @layer base {
   * {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
   }
   body {
     @apply bg-background text-foreground;
