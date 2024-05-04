@@ -18,7 +18,7 @@ export default function YourRaycat() {
         </div>
         <div className="mt-20 flex h-[600px] w-full flex-row items-center rounded-2xl bg-gradient-to-r from-[#D4EAFA] via-[#571AA7] to-[#150539] lg:h-fit">
           <div className="relative h-full w-3/5 xl:w-1/2 lg:w-1/4 sm:w-[15%]">
-            <div className="-sm:right-0 absolute -left-20 right-20 top-1/2 -translate-y-1/2 xl:-left-44 xl:right-10 sm:-left-[430px] sm:w-[500px]">
+            <div className="absolute -left-16 right-8 top-1/2 -translate-y-1/2 xl:-left-44 xl:right-10 sm:-left-[430px] sm:-right-0 sm:w-[500px]">
               <div className="relative h-full">
                 <Image
                   alt="Code"
@@ -33,7 +33,7 @@ export default function YourRaycat() {
                     src="/assets/images/practice2/img6.png"
                     width={450}
                     height={450}
-                    className="-mt-10 sm:mt-0 sm:pt-10"
+                    className="-mt-6 sm:mt-0 sm:pt-10"
                   />
                 </div>
               </div>
