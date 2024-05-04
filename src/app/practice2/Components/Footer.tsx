@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <div className="grid w-full grid-cols-5 justify-around justify-items-center border-t p-16 xl:grid-cols-4 xl:gap-10 xl:px-6 sm:grid-cols-2 sm:px-4">
+    <div className="grid w-full grid-cols-5 justify-around justify-items-stretch border-t p-16 xl:grid-cols-4 xl:gap-10 xl:px-6 sm:grid-cols-2 sm:px-4">
       <div className="xl:col-span-4 sm:col-span-2">
         <Image
           alt="Mini logo"
@@ -11,7 +11,7 @@ export default function Footer() {
           height={30}
         />
       </div>
-      <div className="flex flex-col gap-1.5 bg-red-200">
+      <div className="flex flex-col gap-1.5">
         <h2 className="mb-3 text-[15px] font-light text-white">Product</h2>
         <p className="text-[15px] font-extralight text-[#9B999E]">Store</p>
         <p className="text-[15px] font-extralight text-[#9B999E]">Developer</p>
