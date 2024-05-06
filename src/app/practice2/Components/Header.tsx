@@ -1,7 +1,12 @@
+"use client";
+
+import { useRouter } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 
 export default function Header() {
+  const router = useRouter();
+
   return (
     <header className="!z-20 w-full">
       <div className="flex w-full flex-row items-center justify-between py-3 xl:pb-0">
@@ -15,26 +20,27 @@ export default function Header() {
         </div>
         <div className="flex flex-row xl:hidden">
           <Button
+            onClick={() => router.push("/practice2/store")}
             variant="ghost"
-            className="border-none text-[16px] font-light text-[#A19AA7]"
+            className="hover:bg- border-none text-[16px] font-light text-[#A19AA7]"
           >
             Store
           </Button>
           <Button
             variant="ghost"
-            className="border-none text-[16px] font-light text-[#A19AA7]"
+            className="hover:bg- border-none text-[16px] font-light text-[#A19AA7]"
           >
             Developer
           </Button>
           <Button
             variant="ghost"
-            className="border-none text-[16px] font-light text-[#A19AA7]"
+            className="hover:bg- border-none text-[16px] font-light text-[#A19AA7]"
           >
             Teams
           </Button>
           <Button
             variant="ghost"
-            className="flex flex-row gap-1 border-none text-[16px] font-light text-[#A19AA7]"
+            className="hover:bg- flex flex-row gap-1 border-none text-[16px] font-light text-[#A19AA7]"
           >
             <span>Pro</span>
             <Image
@@ -46,19 +52,19 @@ export default function Header() {
           </Button>
           <Button
             variant="ghost"
-            className="border-none text-[16px] font-light text-[#A19AA7]"
+            className="hover:bg- border-none text-[16px] font-light text-[#A19AA7]"
           >
             Changelog
           </Button>
           <Button
             variant="ghost"
-            className="border-none text-[16px] font-light text-[#A19AA7]"
+            className="hover:bg- border-none text-[16px] font-light text-[#A19AA7]"
           >
             Pricing
           </Button>
           <Button
             variant="ghost"
-            className="border-none text-[16px] font-light text-[#A19AA7]"
+            className="hover:bg- border-none text-[16px] font-light text-[#A19AA7]"
           >
             Blog
           </Button>
@@ -66,13 +72,13 @@ export default function Header() {
         <div className="flex w-44 flex-row items-center justify-end xl:w-fit">
           <Button
             variant="ghost"
-            className="border-none text-[16px] font-light text-[#A19AA7]"
+            className="hover:bg- border-none text-[16px] font-light text-[#A19AA7]"
           >
             Log in
           </Button>
           <Button
             variant="ghost"
-            className="h-fit border-none  py-1.5 text-[16px] font-light text-[#A19AA7]"
+            className="hover:bg- h-fit border-none  py-1.5 text-[16px] font-light text-[#A19AA7]"
           >
             Download
           </Button>
