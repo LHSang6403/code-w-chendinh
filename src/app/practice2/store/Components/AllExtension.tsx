@@ -6,7 +6,7 @@ import Image from "next/image";
 export default function AllExtension() {
   return (
     <div className="mt-20 w-full">
-      <div className="flex flex-row items-center justify-between sm:flex-col sm:gap-4">
+      <div className="flex flex-row items-center justify-between lg:flex-col lg:gap-4">
         <div className="flex w-fit flex-row items-center gap-2">
           <Badge className="py-1.5 font-light text-[#A5A3A8]">
             All Extensions
@@ -15,12 +15,12 @@ export default function AllExtension() {
             Recently Added
           </Badge>
         </div>
-        <div className="relative">
+        <div className="relative lg:w-full">
           <Input
             placeholder="Search..."
-            className="mt-6 h-8 w-[450px] border-[#1D1924] bg-[#120E19] opacity-70 lg:w-full"
+            className="h-8 w-[450px] border-[#1D1924] bg-[#120E19] opacity-70 lg:w-full"
           ></Input>
-          <div className="absolute right-4 top-8 z-10 flex h-fit w-fit flex-row items-center gap-1">
+          <div className="absolute right-4 top-2 z-10 flex h-fit w-fit flex-row items-center gap-1">
             <Image
               alt="CMD"
               src="/assets/images/store/cmd_key.png"

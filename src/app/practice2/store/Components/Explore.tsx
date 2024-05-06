@@ -11,7 +11,7 @@ export default function Explore() {
         </p>
       </div>
       <div className="mt-6 grid w-full grid-cols-3 gap-6 xl:grid-cols-2 sm:grid-cols-1 sm:gap-4">
-        <div className="flex h-auto w-full flex-col items-center justify-between gap-4 rounded-lg border-[2px] border-[#1B1722] bg-[#120E19] p-8 sm:p-4">
+        <div className="flex h-auto w-full flex-col items-center justify-between gap-4 rounded-lg border-[2px] border-[#1B1722] bg-[#120E19] p-8">
           <div className="flex flex-col items-center gap-4">
             <Image
               alt="Mini"
@@ -40,7 +40,7 @@ export default function Explore() {
             Install Extension
           </Button>
         </div>
-        <div className="flex h-auto w-full flex-col items-center justify-between gap-4 rounded-lg border-[2px] border-[#1B1722] bg-[#120E19] p-8 sm:p-4">
+        <div className="flex h-auto w-full flex-col items-center justify-between gap-4 rounded-lg border-[2px] border-[#1B1722] bg-[#120E19] p-8">
           <div className="flex flex-col items-center gap-4">
             <Image
               alt="Mini"
@@ -69,7 +69,7 @@ export default function Explore() {
             Install Extension
           </Button>
         </div>
-        <div className="flex h-auto w-full flex-col items-center justify-between gap-4 rounded-lg border-[2px] border-[#1B1722] bg-[#120E19] p-8 sm:p-4">
+        <div className="flex h-auto w-full flex-col items-center justify-between gap-4 rounded-lg border-[2px] border-[#1B1722] bg-[#120E19] p-8">
           <div className="flex flex-col items-center gap-4">
             <Image
               alt="Mini"

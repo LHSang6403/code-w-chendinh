@@ -4,17 +4,14 @@ import AllExtension from "./Components/AllExtension";
 import {
   Pagination,
   PaginationContent,
-  PaginationEllipsis,
   PaginationItem,
   PaginationLink,
-  PaginationNext,
-  PaginationPrevious,
 } from "@/components/ui/pagination";
 import Image from "next/image";
 
 export default function page() {
   return (
-    <div className="w-full">
+    <div className="flex w-full flex-col items-center">
       <div className="absolute left-0 right-0 top-0 z-0 w-full">
         <div className="relative w-full">
           <div className="absolute -top-[200px] left-1/2 flex w-full -translate-x-1/2 justify-center">
@@ -44,7 +41,7 @@ export default function page() {
             <br className="xl:hidden"></br> and take your daily workflow to the
             next level.
           </p>
-          <div className="relative">
+          <div className="relative lg:w-full">
             <Input
               placeholder="Search..."
               className="mt-6 w-[450px] border-[#1D1924] bg-[#120E19] opacity-70 lg:w-full"
