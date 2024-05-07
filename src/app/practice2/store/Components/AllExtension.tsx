@@ -18,7 +18,7 @@ export default function AllExtension() {
         <div className="relative lg:w-full">
           <Input
             placeholder="Search..."
-            className="h-8 w-[450px] border-[#1D1924] bg-[#120E19] opacity-70 lg:w-full"
+            className="h-8 w-[450px] border-[#1D1924] bg-[#120E19] opacity-70 lg:w-full sm:h-10"
           ></Input>
           <div className="absolute right-4 top-1/2 z-10 flex h-fit w-fit -translate-y-1/2 flex-row items-center gap-1">
             <Image
