@@ -58,7 +58,7 @@ export default function AllExtension() {
               Install
             </Button>
           </div>
-          <p className="mt-3 text-[18px] text-[#716E75]">
+          <p className="mt-3 text-sm text-[#716E75]">
             Search and install Homebrew formulae
           </p>
           <div className="mt-8 flex flex-row items-center gap-3">
@@ -106,7 +106,7 @@ export default function AllExtension() {
               Install
             </Button>
           </div>
-          <p className="mt-3 text-[18px] text-[#716E75]">
+          <p className="mt-3 text-sm text-[#716E75]">
             Search and install Homebrew formulae
           </p>
           <div className="mt-8 flex flex-row items-center gap-3">
@@ -154,7 +154,7 @@ export default function AllExtension() {
               Install
             </Button>
           </div>
-          <p className="mt-3 text-[18px] text-[#716E75]">
+          <p className="mt-3 text-sm text-[#716E75]">
             Search and install Homebrew formulae
           </p>
           <div className="mt-8 flex flex-row items-center gap-3">
@@ -202,7 +202,7 @@ export default function AllExtension() {
               Install
             </Button>
           </div>
-          <p className="mt-3 text-[18px] text-[#716E75]">
+          <p className="mt-3 text-sm text-[#716E75]">
             Search and install Homebrew formulae
           </p>
           <div className="mt-8 flex flex-row items-center gap-3">
@@ -250,7 +250,7 @@ export default function AllExtension() {
               Install
             </Button>
           </div>
-          <p className="mt-3 text-[18px] text-[#716E75]">
+          <p className="mt-3 text-sm text-[#716E75]">
             Search and install Homebrew formulae
           </p>
           <div className="mt-8 flex flex-row items-center gap-3">
@@ -298,7 +298,7 @@ export default function AllExtension() {
               Install
             </Button>
           </div>
-          <p className="mt-3 text-[18px] text-[#716E75]">
+          <p className="mt-3 text-sm text-[#716E75]">
             Search and install Homebrew formulae
           </p>
           <div className="mt-8 flex flex-row items-center gap-3">
@@ -346,7 +346,7 @@ export default function AllExtension() {
               Install
             </Button>
           </div>
-          <p className="mt-3 text-[18px] text-[#716E75]">
+          <p className="mt-3 text-sm text-[#716E75]">
             Search and install Homebrew formulae
           </p>
           <div className="mt-8 flex flex-row items-center gap-3">
@@ -394,7 +394,7 @@ export default function AllExtension() {
               Install
             </Button>
           </div>
-          <p className="mt-3 text-[18px] text-[#716E75]">
+          <p className="mt-3 text-sm text-[#716E75]">
             Search and install Homebrew formulae
           </p>
           <div className="mt-8 flex flex-row items-center gap-3">
@@ -442,7 +442,7 @@ export default function AllExtension() {
               Install
             </Button>
           </div>
-          <p className="mt-3 text-[18px] text-[#716E75]">
+          <p className="mt-3 text-sm text-[#716E75]">
             Search and install Homebrew formulae
           </p>
           <div className="mt-8 flex flex-row items-center gap-3">
@@ -490,7 +490,7 @@ export default function AllExtension() {
               Install
             </Button>
           </div>
-          <p className="mt-3 text-[18px] text-[#716E75]">
+          <p className="mt-3 text-sm text-[#716E75]">
             Search and install Homebrew formulae
           </p>
           <div className="mt-8 flex flex-row items-center gap-3">
