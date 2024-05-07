@@ -14,8 +14,8 @@ export default function Banners() {
             className="rounded-xl xl:w-full"
           />
         </div>
-        <div className="flex h-fit flex-col justify-between p-10 pt-0 lg:h-fit sm:p-6">
-          <div className="h-fit">
+        <div className="flex h-full flex-col justify-between p-10 pt-0 lg:h-fit sm:p-6">
+          <div className="mt-1 h-fit">
             <h3 className="text-lg font-medium text-black">Start developing</h3>
             <p className="mt-2 line-clamp-5 overflow-ellipsis text-[18px] font-light text-[#093B41]">
               Build rich extensions with React, Node.js and TypeScript. Our docs
