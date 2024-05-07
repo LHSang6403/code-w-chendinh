@@ -1,8 +1,6 @@
-"use client";
-
-import { useRouter } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 export default function Header() {
   const router = useRouter();
@@ -87,12 +85,14 @@ export default function Header() {
       </div>
       <div className="hidden w-full grid-cols-4 xl:grid sm:hidden">
         <Button
+          onClick={() => router.push("/practice2/store")}
           variant="ghost"
           className="border-none text-[16px] font-light text-[#A19AA7]"
         >
           Store
         </Button>
         <Button
+          onClick={() => router.push("/practice2/developers")}
           variant="ghost"
           className="border-none text-[16px] font-light text-[#A19AA7]"
         >
