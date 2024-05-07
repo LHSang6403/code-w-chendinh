@@ -20,14 +20,14 @@ export default function page() {
           <div className="absolute -top-[200px] left-1/2 flex w-full -translate-x-1/2 justify-center">
             <div className="h-[300px] w-[300px] rounded-full bg-[#792359] bg-gradient-to-b opacity-[45%] shadow-[rgba(121,35,89,100)_0px_0px_200px_200px]"></div>
           </div> */}
-          <div className="absolute -top-16 left-1/2 flex w-full -translate-x-1/2 justify-center">
+          <div className="absolute -top-16 left-1/2 flex w-full -translate-x-1/2 justify-center sm:top-0 ">
             <Image
               alt="blur"
               src="/assets/images/store/blur.png"
               width={1440}
               height={850}
               quality={100}
-              className="opacity-70 shadow-[rgba(7,2,15,100)_0px_0px_200px_200px]"
+              className="opacity-70 shadow-[rgba(7,2,15,100)_0px_0px_200px_200px] xl:scale-125 sm:scale-150"
             />
           </div>
           <div className="absolute left-1/2 top-16 flex w-full -translate-x-1/2 justify-center">
