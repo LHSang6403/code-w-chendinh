@@ -27,6 +27,7 @@ export default function Header() {
             Store
           </Button>
           <Button
+            onClick={() => router.push("/practice2/developers")}
             variant="ghost"
             className="hover:bg- border-none text-[16px] font-light text-[#A19AA7]"
           >

@@ -14,12 +14,6 @@ export default function page() {
     <div className="flex w-full flex-col items-center">
       <div className="absolute left-0 right-0 top-0 z-0 w-full">
         <div className="relative w-full">
-          {/* <div className="absolute -top-[200px] left-1/2 flex w-full -translate-x-1/2 justify-center">
-            <div className="h-[550px] w-[650px] rounded-full bg-[#1a0c38] bg-gradient-to-b opacity-[45%] shadow-[rgba(26,12,56,100)_0px_0px_200px_200px]"></div>
-          </div>
-          <div className="absolute -top-[200px] left-1/2 flex w-full -translate-x-1/2 justify-center">
-            <div className="h-[300px] w-[300px] rounded-full bg-[#792359] bg-gradient-to-b opacity-[45%] shadow-[rgba(121,35,89,100)_0px_0px_200px_200px]"></div>
-          </div> */}
           <div className="absolute -top-16 left-1/2 flex w-full -translate-x-1/2 justify-center sm:top-0 ">
             <Image
               alt="blur"
