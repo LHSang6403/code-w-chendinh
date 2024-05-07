@@ -5,12 +5,12 @@ export default function Banners() {
   return (
     <div className="mt-28 flex h-fit w-full flex-row items-center gap-4 lg:flex-col">
       <div className="flex h-full w-1/2 flex-col justify-between rounded-lg bg-gradient-to-br from-[#E3FCEB] via-[#0E938B] to-[#13615E] lg:w-full">
-        <div className="h-[300px] px-4 lg:h-fit lg:px-2 sm:pt-4">
+        <div className="h-[300px] px-4 lg:h-fit sm:pt-4">
           <Image
             alt="coding"
             src="/assets/images/developers/coding.png"
-            width={600}
-            height={400}
+            width={800}
+            height={600}
             className="mt-8 xl:-mb-12 xl:w-full"
           />
         </div>
@@ -29,12 +29,12 @@ export default function Banners() {
         </div>
       </div>
       <div className="flex h-full w-1/2 flex-col justify-between rounded-lg bg-[#1E1B26] lg:w-full">
-        <div className="h-[300px] px-4 lg:h-fit lg:px-2 sm:pt-4">
+        <div className="h-[300px] px-4 lg:h-fit sm:pt-4">
           <Image
             alt="coding"
             src="/assets/images/developers/apps.png"
-            width={600}
-            height={400}
+            width={800}
+            height={600}
             className="xl:w-full"
           />
         </div>
