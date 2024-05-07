@@ -25,20 +25,22 @@ export default function Explore() {
               formats, and convert…
             </p>
           </div>
-          <div className="flex flex-row items-center gap-1.5">
-            <Image
-              alt="Mini"
-              src="/assets/images/store/mini-icon.png"
-              width={25}
-              height={25}
-            />
-            <span className="mt-[2px] text-[16px] text-[#A09FA3]">
-              Stephen Kaplan
-            </span>
+          <div className="flex flex-col items-center gap-4">
+            <div className="flex flex-row items-center gap-1.5">
+              <Image
+                alt="Mini"
+                src="/assets/images/store/mini-icon.png"
+                width={25}
+                height={25}
+              />
+              <span className="mt-[2px] text-[16px] text-[#A09FA3]">
+                Stephen Kaplan
+              </span>
+            </div>
+            <Button className="mt-1 h-fit py-1.5 text-sm font-normal text-white">
+              Install Extension
+            </Button>
           </div>
-          <Button className="mt-1 h-fit py-1.5 text-sm font-normal text-white">
-            Install Extension
-          </Button>
         </div>
         <div className="flex h-auto w-full flex-col items-center justify-between gap-4 rounded-lg border-[2px] border-[#1B1722] bg-[#120E19] p-8">
           <div className="flex flex-col items-center gap-4">
@@ -54,23 +56,25 @@ export default function Explore() {
               formats, and convert…
             </p>
           </div>
-          <div className="flex flex-row items-center gap-1.5">
-            <Image
-              alt="Mini"
-              src="/assets/images/store/mini-icon.png"
-              width={25}
-              height={25}
-            />
-            <span className="mt-[2px] text-[16px] text-[#A09FA3]">
-              Stephen Kaplan
-            </span>
+          <div className="flex flex-col items-center gap-4">
+            <div className="flex flex-row items-center gap-1.5">
+              <Image
+                alt="Mini"
+                src="/assets/images/store/mini-icon.png"
+                width={25}
+                height={25}
+              />
+              <span className="mt-[2px] text-[16px] text-[#A09FA3]">
+                Stephen Kaplan
+              </span>
+            </div>
+            <Button className="mt-1 h-fit py-1.5 text-sm font-normal text-white">
+              Install Extension
+            </Button>
           </div>
-          <Button className="mt-1 h-fit py-1.5 text-sm font-normal text-white">
-            Install Extension
-          </Button>
         </div>
         <div className="flex h-auto w-full flex-col items-center justify-between gap-4 rounded-lg border-[2px] border-[#1B1722] bg-[#120E19] p-8">
-          <div className="flex flex-col items-center gap-4">
+          <div className="flex h-fit flex-col items-center gap-4">
             <Image
               alt="Mini"
               src="/assets/images/store/app.png"
@@ -82,20 +86,22 @@ export default function Explore() {
               Search the Internet for animated GIFs
             </p>
           </div>
-          <div className="flex flex-row items-center gap-1.5">
-            <Image
-              alt="Mini"
-              src="/assets/images/store/mini-icon.png"
-              width={25}
-              height={25}
-            />
-            <span className="mt-[2px] text-[16px] text-[#A09FA3]">
-              Joe Schmitt
-            </span>
+          <div className="flex flex-col items-center gap-4">
+            <div className="flex h-fit flex-row items-center gap-1.5">
+              <Image
+                alt="Mini"
+                src="/assets/images/store/mini-icon.png"
+                width={25}
+                height={25}
+              />
+              <span className="mt-[2px] text-[16px] text-[#A09FA3]">
+                Joe Schmitt
+              </span>
+            </div>
+            <Button className="mt-1 h-fit py-1.5 text-sm font-normal text-white">
+              Install Extension
+            </Button>
           </div>
-          <Button className="mt-1 h-fit py-1.5 text-sm font-normal text-white">
-            Install Extension
-          </Button>
         </div>
       </div>
     </div>
