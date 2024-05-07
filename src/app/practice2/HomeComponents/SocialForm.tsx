@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 export default function SocialForm() {
   return (
     <>
-      <div className="flex h-44 w-full flex-row gap-6 lg:h-fit lg:flex-col">
+      <div className="flex h-44 w-full flex-row gap-6 xl:gap-4 lg:h-fit lg:flex-col">
         <div className="flex h-full w-1/2 flex-col justify-center gap-4 rounded-xl bg-gradient-to-r from-[#315A6C] via-[#182955] to-[#0F0724] px-12 py-6 lg:w-full sm:px-6">
           <div>
             <Image
