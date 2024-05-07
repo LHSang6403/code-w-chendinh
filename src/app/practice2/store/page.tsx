@@ -14,11 +14,21 @@ export default function page() {
     <div className="flex w-full flex-col items-center">
       <div className="absolute left-0 right-0 top-0 z-0 w-full">
         <div className="relative w-full">
-          <div className="absolute -top-[200px] left-1/2 flex w-full -translate-x-1/2 justify-center">
+          {/* <div className="absolute -top-[200px] left-1/2 flex w-full -translate-x-1/2 justify-center">
             <div className="h-[550px] w-[650px] rounded-full bg-[#1a0c38] bg-gradient-to-b opacity-[45%] shadow-[rgba(26,12,56,100)_0px_0px_200px_200px]"></div>
           </div>
           <div className="absolute -top-[200px] left-1/2 flex w-full -translate-x-1/2 justify-center">
             <div className="h-[300px] w-[300px] rounded-full bg-[#792359] bg-gradient-to-b opacity-[45%] shadow-[rgba(121,35,89,100)_0px_0px_200px_200px]"></div>
+          </div> */}
+          <div className="absolute -top-16 left-1/2 flex w-full -translate-x-1/2 justify-center">
+            <Image
+              alt="blur"
+              src="/assets/images/store/blur.png"
+              width={1440}
+              height={850}
+              quality={100}
+              className="opacity-70 shadow-[rgba(7,2,15,100)_0px_0px_200px_200px]"
+            />
           </div>
           <div className="absolute left-1/2 top-16 flex w-full -translate-x-1/2 justify-center">
             <Image
@@ -121,7 +131,7 @@ export default function page() {
                   className="flex h-8 w-10 items-center justify-center border-none text-[16px] font-light text-[#A5A3A8] hover:bg-[#1E1A25]"
                   href="#"
                 >
-                  <hr className="w-8 border-[0.5px] border-white"></hr>
+                  <hr className="w-8 border-[0.5px] border-[#A5A3A8]"></hr>
                 </PaginationLink>
               </PaginationItem>
               <PaginationItem>
