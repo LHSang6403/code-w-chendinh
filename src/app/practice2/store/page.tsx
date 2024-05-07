@@ -51,12 +51,12 @@ export default function page() {
             <br className="xl:hidden"></br> and take your daily workflow to the
             next level.
           </p>
-          <div className="relative lg:w-full">
+          <div className="relative mt-6 lg:w-full">
             <Input
               placeholder="Search..."
-              className="mt-6 w-[450px] border-[#1D1924] bg-[#120E19] opacity-70 lg:w-full"
+              className="w-[450px] border-[#1D1924] bg-[#120E19] opacity-70 lg:w-full"
             ></Input>
-            <div className="absolute right-4 top-9 z-10 flex h-fit w-fit flex-row items-center gap-1">
+            <div className="absolute right-4 top-1/2 z-10 flex h-fit w-fit -translate-y-1/2 flex-row items-center gap-1">
               <Image
                 alt="CMD"
                 src="/assets/images/store/cmd_key.png"

@@ -20,7 +20,7 @@ export default function AllExtension() {
             placeholder="Search..."
             className="h-8 w-[450px] border-[#1D1924] bg-[#120E19] opacity-70 lg:w-full"
           ></Input>
-          <div className="absolute right-4 top-2 z-10 flex h-fit w-fit flex-row items-center gap-1">
+          <div className="absolute right-4 top-1/2 z-10 flex h-fit w-fit -translate-y-1/2 flex-row items-center gap-1">
             <Image
               alt="CMD"
               src="/assets/images/store/cmd_key.png"
