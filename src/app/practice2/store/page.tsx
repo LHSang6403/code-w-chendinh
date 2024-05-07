@@ -14,14 +14,14 @@ export default function page() {
     <div className="flex w-full flex-col items-center">
       <div className="absolute left-0 right-0 top-0 z-0 w-full">
         <div className="relative w-full">
-          <div className="absolute -top-16 left-1/2 flex w-full -translate-x-1/2 justify-center sm:top-0 ">
+          <div className="absolute -top-16 left-1/2 flex w-full -translate-x-1/2 justify-center xl:-top-6 sm:top-0">
             <Image
               alt="blur"
               src="/assets/images/store/blur.png"
               width={1440}
               height={850}
               quality={100}
-              className="opacity-70 shadow-[rgba(7,2,15,100)_0px_0px_200px_200px] xl:scale-125 sm:scale-150"
+              className="opacity-70 shadow-[rgba(7,2,15,100)_0px_0px_200px_200px] "
             />
           </div>
           <div className="absolute left-1/2 top-16 flex w-full -translate-x-1/2 justify-center">
