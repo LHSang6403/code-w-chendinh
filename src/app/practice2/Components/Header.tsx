@@ -89,26 +89,26 @@ export default function Header() {
         <Button
           onClick={() => router.push("/practice2/store")}
           variant="ghost"
-          className="border-none text-[16px] font-light text-[#A19AA7]"
+          className="hover:bg- border-none text-[16px] font-light text-[#A19AA7]"
         >
           Store
         </Button>
         <Button
           onClick={() => router.push("/practice2/developers")}
           variant="ghost"
-          className="border-none text-[16px] font-light text-[#A19AA7]"
+          className="hover:bg- border-none text-[16px] font-light text-[#A19AA7]"
         >
           Developer
         </Button>
         <Button
           variant="ghost"
-          className="border-none text-[16px] font-light text-[#A19AA7]"
+          className="hover:bg- border-none text-[16px] font-light text-[#A19AA7]"
         >
           Teams
         </Button>
         <Button
           variant="ghost"
-          className="flex flex-row gap-1 border-none text-[16px] font-light text-[#A19AA7]"
+          className="hover:bg- flex flex-row gap-1 border-none text-[16px] font-light text-[#A19AA7]"
         >
           <span>Pro</span>
           <Image
@@ -120,19 +120,19 @@ export default function Header() {
         </Button>
         <Button
           variant="ghost"
-          className="border-none text-[16px] font-light text-[#A19AA7]"
+          className="hover:bg- border-none text-[16px] font-light text-[#A19AA7]"
         >
           Changelog
         </Button>
         <Button
           variant="ghost"
-          className="border-none text-[16px] font-light text-[#A19AA7]"
+          className="hover:bg- border-none text-[16px] font-light text-[#A19AA7]"
         >
           Pricing
         </Button>
         <Button
           variant="ghost"
-          className="border-none text-[16px] font-light text-[#A19AA7]"
+          className="hover:bg- border-none text-[16px] font-light text-[#A19AA7]"
         >
           Blog
         </Button>
