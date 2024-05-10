@@ -2,6 +2,7 @@ import { GeistSans } from "geist/font/sans";
 import "./globals.css";
 import NavDrawer from "@components/Layout/Drawer/NavDrawer";
 import ThemeProvider from "@components/Providers/ThemeProvider";
+import ReactQueryProvider from "@components/Providers/ReactQueryProvider";
 
 export const metadata = {
   title: "Next.js Starter Kit",
@@ -23,10 +24,12 @@ export default function RootLayout({
     >
       <body className="bg-background text-foreground">
         {/* <ThemeProvider> */}
+        <ReactQueryProvider>
           <main className="mx-auto flex min-h-screen w-auto max-w-[2200px] flex-col items-center overflow-hidden">
             {children}
             {/* <NavDrawer /> */}
           </main>
+        </ReactQueryProvider>
         {/* </ThemeProvider> */}
       </body>
     </html>

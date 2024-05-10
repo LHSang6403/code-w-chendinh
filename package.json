@@ -60,6 +60,7 @@
     "cloudinary": "^2.0.1",
     "clsx": "^2.1.0",
     "cmdk": "^0.2.1",
+    "crypto": "^1.0.1",
     "crypto-js": "^4.2.0",
     "date-fn": "^0.0.2",
     "date-fns": "^3.3.1",
