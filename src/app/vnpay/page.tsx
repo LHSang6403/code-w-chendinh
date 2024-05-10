@@ -3,6 +3,7 @@
 import { Button } from "@/components/ui/button";
 import { useMutation } from "@tanstack/react-query";
 import axios from "axios";
+import crypto from "crypto";
 
 const VNPAY_URL = "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html";
 
@@ -74,4 +75,26 @@ export default function page() {
       </Button>
     </div>
   );
+}
+
+function createSecureHash(
+  params: { [key: string]: string },
+  secretKey: string
+): string {
+  const sortedParams: { [key: string]: string } = {};
+
+  Object.keys(params)
+    .sort()
+    .forEach((key) => {
+      sortedParams[key] = params[key];
+    });
+
+  const signData = Object.keys(sortedParams)
+    .map((key) => `${key}=${sortedParams[key]}`)
+    .join("&");
+
+  const hmac = crypto.createHmac("sha512", secretKey);
+  const vnp_SecureHash = hmac.update(signData).digest("hex");
+
+  return vnp_SecureHash;
 }
